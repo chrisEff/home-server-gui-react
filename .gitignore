@@ -1,0 +1,5 @@
+.idae/
+node_modules/
+scripts/
+/config.js
+package-lock.json
