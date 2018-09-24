@@ -1,11 +1,11 @@
 'use strict';
 
-const e = React.createElement;
-
 class Lights extends React.Component {
   constructor(props) {
     super(props)
-    this.state = {}
+    this.state = {
+      bulbs: []
+    }
   }
 
   async componentDidMount() {
@@ -22,26 +22,43 @@ class Lights extends React.Component {
   }
 
   render() {
-    if (!this.state.bulbs) {
-      return <div/>
-    }
-    console.log(this.state)
-
     return (
       <div>
-        {this.state.bulbs.map(bulb => {
-          return Lights.renderLight(bulb.name, !!bulb.state)
-        })}
+        <h2>Licht</h2>
+        {this.state.bulbs.map(bulb => <Light key={bulb.name} bulb={bulb} />)}
+      </div>
+    )
+  }
+}
+
+class Light extends React.Component {
+  constructor(props) {
+    super(props)
+    this.state = {bulb: props.bulb}
+  }
+  
+
+  render() {
+    const className = this.state.bulb.state ? 'light on' : 'light'
+    return (
+      <div className={className} onClick={this.handleClick}>
+        {this.state.bulb.name}
+        <div className='bulb'>💡</div>
       </div>
     )
   }
 
-  static renderLight(name, state) {
-    const className = state ? 'light on' : 'light'
-    return <div className={className}>{name}</div>
+  handleClick = async () => {
+    const bulb = this.state.bulb
+    await fetch(
+      `${config.api.protocol}://${config.api.host}:${config.api.port}/tradfri/device/${bulb.id}/state/${bulb.state ? 0 : 1}?key=${config.api.key}`,
+      {method: 'PUT'}
+    )
+    
+    bulb.state = bulb.state ? 0 : 1
+    this.setState({bulb})
   }
-
 }
 
-const domContainer = document.querySelector('#lights');
-ReactDOM.render(e(Lights), domContainer);
+
+ReactDOM.render(<Lights/>, document.querySelector('#lights'));

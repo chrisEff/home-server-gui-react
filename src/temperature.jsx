@@ -20,18 +20,33 @@ class Temperature extends React.Component {
     if (!this.state.tempSensors) {
       return <div/>
     }
-    console.log(this.state)
 
-    return <table>
-      {this.state.tempSensors.map(sensor => Temperature.renderSensor(sensor))}
-    </table>
+    return (
+      <div>
+        <h2>Temperatur</h2>
+        <table>
+          <tbody>
+            {this.state.tempSensors.map(sensor => <TemperatureSensor key={sensor.id} sensor={sensor}/>)}
+          </tbody>
+        </table>
+      </div>
+    )
   }
-
-  static renderSensor(sensor) {
-    return <tr><td>{sensor.name}:</td> <td>{sensor.celsiusValue}°C</td></tr>
-  }
-
 }
 
-const domContainer = document.querySelector('#temperature');
-ReactDOM.render(e(Temperature), domContainer);
+class TemperatureSensor extends React.Component {
+  constructor(props) {
+    super(props)
+  }
+
+  render() {
+    return (
+      <tr>
+        <td>{this.props.sensor.name}:</td>
+        <td>{this.props.sensor.celsiusValue}°C</td>
+      </tr>
+    )
+  }
+}
+
+ReactDOM.render(<Temperature/>, document.querySelector('#temperature'));
