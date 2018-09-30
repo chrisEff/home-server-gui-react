@@ -13,6 +13,7 @@
     height: 180px;
     margin: 0 20px 20px 0;
     padding: 10px;
+    position: relative;
     text-align: center;
     width: 120px;
 }
@@ -25,10 +26,39 @@
 .light .bulb {
     text-align: center;
     font-size: 80px;
-    padding-top: 30px;
+    padding-top: 15px;
     visibility: hidden;
 }
 
 .light.on .bulb {
     visibility: visible;
 }
+
+.color-switcher {
+    bottom: 8px;
+    font-size: 0;
+    position: absolute;
+    visibility: hidden;
+}
+
+.color-switcher .color {
+    border-radius: 10px;
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+}
+
+.light.on .color-switcher {
+    visibility: visible;
+}
+
+.color-switcher .warm    { background-color: #efd275; }
+.color-switcher .neutral { background-color: #f1e0b5; }
+.color-switcher .cold    { background-color: #f5faf6; }
+
+.color-switcher .red     { background-color: red; }
+.color-switcher .green   { background-color: green; }
+.color-switcher .blue    { background-color: blue; }
+.color-switcher .yellow  { background-color: yellow; }
+.color-switcher .pink    { background-color: pink; }
+.color-switcher .purple  { background-color: purple; }
