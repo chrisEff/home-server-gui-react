@@ -59,7 +59,8 @@ body {
 }
 
 .color-switcher .color {
-    border-radius: 10px;
+    border-radius: 7px;
+    box-shadow: 0 0 10px black;
     display: inline-block;
     height: 38px;
     margin: 0 1px 1px 0;
