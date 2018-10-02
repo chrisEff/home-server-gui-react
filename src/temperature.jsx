@@ -1,7 +1,5 @@
 'use strict';
 
-const e = React.createElement;
-
 class Temperature extends React.Component {
   constructor(props) {
     super(props)
