@@ -94,6 +94,11 @@ class Light extends React.Component {
           <div className={bulb.color === 'neutral' ? 'color neutral active' : 'color neutral'} onClick={(e) => this.handleColor(e, 'neutral')}/>
           <div className={bulb.color === 'cold' ? 'color cold active' : 'color cold'} onClick={(e) => this.handleColor(e, 'cold')}/>
         </div>}
+
+        { bulb.bulbType === 'white' &&
+        <div className='color-switcher white'>
+          <div className='color neutral active' />
+        </div>}
       </div>
     )
   }
