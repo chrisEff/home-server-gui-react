@@ -5,27 +5,28 @@ class ColorSwitcher extends React.Component {
   }
 
   render() {
+    const bulb = this.state.bulb
     if (bulb.bulbType === 'rgb') {
       return (
         <div className='color-switcher'>
-          <div className='color red' onClick={(e) => this.handleChange(e, 'red')}/>
-          <div className='color green' onClick={(e) => this.handleChange(e, 'green')}/>
-          <div className='color blue' onClick={(e) => this.handleChange(e, 'blue')}/>
-          <div className='color yellow' onClick={(e) => this.handleChange(e, 'yellow')}/>
-          <div className='color pink' onClick={(e) => this.handleChange(e, 'pink')}/>
-          <div className='color purple' onClick={(e) => this.handleChange(e, 'purple')}/>
-          <div className='color warm' onClick={(e) => this.handleChange(e, 'warm')}/>
-          <div className='color neutral' onClick={(e) => this.handleChange(e, 'neutral')}/>
-          <div className='color cold' onClick={(e) => this.handleChange(e, 'cold')}/>
+          <div className={bulb.color === 'red'     ? 'color red active'     : 'color red'}     onClick={(e) => this.handleChange(e, 'red')}/>
+          <div className={bulb.color === 'green'   ? 'color green active'   : 'color green'}   onClick={(e) => this.handleChange(e, 'green')}/>
+          <div className={bulb.color === 'blue'    ? 'color blue active'    : 'color blue'}    onClick={(e) => this.handleChange(e, 'blue')}/>
+          <div className={bulb.color === 'yellow'  ? 'color yellow active'  : 'color yellow'}  onClick={(e) => this.handleChange(e, 'yellow')}/>
+          <div className={bulb.color === 'pink'    ? 'color pink active'    : 'color pink'}    onClick={(e) => this.handleChange(e, 'pink')}/>
+          <div className={bulb.color === 'purple'  ? 'color purple active'  : 'color purple'}  onClick={(e) => this.handleChange(e, 'purple')}/>
+          <div className={bulb.color === 'warm'    ? 'color warm active'    : 'color warm'}    onClick={(e) => this.handleChange(e, 'warm')}/>
+          <div className={bulb.color === 'neutral' ? 'color neutral active' : 'color neutral'} onClick={(e) => this.handleChange(e, 'neutral')}/>
+          <div className={bulb.color === 'cold'    ? 'color cold active'    : 'color cold'}    onClick={(e) => this.handleChange(e, 'cold')}/>
         </div>
       )
     }
     if (bulb.bulbType === 'white-spectrum') {
       return (
         <div className='color-switcher spectrum'>
-          <div className={bulb.color === 'warm' ? 'color warm active' : 'color warm'} onClick={(e) => this.handleChange(e, 'warm')}/>
+          <div className={bulb.color === 'warm'    ? 'color warm active'    : 'color warm'}    onClick={(e) => this.handleChange(e, 'warm')}/>
           <div className={bulb.color === 'neutral' ? 'color neutral active' : 'color neutral'} onClick={(e) => this.handleChange(e, 'neutral')}/>
-          <div className={bulb.color === 'cold' ? 'color cold active' : 'color cold'} onClick={(e) => this.handleChange(e, 'cold')}/>
+          <div className={bulb.color === 'cold'    ? 'color cold active'    : 'color cold'}    onClick={(e) => this.handleChange(e, 'cold')}/>
         </div>
       )
     }
