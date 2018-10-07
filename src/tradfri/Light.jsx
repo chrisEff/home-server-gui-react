@@ -1,72 +1,8 @@
-'use strict';
-
-class Tradfri extends React.Component {
-  constructor(props) {
-    super(props)
-    this.state = {
-      groups: []
-    }
-  }
-
-  async componentDidMount() {
-    const groups = await (await fetch(`${config.api.protocol}://${config.api.host}:${config.api.port}/tradfri/group?key=${config.api.key}`)).json()
-    const devices = await (await fetch(`${config.api.protocol}://${config.api.host}:${config.api.port}/tradfri/device?key=${config.api.key}`)).json()
-    
-    groups.forEach(group => {
-      group.devices = []
-      group.deviceIds.forEach(deviceId => {
-        const device = devices.find(device => device.id === deviceId)
-        group.devices.push(device)
-      })
-      group.devices.sort((a, b) => {
-        return a.name > b.name ? 1 : b.name < a.name ? -1 : 0;
-      })
-    })
-    groups.sort((a, b) => {
-      return a.name > b.name ? 1 : b.name < a.name ? -1 : 0;
-    })
-    
-    this.setState({
-      groups
-    })
-  }
-
-  render() {
-    return (
-      <div>
-        <h2>Licht</h2>
-        {this.state.groups.map(group => <LightGroup key={group.name} group={group} />)}
-      </div>
-    )
-  }
-}
-
-class LightGroup extends React.Component {
-  constructor(props) {
-    super(props)
-    this.state = {group: props.group}
-  }
-
-  render() {
-    return (
-      <div className='lightGroup'>
-        <h3>{this.state.group.name}</h3>
-        {
-          this.state.group.devices
-            .filter(device => device.type === 'bulb')
-            .map(device => <Light key={device.name} bulb={device} />)
-        }
-      </div>
-    )
-  }
-}
-
 class Light extends React.Component {
   constructor(props) {
     super(props)
     this.state = {bulb: props.bulb}
   }
-  
 
   render() {
     const bulb = this.state.bulb;
@@ -75,11 +11,11 @@ class Light extends React.Component {
       <div className={className}>
         {bulb.name}
         <div className='bulb' onClick={this.handleClick}>💡</div>
-        
+
         <input className='brightness-slider'
                type='range' min='0' max='254' defaultValue={bulb.brightness}
                onMouseUp={(e) => this.handleBrightness(e, e.target.value)} />
-        
+
         { bulb.bulbType === 'rgb' &&
         <div className='color-switcher'>
           <div className='color red'    onClick={(e) => this.handleColor(e, 'red')}/>
@@ -114,7 +50,7 @@ class Light extends React.Component {
       `${config.api.protocol}://${config.api.host}:${config.api.port}/tradfri/device/${bulb.id}/state/${bulb.state ? 0 : 1}?key=${config.api.key}`,
       {method: 'PUT'}
     )
-    
+
     bulb.state = bulb.state ? 0 : 1
     this.setState({bulb})
   }
@@ -129,7 +65,7 @@ class Light extends React.Component {
     bulb.brightness = brightness
     this.setState({bulb})
   }
-  
+
   handleColor = async (e, color) => {
     e.stopPropagation()
     const bulb = this.state.bulb
@@ -137,11 +73,10 @@ class Light extends React.Component {
       `${config.api.protocol}://${config.api.host}:${config.api.port}/tradfri/device/${bulb.id}/color/${color}?key=${config.api.key}`,
       {method: 'PUT'}
     )
-    
+
     bulb.color = color
     this.setState({bulb})
   }
 }
 
-
-ReactDOM.render(<Tradfri/>, document.querySelector('#lights'));
+module.exports = Light

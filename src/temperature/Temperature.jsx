@@ -1,5 +1,7 @@
 'use strict';
 
+const TemperatureSensor = require('./TemperatureSensor')
+
 class Temperature extends React.Component {
   constructor(props) {
     super(props)
@@ -32,19 +34,4 @@ class Temperature extends React.Component {
   }
 }
 
-class TemperatureSensor extends React.Component {
-  constructor(props) {
-    super(props)
-  }
-
-  render() {
-    return (
-      <tr>
-        <td>{this.props.sensor.name}:</td>
-        <td>{this.props.sensor.celsiusValue}°C</td>
-      </tr>
-    )
-  }
-}
-
-ReactDOM.render(<Temperature/>, document.querySelector('#temperature'));
+module.exports = Temperature
