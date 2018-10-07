@@ -1,4 +1,4 @@
-const config = {
+module.exports = {
   api: {
     protocol: 'https',
     host: 'my.api.example.com',
