@@ -42,8 +42,23 @@ body {
 
 .light.on .bulb, .outlet.on .plug {
     filter: none;
-    text-shadow: 0 0 1px black, 0 0 50px rgb(249,233,168);
+    text-shadow: 0 0 1px black, 0 0 50px #efd275;
 }
+
+.outlet.on .plug {
+    filter: none;
+    text-shadow: 0 0 1px black, 0 0 50px #f5faf6;
+}
+
+.light.on.warm .bulb    { text-shadow: 0 0 1px black, 0 0 50px #efd275; }
+.light.on.neutral .bulb { text-shadow: 0 0 1px black, 0 0 50px #f1e0b5; }
+.light.on.cold .bulb    { text-shadow: 0 0 1px black, 0 0 50px #f5faf6; }
+.light.on.red .bulb     { text-shadow: 0 0 1px black, 0 0 50px red; }
+.light.on.green .bulb   { text-shadow: 0 0 1px black, 0 0 50px green; }
+.light.on.blue .bulb    { text-shadow: 0 0 1px black, 0 0 50px blue; }
+.light.on.yellow .bulb  { text-shadow: 0 0 1px black, 0 0 50px yellow; }
+.light.on.pink .bulb    { text-shadow: 0 0 1px black, 0 0 50px pink; }
+.light.on.purple .bulb  { text-shadow: 0 0 1px black, 0 0 50px purple; }
 
 .outlet  .plug {
     padding-top: 40px;

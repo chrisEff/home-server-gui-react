@@ -20,8 +20,7 @@ class BrightnessSlider extends React.Component {
       {method: 'PUT'}
     )
 
-    bulb.brightness = brightness
-    this.setState({bulb})
+    this.props.onchange(brightness)
   }
 }
 

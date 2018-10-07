@@ -50,8 +50,7 @@ class ColorSwitcher extends React.Component {
       {method: 'PUT'}
     )
 
-    bulb.color = color
-    this.setState({bulb})
+    this.props.onchange(color)
   }
 }
 
