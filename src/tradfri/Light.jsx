@@ -1,3 +1,5 @@
+const config = require('../../config')
+
 const BrightnessSlider = require('./BrightnessSlider')
 const ColorSwitcher = require('./ColorSwitcher')
 

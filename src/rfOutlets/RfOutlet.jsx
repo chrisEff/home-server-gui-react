@@ -1,3 +1,5 @@
+const config = require('../../config')
+
 class RfOutlet extends React.Component {
   constructor(props) {
     super(props)

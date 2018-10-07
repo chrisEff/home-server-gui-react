@@ -1,3 +1,5 @@
+const config = require('../../config')
+
 class ColorSwitcher extends React.Component {
   constructor(props) {
     super(props)

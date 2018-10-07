@@ -1,3 +1,5 @@
+const config = require('../../config')
+
 class BrightnessSlider extends React.Component {
   constructor(props) {
     super(props)
@@ -5,7 +7,7 @@ class BrightnessSlider extends React.Component {
   }
 
   render() {
-    const bulb = this.state.bulb;
+    const bulb = this.state.bulb
     return <input className='brightness-slider'
                   type='range' min='0' max='254' defaultValue={bulb.brightness}
                   onMouseUp={(e) => this.handleChange(e, e.target.value)} />

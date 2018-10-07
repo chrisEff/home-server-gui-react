@@ -1,5 +1,6 @@
 'use strict';
 
+const config = require('../../config')
 const LightGroup = require('./LightGroup')
 
 class Tradfri extends React.Component {
