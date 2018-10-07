@@ -17,7 +17,7 @@ body {
     border-radius: 10px;
     color: rgb(135, 147, 155);
     display: inline-block;
-    height: 260px;
+    height: 316px;
     margin: 0 20px 20px 0;
     overflow: hidden;
     padding: 10px;
@@ -47,6 +47,16 @@ body {
 
 .outlet  .plug {
     padding-top: 40px;
+}
+
+.brightness-slider {
+    margin: 20px 0;
+    visibility: hidden;
+    width: 120px;
+}
+
+.light.on .brightness-slider {
+    visibility: visible;
 }
 
 .color-switcher {

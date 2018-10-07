@@ -72,9 +72,14 @@ class Light extends React.Component {
     const bulb = this.state.bulb;
     const className = bulb.state ? 'light on' : 'light'
     return (
-      <div className={className} onClick={this.handleClick}>
+      <div className={className}>
         {bulb.name}
-        <div className='bulb'>💡</div>
+        <div className='bulb' onClick={this.handleClick}>💡</div>
+        
+        <input className='brightness-slider'
+               type='range' min='0' max='254' defaultValue={bulb.brightness}
+               onMouseUp={(e) => this.handleBrightness(e, e.target.value)} />
+        
         { bulb.bulbType === 'rgb' &&
         <div className='color-switcher'>
           <div className='color red'    onClick={(e) => this.handleColor(e, 'red')}/>
@@ -114,6 +119,17 @@ class Light extends React.Component {
     this.setState({bulb})
   }
 
+  handleBrightness = async (e, brightness) => {
+    const bulb = this.state.bulb
+    await fetch(
+      `${config.api.protocol}://${config.api.host}:${config.api.port}/tradfri/device/${bulb.id}/brightness/${brightness}?key=${config.api.key}`,
+      {method: 'PUT'}
+    )
+
+    bulb.brightness = brightness
+    this.setState({bulb})
+  }
+  
   handleColor = async (e, color) => {
     e.stopPropagation()
     const bulb = this.state.bulb
