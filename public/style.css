@@ -38,6 +38,7 @@ body {
     filter: grayscale(100%) blur(5px);
     font-size: 80px;
     padding-top: 15px;
+    user-select: none;
 }
 
 .light.on .bulb, .outlet.on .plug {
