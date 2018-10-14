@@ -2,6 +2,7 @@ const config = require('../../config')
 
 const BrightnessSlider = require('./BrightnessSlider')
 const ColorSwitcher = require('./ColorSwitcher')
+const LightSwitch = require('./LightSwitch')
 
 class Light extends React.Component {
   constructor(props) {
@@ -15,33 +16,45 @@ class Light extends React.Component {
     return (
       <div className={className + ' ' + bulb.color}>
         <span className={bulb.name.length > 15 ? 'name long' : 'name'}>{bulb.name}</span>
-        <div className='bulb' onClick={this.handleClick}>💡</div>
-
-        <BrightnessSlider bulb={bulb} onchange={this.updateBrightness} />
-        <ColorSwitcher bulb={bulb} onchange={this.updateColor} />
+        
+        <LightSwitch state={bulb.state} onchange={this.updateState} />
+        <BrightnessSlider brightness={bulb.brightness} onchange={this.updateBrightness} />
+        <ColorSwitcher bulbType={bulb.bulbType} color={bulb.color} onchange={this.updateColor} />
       </div>
     )
   }
 
-  handleClick = async () => {
+  updateState = async (state) => {
     const bulb = this.state.bulb
     await fetch(
-      `${config.api.protocol}://${config.api.host}:${config.api.port}/tradfri/device/${bulb.id}/state/${bulb.state ? 0 : 1}?key=${config.api.key}`,
+      `${config.api.protocol}://${config.api.host}:${config.api.port}/tradfri/device/${bulb.id}/state/${state}?key=${config.api.key}`,
       {method: 'PUT'}
     )
 
-    bulb.state = bulb.state ? 0 : 1
+    bulb.state = state
     this.setState({bulb})
   }
 
-  updateBrightness = (value) => {
-    this.state.bulb.brightness = value
-    this.setState({bulb: this.state.bulb})
+  updateBrightness = async (brightness) => {
+    const bulb = this.state.bulb
+    await fetch(
+      `${config.api.protocol}://${config.api.host}:${config.api.port}/tradfri/device/${bulb.id}/brightness/${brightness}?key=${config.api.key}`,
+      {method: 'PUT'}
+    )
+    
+    bulb.brightness = brightness
+    this.setState({bulb})
   }
 
-  updateColor = (value) => {
-    this.state.bulb.color = value
-    this.setState({bulb: this.state.bulb})
+  updateColor = async (color) => {
+    const bulb = this.state.bulb
+    await fetch(
+      `${config.api.protocol}://${config.api.host}:${config.api.port}/tradfri/device/${bulb.id}/color/${color}?key=${config.api.key}`,
+      {method: 'PUT'}
+    )
+    
+    bulb.color = color
+    this.setState({bulb})
   }
 }
 
