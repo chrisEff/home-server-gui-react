@@ -27,7 +27,7 @@ class Temperature extends React.Component {
         <h2>Temperatur</h2>
         <table>
           <tbody>
-            {this.state.tempSensors.map(sensor => <TemperatureSensor key={sensor.id} sensor={sensor}/>)}
+            {this.state.tempSensors.map(sensor => <TemperatureSensor key={sensor.id} name={sensor.name} value={sensor.celsiusValue}/>)}
           </tbody>
         </table>
       </div>
