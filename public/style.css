@@ -51,6 +51,16 @@ body {
     text-shadow: 0 0 1px black, 0 0 50px #f5faf6;
 }
 
+.light .name {
+    display: block;
+    height: 1.6em;
+}
+
+.light .name.long {
+    font-size: 0.8em;
+    height: 2em;
+}
+
 .light.on.warm .bulb    { text-shadow: 0 0 1px black, 0 0 50px #efd275; }
 .light.on.neutral .bulb { text-shadow: 0 0 1px black, 0 0 50px #f1e0b5; }
 .light.on.cold .bulb    { text-shadow: 0 0 1px black, 0 0 50px #f5faf6; }

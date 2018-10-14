@@ -14,7 +14,7 @@ class Light extends React.Component {
     const className = bulb.state ? 'light on' : 'light'
     return (
       <div className={className + ' ' + bulb.color}>
-        {bulb.name}
+        <span className={bulb.name.length > 15 ? 'name long' : 'name'}>{bulb.name}</span>
         <div className='bulb' onClick={this.handleClick}>💡</div>
 
         <BrightnessSlider bulb={bulb} onchange={this.updateBrightness} />
