@@ -1,7 +1,18 @@
 {
 	"extends": "@chriseff",
+	"plugins": ["react"],
 	"env": {
 		"browser": true
+	},
+	"parserOptions": {
+		"ecmaFeatures": {
+			"jsx": true
+		}
+	},
+	"rules": {
+		"react/jsx-pascal-case": "error",
+		"react/jsx-uses-react": "error",
+		"react/jsx-uses-vars": "error"
 	}
 }
 
