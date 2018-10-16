@@ -1,5 +1,8 @@
+'use strict'
+
 const config = require('../../config')
 
+const React = require('react')
 const BrightnessSlider = require('./BrightnessSlider')
 const ColorSwitcher = require('./ColorSwitcher')
 const LightSwitch = require('./LightSwitch')

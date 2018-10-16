@@ -1,3 +1,6 @@
+'use strict'
+
+const React = require('react')
 const Light = require('./Light')
 
 class LightGroup extends React.Component {

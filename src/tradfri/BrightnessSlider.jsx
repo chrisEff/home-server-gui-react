@@ -1,3 +1,6 @@
+'use strict'
+
+const React = require('react')
 const PropTypes = require('prop-types')
 
 const BrightnessSlider = ({brightness, onchange}) =>

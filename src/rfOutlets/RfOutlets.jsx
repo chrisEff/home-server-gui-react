@@ -1,6 +1,8 @@
 'use strict'
 
 const config = require('../../config')
+
+const React = require('react')
 const RfOutlet = require('./RfOutlet')
 const ErrorMessage = require('../ErrorMessage')
 

@@ -1,3 +1,4 @@
+const React = require('react')
 const PropTypes = require('prop-types')
 
 let LightSwitch = ({state, onchange}) =>
