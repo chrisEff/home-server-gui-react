@@ -1,4 +1,6 @@
-module.exports = ({bulbType, color, onchange}) => {  
+const PropTypes = require('prop-types')
+
+const ColorSwitcher = ({bulbType, color, onchange}) => {
   if (bulbType === 'rgb') {
     return (
       <div className='color-switcher'>
@@ -32,3 +34,11 @@ module.exports = ({bulbType, color, onchange}) => {
   }
   return <div/>
 }
+
+ColorSwitcher.propTypes = {
+    bulbType: PropTypes.string.isRequired,
+    color: PropTypes.string,
+    onchange: PropTypes.func
+}
+
+module.exports = ColorSwitcher
