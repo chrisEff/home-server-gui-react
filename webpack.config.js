@@ -6,7 +6,7 @@ module.exports = {
 		filename: './public/bundle.js',
 	},
 	resolve: {
-		extensions: ['.js', '.jsx']
+		extensions: ['.js', '.jsx'],
 	},
 	module: {
 		rules: [
@@ -18,16 +18,16 @@ module.exports = {
 						options: {
 							presets: [
 								'react',
-								'es2015'
+								'es2015',
 							],
 							plugins: [
-								'transform-class-properties'
-							]
-						}
-					}
-				]
-			}
-		]
+								'transform-class-properties',
+							],
+						},
+					},
+				],
+			},
+		],
 	},
 	devtool: 'cheap-module-eval-source-map'
-};
+}
