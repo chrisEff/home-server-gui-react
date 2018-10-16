@@ -5,27 +5,27 @@ const RfOutlet = require('./RfOutlet')
 const ErrorMessage = require('../ErrorMessage')
 
 class RfOutlets extends React.Component {
-	constructor(props) {
+	constructor (props) {
 		super(props)
 		this.state = {
 			outlets: [],
-			errorMsg: null
+			errorMsg: null,
 		}
 	}
 
-	async componentDidMount() {
+	async componentDidMount () {
 		try {
 			const response = await fetch(`${config.api.protocol}://${config.api.host}:${config.api.port}/rfoutlets/outlet?key=${config.api.key}`)
 			const outlets = Object.values(await response.json())
 			this.setState({
-				outlets
+				outlets,
 			})
 		} catch (e) {
 			this.setState({errorMsg: e.message})
 		}
 	}
 
-	render() {
+	render () {
 		return (
 			<div>
 				<h2>Steckdosen</h2>

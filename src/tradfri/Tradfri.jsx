@@ -5,15 +5,15 @@ const LightGroup = require('./LightGroup')
 const ErrorMessage = require('../ErrorMessage')
 
 class Tradfri extends React.Component {
-	constructor(props) {
+	constructor (props) {
 		super(props)
 		this.state = {
 			groups: [],
-			errorMsg: null
+			errorMsg: null,
 		}
 	}
 
-	async componentDidMount() {
+	async componentDidMount () {
 		try {
 			const groups = await (await fetch(`${config.api.protocol}://${config.api.host}:${config.api.port}/tradfri/group?key=${config.api.key}`)).json()
 			const devices = await (await fetch(`${config.api.protocol}://${config.api.host}:${config.api.port}/tradfri/device?key=${config.api.key}`)).json()
@@ -40,7 +40,7 @@ class Tradfri extends React.Component {
 		}
 	}
 
-	render() {
+	render () {
 		return (
 			<div>
 				<h2>Licht</h2>

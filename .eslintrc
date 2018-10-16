@@ -1,0 +1,7 @@
+{
+	"extends": "@chriseff",
+	"env": {
+		"browser": true
+	}
+}
+

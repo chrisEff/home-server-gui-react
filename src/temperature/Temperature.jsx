@@ -5,15 +5,15 @@ const TemperatureSensor = require('./TemperatureSensor')
 const ErrorMessage = require('../ErrorMessage')
 
 class Temperature extends React.Component {
-	constructor(props) {
+	constructor (props) {
 		super(props)
 		this.state = {
 			tempSensors: [],
-			errorMsg: null
+			errorMsg: null,
 		}
 	}
 
-	async componentDidMount() {
+	async componentDidMount () {
 		try {
 			const response = await fetch(`${config.api.protocol}://${config.api.host}:${config.api.port}/tempSensors/?key=${config.api.key}`)
 			const tempSensors = Object.values(await response.json())
@@ -25,7 +25,7 @@ class Temperature extends React.Component {
 		}
 	}
 
-	render() {
+	render () {
 		if (!this.state.tempSensors) {
 			return <div/>
 		}
@@ -36,7 +36,7 @@ class Temperature extends React.Component {
 				{this.state.errorMsg && <ErrorMessage message={this.state.errorMsg}/>}
 				<table>
 					<tbody>
-					{this.state.tempSensors.map(sensor => <TemperatureSensor key={sensor.id} name={sensor.name} value={sensor.celsiusValue}/>)}
+						{this.state.tempSensors.map(sensor => <TemperatureSensor key={sensor.id} name={sensor.name} value={sensor.celsiusValue}/>)}
 					</tbody>
 				</table>
 			</div>

@@ -1,12 +1,12 @@
 const Light = require('./Light')
 
 class LightGroup extends React.Component {
-	constructor(props) {
+	constructor (props) {
 		super(props)
 		this.state = {group: props.group}
 	}
 
-	render() {
+	render () {
 		return (
 			<div className='lightGroup'>
 				<h3>{this.state.group.name}</h3>

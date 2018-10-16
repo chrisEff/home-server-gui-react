@@ -5,12 +5,12 @@ const ColorSwitcher = require('./ColorSwitcher')
 const LightSwitch = require('./LightSwitch')
 
 class Light extends React.Component {
-	constructor(props) {
+	constructor (props) {
 		super(props)
 		this.state = {bulb: props.bulb}
 	}
 
-	render() {
+	render () {
 		const bulb = this.state.bulb;
 		const className = bulb.state ? 'light on' : 'light'
 		return (
