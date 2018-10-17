@@ -1,0 +1,73 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ColorSwitcher should render the rgb switcher correctly 1`] = `
+<div
+  className="color-switcher"
+>
+  <div
+    className="color red active"
+    onClick={[Function]}
+  />
+  <div
+    className="color green"
+    onClick={[Function]}
+  />
+  <div
+    className="color blue"
+    onClick={[Function]}
+  />
+  <div
+    className="color yellow"
+    onClick={[Function]}
+  />
+  <div
+    className="color pink"
+    onClick={[Function]}
+  />
+  <div
+    className="color purple"
+    onClick={[Function]}
+  />
+  <div
+    className="color warm"
+    onClick={[Function]}
+  />
+  <div
+    className="color neutral"
+    onClick={[Function]}
+  />
+  <div
+    className="color cold"
+    onClick={[Function]}
+  />
+</div>
+`;
+
+exports[`ColorSwitcher should render the white switcher correctly 1`] = `
+<div
+  className="color-switcher white"
+>
+  <div
+    className="color neutral active"
+  />
+</div>
+`;
+
+exports[`ColorSwitcher should render the white-spectrum switcher correctly 1`] = `
+<div
+  className="color-switcher spectrum"
+>
+  <div
+    className="color warm active"
+    onClick={[Function]}
+  />
+  <div
+    className="color neutral"
+    onClick={[Function]}
+  />
+  <div
+    className="color cold"
+    onClick={[Function]}
+  />
+</div>
+`;

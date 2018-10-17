@@ -2,7 +2,8 @@
 	"extends": "@chriseff",
 	"plugins": ["react"],
 	"env": {
-		"browser": true
+		"browser": true,
+		"jest": true
 	},
 	"parserOptions": {
 		"ecmaFeatures": {

@@ -13,21 +13,10 @@ module.exports = {
 			{
 				test: /\.jsx$/,
 				use: [
-					{
-						loader: 'babel-loader',
-						options: {
-							presets: [
-								'react',
-								'es2015',
-							],
-							plugins: [
-								'transform-class-properties',
-							],
-						},
-					},
+					{loader: 'babel-loader'},
 				],
 			},
 		],
 	},
-	devtool: 'cheap-module-eval-source-map'
+	devtool: 'cheap-module-eval-source-map',
 }
