@@ -1,6 +1,7 @@
 'use strict'
 
 const React = require('react')
+const PropTypes = require('prop-types')
 const Light = require('./Light')
 
 class LightGroup extends React.Component {
@@ -21,6 +22,10 @@ class LightGroup extends React.Component {
 			</div>
 		)
 	}
+}
+
+LightGroup.propTypes = {
+	group: PropTypes.object.isRequired,
 }
 
 module.exports = LightGroup

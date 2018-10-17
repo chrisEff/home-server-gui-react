@@ -3,6 +3,7 @@
 const config = require('../../config')
 
 const React = require('react')
+const PropTypes = require('prop-types')
 const BrightnessSlider = require('./BrightnessSlider')
 const ColorSwitcher = require('./ColorSwitcher')
 const LightSwitch = require('./LightSwitch')
@@ -59,6 +60,10 @@ class Light extends React.Component {
 		bulb.color = color
 		this.setState({bulb})
 	}
+}
+
+Light.propTypes = {
+	bulb: PropTypes.object.isRequired,
 }
 
 module.exports = Light

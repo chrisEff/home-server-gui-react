@@ -1,6 +1,7 @@
 const config = require('../../config')
 
 const React = require('react')
+const PropTypes = require('prop-types')
 
 class RfOutlet extends React.Component {
 	constructor(props) {
@@ -29,6 +30,10 @@ class RfOutlet extends React.Component {
 		outlet.state = outlet.state ? 0 : 1
 		this.setState({outlet})
 	}
+}
+
+RfOutlet.propTypes = {
+	outlet: PropTypes.object.isRequired,
 }
 
 module.exports = RfOutlet
