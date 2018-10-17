@@ -10,7 +10,7 @@ const BrightnessSlider = ({brightness, onchange}) =>
 
 BrightnessSlider.propTypes = {
 	brightness: PropTypes.number.isRequired,
-	onchange: PropTypes.func
+	onchange: PropTypes.func,
 }
 
 module.exports = BrightnessSlider

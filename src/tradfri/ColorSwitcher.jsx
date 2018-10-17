@@ -41,7 +41,7 @@ const ColorSwitcher = ({bulbType, color, onchange}) => {
 ColorSwitcher.propTypes = {
 	bulbType: PropTypes.string.isRequired,
 	color: PropTypes.string,
-	onchange: PropTypes.func
+	onchange: PropTypes.func,
 }
 
 module.exports = ColorSwitcher
