@@ -1,6 +1,7 @@
 'use strict'
 
-const config = require('../../config')
+const api = require('../../config').api
+api.url = `${api.protocol}://${api.host}:${api.port}`
 
 const React = require('react')
 const LightGroup = require('./LightGroup')
@@ -17,26 +18,17 @@ class Tradfri extends React.Component {
 
 	async componentDidMount () {
 		try {
-			const groups = await (await fetch(`${config.api.protocol}://${config.api.host}:${config.api.port}/tradfri/group?key=${config.api.key}`)).json()
-			const devices = await (await fetch(`${config.api.protocol}://${config.api.host}:${config.api.port}/tradfri/device?key=${config.api.key}`)).json()
+			const groups = await (await fetch(`${api.url}/tradfri/group?key=${api.key}`)).json()
+			const devices = await (await fetch(`${api.url}/tradfri/device?key=${api.key}`)).json()
 
 			groups.forEach(group => {
 				group.devices = []
-				group.deviceIds.forEach(deviceId => {
-					const device = devices.find(device => device.id === deviceId)
-					group.devices.push(device)
-				})
-				group.devices.sort((a, b) => {
-					return a.name > b.name ? 1 : b.name < a.name ? -1 : 0;
-				})
+				group.deviceIds.forEach(deviceId => group.devices.push(devices.find(device => device.id === deviceId)))
+				group.devices.sort((a, b) => a.name.localeCompare(b.name))
 			})
-			groups.sort((a, b) => {
-				return a.name > b.name ? 1 : b.name < a.name ? -1 : 0;
-			})
+			groups.sort((a, b) => a.name.localeCompare(b.name))
 
-			this.setState({
-				groups
-			})
+			this.setState({groups})
 		} catch (e) {
 			this.setState({errorMsg: e.message})
 		}
