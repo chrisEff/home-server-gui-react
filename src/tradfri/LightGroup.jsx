@@ -5,6 +5,11 @@ const PropTypes = require('prop-types')
 const Light = require('./Light')
 
 class LightGroup extends React.Component {
+
+	static propTypes = {
+		group: PropTypes.object.isRequired,
+	}
+
 	constructor (props) {
 		super(props)
 		this.state = {group: props.group}
@@ -22,10 +27,6 @@ class LightGroup extends React.Component {
 			</div>
 		)
 	}
-}
-
-LightGroup.propTypes = {
-	group: PropTypes.object.isRequired,
 }
 
 module.exports = LightGroup

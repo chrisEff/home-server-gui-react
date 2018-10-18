@@ -10,13 +10,18 @@ const ColorSwitcher = require('./ColorSwitcher')
 const LightSwitch = require('./LightSwitch')
 
 class Light extends React.Component {
+
+	static propTypes = {
+		bulb: PropTypes.object.isRequired,
+	}
+
 	constructor (props) {
 		super(props)
 		this.state = {bulb: props.bulb}
 	}
 
 	render () {
-		const bulb = this.state.bulb;
+		const bulb = this.state.bulb
 		const className = bulb.state ? 'light on' : 'light'
 		return (
 			<div className={className + ' ' + bulb.color}>
@@ -52,10 +57,6 @@ class Light extends React.Component {
 		bulb.color = color
 		this.setState({bulb})
 	}
-}
-
-Light.propTypes = {
-	bulb: PropTypes.object.isRequired,
 }
 
 module.exports = Light

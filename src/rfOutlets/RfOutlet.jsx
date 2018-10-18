@@ -4,13 +4,18 @@ const React = require('react')
 const PropTypes = require('prop-types')
 
 class RfOutlet extends React.Component {
-	constructor(props) {
+
+	static propTypes = {
+		outlet: PropTypes.object.isRequired,
+	}
+
+	constructor (props) {
 		super(props)
 		this.state = {outlet: props.outlet}
 	}
 
 
-	render() {
+	render () {
 		const className = this.state.outlet.state ? 'outlet on' : 'outlet'
 		return (
 			<div className={className} onClick={this.handleClick}>
@@ -30,10 +35,6 @@ class RfOutlet extends React.Component {
 		outlet.state = outlet.state ? 0 : 1
 		this.setState({outlet})
 	}
-}
-
-RfOutlet.propTypes = {
-	outlet: PropTypes.object.isRequired,
 }
 
 module.exports = RfOutlet
