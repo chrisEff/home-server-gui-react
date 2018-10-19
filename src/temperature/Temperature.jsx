@@ -1,12 +1,20 @@
 'use strict'
 
-const config = require('../../config')
+const api = require('../../config').api
+api.url = `${api.protocol}://${api.host}:${api.port}`
 
 const React = require('react')
+const PropTypes = require('prop-types')
+
 const TemperatureSensor = require('./TemperatureSensor')
 const ErrorMessage = require('../ErrorMessage')
 
 class Temperature extends React.Component {
+
+	static propTypes = {
+		title: PropTypes.string,
+	}
+
 	constructor (props) {
 		super(props)
 		this.state = {
@@ -17,11 +25,9 @@ class Temperature extends React.Component {
 
 	async componentDidMount () {
 		try {
-			const response = await fetch(`${config.api.protocol}://${config.api.host}:${config.api.port}/tempSensors/?key=${config.api.key}`)
+			const response = await fetch(`${api.url}/tempSensors/?key=${api.key}`)
 			const tempSensors = Object.values(await response.json())
-			this.setState({
-				tempSensors
-			})
+			this.setState({tempSensors})
 		} catch (e) {
 			this.setState({errorMsg: e.message})
 		}
@@ -34,7 +40,7 @@ class Temperature extends React.Component {
 
 		return (
 			<div>
-				<h2>Temperatur</h2>
+				<h2>{this.props.title}</h2>
 				{this.state.errorMsg && <ErrorMessage message={this.state.errorMsg}/>}
 				<table>
 					<tbody>

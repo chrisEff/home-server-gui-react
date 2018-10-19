@@ -1,12 +1,20 @@
 'use strict'
 
-const config = require('../../config')
+const api = require('../../config').api
+api.url = `${api.protocol}://${api.host}:${api.port}`
 
 const React = require('react')
+const PropTypes = require('prop-types')
+
 const RfOutlet = require('./RfOutlet')
 const ErrorMessage = require('../ErrorMessage')
 
 class RfOutlets extends React.Component {
+
+	static propTypes = {
+		title: PropTypes.string,
+	}
+
 	constructor (props) {
 		super(props)
 		this.state = {
@@ -17,11 +25,9 @@ class RfOutlets extends React.Component {
 
 	async componentDidMount () {
 		try {
-			const response = await fetch(`${config.api.protocol}://${config.api.host}:${config.api.port}/rfoutlets/outlet?key=${config.api.key}`)
+			const response = await fetch(`${api.url}/rfoutlets/outlet?key=${api.key}`)
 			const outlets = Object.values(await response.json())
-			this.setState({
-				outlets,
-			})
+			this.setState({outlets})
 		} catch (e) {
 			this.setState({errorMsg: e.message})
 		}
@@ -30,7 +36,7 @@ class RfOutlets extends React.Component {
 	render () {
 		return (
 			<div>
-				<h2>Steckdosen</h2>
+				<h2>{this.props.title}</h2>
 				{this.state.errorMsg && <ErrorMessage message={this.state.errorMsg}/>}
 				{this.state.outlets.map(outlet => <RfOutlet key={outlet.name} outlet={outlet}/>)}
 			</div>

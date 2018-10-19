@@ -4,10 +4,17 @@ const api = require('../../config').api
 api.url = `${api.protocol}://${api.host}:${api.port}`
 
 const React = require('react')
+const PropTypes = require('prop-types')
+
 const LightGroup = require('./LightGroup')
 const ErrorMessage = require('../ErrorMessage')
 
 class Tradfri extends React.Component {
+
+	static propTypes = {
+		title: PropTypes.string,
+	}
+
 	constructor (props) {
 		super(props)
 		this.state = {
@@ -37,7 +44,7 @@ class Tradfri extends React.Component {
 	render () {
 		return (
 			<div>
-				<h2>Licht</h2>
+				<h2>{this.props.title}</h2>
 				{this.state.errorMsg && <ErrorMessage message={this.state.errorMsg}/>}
 				{this.state.groups.map(group => <LightGroup key={group.name} id={group.id} name={group.name} devices={group.devices}/>)}
 			</div>

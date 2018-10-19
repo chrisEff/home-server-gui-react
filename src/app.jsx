@@ -7,6 +7,6 @@ const Temperature = require('./temperature/Temperature')
 
 require('style-loader!css-loader!./style.css')
 
-ReactDOM.render(<Tradfri/>, document.querySelector('#lights'))
-ReactDOM.render(<RfOutlets/>, document.querySelector('#rfOutlets'))
-ReactDOM.render(<Temperature/>, document.querySelector('#temperature'))
+ReactDOM.render(<Tradfri title='Licht'/>, document.querySelector('#lights'))
+ReactDOM.render(<RfOutlets title='Steckdosen'/>, document.querySelector('#rfOutlets'))
+ReactDOM.render(<Temperature title='Temperatur'/>, document.querySelector('#temperature'))
