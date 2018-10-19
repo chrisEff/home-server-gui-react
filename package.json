@@ -10,7 +10,7 @@
 	"author": "chrisEff",
 	"license": "ISC",
 	"devDependencies": {
-		"@chriseff/eslint-config": "^1.0.0",
+		"@chriseff/eslint-config": "^1.0.1",
 		"babel-core": "^6.26.3",
 		"babel-eslint": "^10.0.1",
 		"babel-loader": "^7.1.5",
