@@ -5,6 +5,8 @@ api.url = `${api.protocol}://${api.host}:${api.port}`
 
 const React = require('react')
 const PropTypes = require('prop-types')
+
+const LightTitle = require('./LightTitle')
 const BrightnessSlider = require('./BrightnessSlider')
 const ColorSwitcher = require('./ColorSwitcher')
 const LightSwitch = require('./LightSwitch')
@@ -25,13 +27,21 @@ class Light extends React.Component {
 		const className = bulb.state ? 'light on' : 'light'
 		return (
 			<div className={className + ' ' + bulb.color}>
-				<span className={bulb.name.length > 15 ? 'name long' : 'name'}>{bulb.name}</span>
+				<LightTitle title={bulb.name} onChange={this.updateName} />
 
 				<LightSwitch state={bulb.state} onchange={this.updateState}/>
 				<BrightnessSlider brightness={bulb.brightness} onchange={this.updateBrightness}/>
 				<ColorSwitcher bulbType={bulb.bulbType} color={bulb.color} onchange={this.updateColor}/>
 			</div>
 		)
+	}
+
+	updateName = async (name) => {
+		const bulb = this.state.bulb
+		await fetch(`${api.url}/tradfri/device/${bulb.id}/name/${name}?key=${api.key}`, {method: 'PUT'})
+
+		bulb.name = name
+		this.setState({bulb})
 	}
 
 	updateState = async (state) => {

@@ -1,64 +1,74 @@
 body {
-    background-color: rgb(49, 51, 53);
-    color: #eee;
+	background-color: rgb(49, 51, 53);
+	color: #eee;
 }
 
 #wrapper {
-    font-family: SF Pro Display,SF Pro Icons,AOS Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
-    margin: 20px;
+	font-family: SF Pro Display, SF Pro Icons, AOS Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+	margin: 20px;
 }
 
 .lightGroup {
-    display: inline-block;
+	display: inline-block;
+}
+
+.lightGroup .name:hover:after {
+	content: ' ✏️';
+	font-size: 0.9em;
 }
 
 .light, .outlet {
-    background-color: rgb(60, 63, 65);
-    border-radius: 10px;
-    color: rgb(135, 147, 155);
-    display: inline-block;
-    height: 316px;
-    margin: 0 20px 20px 0;
-    overflow: hidden;
-    padding: 10px;
-    text-align: center;
-    width: 120px;
+	background-color: rgb(60, 63, 65);
+	border-radius: 10px;
+	color: rgb(135, 147, 155);
+	display: inline-block;
+	height: 316px;
+	margin: 0 20px 20px 0;
+	overflow: hidden;
+	padding: 10px;
+	text-align: center;
+	width: 120px;
 }
 
 .outlet {
-    height: 200px;
+	height: 200px;
 }
 
 .light.on, .outlet.on {
-    color: #eee;
+	color: #eee;
 }
 
 .light .bulb, .outlet .plug {
-    text-align: center;
-    filter: grayscale(100%) blur(5px);
-    font-size: 80px;
-    padding-top: 15px;
-    user-select: none;
+	text-align: center;
+	filter: grayscale(100%) blur(5px);
+	font-size: 80px;
+	padding-top: 15px;
+	user-select: none;
 }
 
 .light.on .bulb, .outlet.on .plug {
-    filter: none;
-    text-shadow: 0 0 1px black, 0 0 50px #efd275;
+	filter: none;
+	text-shadow: 0 0 1px black, 0 0 50px #efd275;
 }
 
 .outlet.on .plug {
-    filter: none;
-    text-shadow: 0 0 1px black, 0 0 50px #f5faf6;
+	filter: none;
+	text-shadow: 0 0 1px black, 0 0 50px #f5faf6;
 }
 
 .light .name {
-    display: block;
-    height: 1.6em;
+	display: block;
+	height: 1.6em;
+}
+
+.light .name:hover:after {
+	content: ' ✏️';
+	font-size: 0.9em;
 }
 
 .light .name.long {
-    font-size: 0.8em;
-    height: 2em;
+	font-size: 0.8em;
+	height: 2em;
 }
 
 .light.on.warm .bulb    { text-shadow: 0 0 1px black, 0 0 50px #efd275; }
@@ -71,53 +81,53 @@ body {
 .light.on.pink .bulb    { text-shadow: 0 0 1px black, 0 0 50px pink; }
 .light.on.purple .bulb  { text-shadow: 0 0 1px black, 0 0 50px purple; }
 
-.outlet  .plug {
-    padding-top: 40px;
+.outlet .plug {
+	padding-top: 40px;
 }
 
 .brightness-slider {
-    margin: 20px 0;
-    visibility: hidden;
-    width: 120px;
+	margin: 20px 0;
+	visibility: hidden;
+	width: 120px;
 }
 
 .light.on .brightness-slider {
-    visibility: visible;
+	visibility: visible;
 }
 
 .color-switcher {
-    font-size: 0;
-    visibility: hidden;
+	font-size: 0;
+	visibility: hidden;
 }
 
 .color-switcher.spectrum, .color-switcher.white {
-    margin-top: 80px;
+	margin-top: 80px;
 }
 
 .color-switcher .color {
-    border-radius: 7px;
-    box-shadow: 0 0 10px black;
-    display: inline-block;
-    height: 38px;
-    margin: 0 1px 1px 0;
-    width: 38px;
+	border-radius: 7px;
+	box-shadow: 0 0 10px black;
+	display: inline-block;
+	height: 38px;
+	margin: 0 1px 1px 0;
+	width: 38px;
 }
 
 .color-switcher .color:last-child {
-    margin: 0;
+	margin: 0;
 }
 
 .color-switcher .color:nth-child(3n) {
-    margin-right: 0;
+	margin-right: 0;
 }
 
 .color-switcher .color.active {
-    height: 42px;
-    width: 42px;
+	height: 42px;
+	width: 42px;
 }
 
 .light.on .color-switcher {
-    visibility: visible;
+	visibility: visible;
 }
 
 .color-switcher .warm    { background-color: #efd275; }

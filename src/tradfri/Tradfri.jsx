@@ -39,7 +39,7 @@ class Tradfri extends React.Component {
 			<div>
 				<h2>Licht</h2>
 				{this.state.errorMsg && <ErrorMessage message={this.state.errorMsg}/>}
-				{this.state.groups.map(group => <LightGroup key={group.name} group={group}/>)}
+				{this.state.groups.map(group => <LightGroup key={group.name} id={group.id} name={group.name} devices={group.devices}/>)}
 			</div>
 		)
 	}
