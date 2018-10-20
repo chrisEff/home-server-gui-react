@@ -48,7 +48,6 @@ body {
 
 .light.on .bulb, .outlet.on .plug {
 	filter: none;
-	text-shadow: 0 0 1px black, 0 0 50px #efd275;
 }
 
 .outlet.on .plug {
@@ -78,8 +77,29 @@ body {
 .light.on.green .bulb   { text-shadow: 0 0 1px black, 0 0 50px green; }
 .light.on.blue .bulb    { text-shadow: 0 0 1px black, 0 0 50px blue; }
 .light.on.yellow .bulb  { text-shadow: 0 0 1px black, 0 0 50px yellow; }
-.light.on.pink .bulb    { text-shadow: 0 0 1px black, 0 0 50px pink; }
-.light.on.purple .bulb  { text-shadow: 0 0 1px black, 0 0 50px purple; }
+.light.on.pink .bulb    { text-shadow: 0 0 1px black, 0 0 50px deeppink; }
+.light.on.purple .bulb  { text-shadow: 0 0 1px black, 0 0 50px mediumpurple; }
+
+.light.on .bulb:before{
+	color: transparent;
+	content: '💡';
+	opacity: 0.2;
+	position: absolute;
+	font-size: 80px;
+	filter: none;
+	height: 63px;
+	overflow: hidden;
+}
+
+.light.on.warm .bulb:before    { text-shadow: 0 0 0 #efd275; }
+.light.on.neutral .bulb:before { text-shadow: 0 0 0 #f1e0b5; }
+.light.on.cold .bulb:before    { text-shadow: 0 0 0 #f5faf6; }
+.light.on.red .bulb:before     { text-shadow: 0 0 0 red; }
+.light.on.green .bulb:before   { text-shadow: 0 0 0 green; }
+.light.on.blue .bulb:before    { text-shadow: 0 0 0 blue; }
+.light.on.yellow .bulb:before  { text-shadow: 0 0 0 yellow; }
+.light.on.pink .bulb:before    { text-shadow: 0 0 0 deeppink; }
+.light.on.purple .bulb:before  { text-shadow: 0 0 0 mediumpurple; }
 
 .outlet .plug {
 	padding-top: 40px;
@@ -135,5 +155,5 @@ body {
 .color-switcher .green div   { background-color: green; }
 .color-switcher .blue div    { background-color: blue; }
 .color-switcher .yellow div  { background-color: yellow; }
-.color-switcher .pink div    { background-color: pink; }
-.color-switcher .purple div  { background-color: purple; }
+.color-switcher .pink div    { background-color: deeppink; }
+.color-switcher .purple div  { background-color: mediumpurple; }
