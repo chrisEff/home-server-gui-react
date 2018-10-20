@@ -105,38 +105,35 @@ body {
 }
 
 .color-switcher .color {
-	border-radius: 7px;
-	box-shadow: 0 0 10px black;
+	border-radius: 20px;
+	/*box-shadow: 0 0 10px black;*/
+	border: 2px solid transparent;
 	display: inline-block;
-	height: 38px;
-	margin: 0 1px 1px 0;
-	width: 38px;
 }
 
-.color-switcher .color:last-child {
-	margin: 0;
+.color-switcher .color div {
+	border-radius: 15px;
+	margin: 3px;
+	height: 29px;
+	width: 29px;
 }
 
-.color-switcher .color:nth-child(3n) {
-	margin-right: 0;
-}
 
 .color-switcher .color.active {
-	height: 42px;
-	width: 42px;
+	border: 2px solid #eee;
 }
 
 .light.on .color-switcher {
 	visibility: visible;
 }
 
-.color-switcher .warm    { background-color: #efd275; }
-.color-switcher .neutral { background-color: #f1e0b5; }
-.color-switcher .cold    { background-color: #f5faf6; }
+.color-switcher .warm div    { background-color: #efd275; }
+.color-switcher .neutral div { background-color: #f1e0b5; }
+.color-switcher .cold div    { background-color: #f5faf6; }
 
-.color-switcher .red     { background-color: red; }
-.color-switcher .green   { background-color: green; }
-.color-switcher .blue    { background-color: blue; }
-.color-switcher .yellow  { background-color: yellow; }
-.color-switcher .pink    { background-color: pink; }
-.color-switcher .purple  { background-color: purple; }
+.color-switcher .red div     { background-color: red; }
+.color-switcher .green div   { background-color: green; }
+.color-switcher .blue div    { background-color: blue; }
+.color-switcher .yellow div  { background-color: yellow; }
+.color-switcher .pink div    { background-color: pink; }
+.color-switcher .purple div  { background-color: purple; }
