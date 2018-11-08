@@ -7,7 +7,7 @@ const React = require('react')
 const PropTypes = require('prop-types')
 
 const LightGroup = require('./LightGroup')
-const ErrorMessage = require('../../ErrorMessage')
+const ErrorMessage = require('../ErrorMessage')
 
 class Tradfri extends React.Component {
 

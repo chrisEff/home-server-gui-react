@@ -9,7 +9,7 @@ const dateFormat = require('dateformat')
 const sortBy = require('lodash.sortby')
 
 const TemperatureSensor = require('./TemperatureSensor')
-const ErrorMessage = require('../../ErrorMessage')
+const ErrorMessage = require('../ErrorMessage')
 
 class Temperature extends React.Component {
 
