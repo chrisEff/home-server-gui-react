@@ -7,39 +7,57 @@ exports[`ColorSwitcher should render the rgb switcher correctly 1`] = `
   <div
     className="color red active"
     onClick={[Function]}
-  />
+  >
+    <div />
+  </div>
   <div
     className="color green"
     onClick={[Function]}
-  />
+  >
+    <div />
+  </div>
   <div
     className="color blue"
     onClick={[Function]}
-  />
+  >
+    <div />
+  </div>
   <div
     className="color yellow"
     onClick={[Function]}
-  />
+  >
+    <div />
+  </div>
   <div
     className="color pink"
     onClick={[Function]}
-  />
+  >
+    <div />
+  </div>
   <div
     className="color purple"
     onClick={[Function]}
-  />
+  >
+    <div />
+  </div>
   <div
     className="color warm"
     onClick={[Function]}
-  />
+  >
+    <div />
+  </div>
   <div
     className="color neutral"
     onClick={[Function]}
-  />
+  >
+    <div />
+  </div>
   <div
     className="color cold"
     onClick={[Function]}
-  />
+  >
+    <div />
+  </div>
 </div>
 `;
 
@@ -49,7 +67,9 @@ exports[`ColorSwitcher should render the white switcher correctly 1`] = `
 >
   <div
     className="color neutral active"
-  />
+  >
+    <div />
+  </div>
 </div>
 `;
 
@@ -60,14 +80,20 @@ exports[`ColorSwitcher should render the white-spectrum switcher correctly 1`] =
   <div
     className="color warm active"
     onClick={[Function]}
-  />
+  >
+    <div />
+  </div>
   <div
     className="color neutral"
     onClick={[Function]}
-  />
+  >
+    <div />
+  </div>
   <div
     className="color cold"
     onClick={[Function]}
-  />
+  >
+    <div />
+  </div>
 </div>
 `;
