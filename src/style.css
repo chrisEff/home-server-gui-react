@@ -8,6 +8,12 @@ body {
 	margin: 20px;
 }
 
+h4 {
+	font-size: 1.09em;
+	font-weight: normal;
+	margin: 0;
+}
+
 .lightGroup {
 	display: inline-block;
 }
@@ -17,12 +23,11 @@ body {
 	font-size: 0.9em;
 }
 
-.light, .outlet {
+.light, .outlet, .tempSensor {
 	background-color: rgb(60, 63, 65);
 	border-radius: 10px;
 	color: rgb(135, 147, 155);
 	display: inline-block;
-	height: 316px;
 	margin: 0 20px 20px 0;
 	overflow: hidden;
 	padding: 10px;
@@ -30,8 +35,22 @@ body {
 	width: 120px;
 }
 
+.light {
+	height: 316px;
+}
+
 .outlet {
 	height: 200px;
+}
+
+.tempSensor {
+	height: 280px;
+	width: 760px;
+}
+
+.tempSensor h4 {
+	margin-left: 20px;
+	margin-top: 5px;
 }
 
 .light.on, .outlet.on {
@@ -53,6 +72,15 @@ body {
 .outlet.on .plug {
 	filter: none;
 	text-shadow: 0 0 1px black, 0 0 50px #f5faf6;
+}
+
+.tempSensor .name {
+	float: left;
+}
+
+.tempSensor .value {
+	float: right;
+	font-size: 2.2em;
 }
 
 .light .name {

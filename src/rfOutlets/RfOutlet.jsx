@@ -19,7 +19,7 @@ class RfOutlet extends React.Component {
 		const className = this.state.outlet.state ? 'outlet on' : 'outlet'
 		return (
 			<div className={className} onClick={this.handleClick}>
-				{this.state.outlet.name}
+				<h4>{this.state.outlet.name}</h4>
 				<div className='plug'>🔌</div>
 			</div>
 		)
@@ -29,7 +29,7 @@ class RfOutlet extends React.Component {
 		const outlet = this.state.outlet
 		await fetch(
 			`${config.api.protocol}://${config.api.host}:${config.api.port}/rfoutlets/outlet/${outlet.id}/${outlet.state ? 0 : 1}?key=${config.api.key}`,
-			{method: 'PUT'}
+			{ method: 'PUT' }
 		)
 
 		outlet.state = outlet.state ? 0 : 1
