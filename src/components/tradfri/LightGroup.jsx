@@ -1,6 +1,6 @@
 'use strict'
 
-const api = require('../../config').api
+const api = require('../../../config').api
 api.url = `${api.protocol}://${api.host}:${api.port}`
 
 const React = require('react')

@@ -1,5 +1,5 @@
 const React = require('react')
-const BrightnessSlider = require('../../src/tradfri/BrightnessSlider')
+const BrightnessSlider = require('../../../src/components/tradfri/BrightnessSlider')
 
 const { shallow } = require('enzyme')
 

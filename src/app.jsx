@@ -1,9 +1,9 @@
 const React = require('react')
 const ReactDOM = require('react-dom')
 
-const Tradfri = require('./tradfri/Tradfri')
-const RfOutlets = require('./rfOutlets/RfOutlets')
-const Temperature = require('./temperature/Temperature')
+const Tradfri = require('./components/tradfri/Tradfri')
+const RfOutlets = require('./components/rfOutlets/RfOutlets')
+const Temperature = require('./components/temperature/Temperature')
 
 require('style-loader!css-loader!./style.css')
 

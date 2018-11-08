@@ -1,13 +1,13 @@
 'use strict'
 
-const api = require('../../config').api
+const api = require('../../../config').api
 api.url = `${api.protocol}://${api.host}:${api.port}`
 
 const React = require('react')
 const PropTypes = require('prop-types')
 
 const RfOutlet = require('./RfOutlet')
-const ErrorMessage = require('../ErrorMessage')
+const ErrorMessage = require('../../ErrorMessage')
 
 class RfOutlets extends React.Component {
 

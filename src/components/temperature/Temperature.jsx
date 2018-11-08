@@ -1,6 +1,6 @@
 'use strict'
 
-const api = require('../../config').api
+const api = require('../../../config').api
 api.url = `${api.protocol}://${api.host}:${api.port}`
 
 const React = require('react')
@@ -9,7 +9,7 @@ const dateFormat = require('dateformat')
 const sortBy = require('lodash.sortby')
 
 const TemperatureSensor = require('./TemperatureSensor')
-const ErrorMessage = require('../ErrorMessage')
+const ErrorMessage = require('../../ErrorMessage')
 
 class Temperature extends React.Component {
 

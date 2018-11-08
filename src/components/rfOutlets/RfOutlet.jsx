@@ -1,4 +1,4 @@
-const config = require('../../config')
+const config = require('../../../config')
 
 const React = require('react')
 const PropTypes = require('prop-types')

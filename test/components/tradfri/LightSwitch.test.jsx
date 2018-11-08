@@ -1,5 +1,5 @@
 const React = require('react')
-const LightSwitch = require('../../src/tradfri/LightSwitch')
+const LightSwitch = require('../../../src/components/tradfri/LightSwitch')
 
 const { shallow } = require('enzyme')
 

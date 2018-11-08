@@ -1,5 +1,5 @@
 const React = require('react')
-const ColorSwitcher = require('../../src/tradfri/ColorSwitcher')
+const ColorSwitcher = require('../../../src/components/tradfri/ColorSwitcher')
 
 const { shallow } = require('enzyme')
 
