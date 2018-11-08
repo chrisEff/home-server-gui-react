@@ -1,7 +1,6 @@
 'use strict'
 
-const api = require('../../../config').api
-api.url = `${api.protocol}://${api.host}:${api.port}`
+const homeServerApi = require('../../homeServerApi')
 
 const React = require('react')
 const PropTypes = require('prop-types')
@@ -38,7 +37,7 @@ class Light extends React.Component {
 
 	updateName = async (name) => {
 		const bulb = this.state.bulb
-		await fetch(`${api.url}/tradfri/device/${bulb.id}/name/${name}?key=${api.key}`, {method: 'PUT'})
+		await homeServerApi.put(`/tradfri/device/${bulb.id}/name/${name}`)
 
 		bulb.name = name
 		this.setState({bulb})
@@ -46,7 +45,7 @@ class Light extends React.Component {
 
 	updateState = async (state) => {
 		const bulb = this.state.bulb
-		await fetch(`${api.url}/tradfri/device/${bulb.id}/state/${state}?key=${api.key}`, {method: 'PUT'})
+		await homeServerApi.put(`/tradfri/device/${bulb.id}/state/${state}`)
 
 		bulb.state = state
 		this.setState({bulb})
@@ -54,7 +53,7 @@ class Light extends React.Component {
 
 	updateBrightness = async (brightness) => {
 		const bulb = this.state.bulb
-		await fetch(`${api.url}/tradfri/device/${bulb.id}/brightness/${brightness}?key=${api.key}`, {method: 'PUT'})
+		await homeServerApi.put(`/tradfri/device/${bulb.id}/brightness/${brightness}`)
 
 		bulb.brightness = brightness
 		this.setState({bulb})
@@ -62,7 +61,7 @@ class Light extends React.Component {
 
 	updateColor = async (color) => {
 		const bulb = this.state.bulb
-		await fetch(`${api.url}/tradfri/device/${bulb.id}/color/${color}?key=${api.key}`, {method: 'PUT'})
+		await homeServerApi.put(`/tradfri/device/${bulb.id}/color/${color}`)
 
 		bulb.color = color
 		this.setState({bulb})

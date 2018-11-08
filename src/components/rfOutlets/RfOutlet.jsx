@@ -1,4 +1,4 @@
-const config = require('../../../config')
+const homeServerApi = require('../../homeServerApi')
 
 const React = require('react')
 const PropTypes = require('prop-types')
@@ -27,10 +27,7 @@ class RfOutlet extends React.Component {
 
 	handleClick = async () => {
 		const outlet = this.state.outlet
-		await fetch(
-			`${config.api.protocol}://${config.api.host}:${config.api.port}/rfoutlets/outlet/${outlet.id}/${outlet.state ? 0 : 1}?key=${config.api.key}`,
-			{ method: 'PUT' }
-		)
+		await homeServerApi.put(`/rfoutlets/outlet/${outlet.id}/${outlet.state ? 0 : 1}`)
 
 		outlet.state = outlet.state ? 0 : 1
 		this.setState({outlet})

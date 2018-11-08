@@ -1,7 +1,6 @@
 'use strict'
 
-const api = require('../../../config').api
-api.url = `${api.protocol}://${api.host}:${api.port}`
+const homeServerApi = require('../../homeServerApi')
 
 const React = require('react')
 const PropTypes = require('prop-types')
@@ -27,7 +26,7 @@ class Temperature extends React.Component {
 
 	async componentDidMount () {
 		try {
-			const response = await fetch(`${api.url}/tempSensors/?key=${api.key}`)
+			const response = await homeServerApi.get(`/tempSensors/`)
 
 			const date = new Date()
 			date.setHours(0, 0, 0, 0)
@@ -68,11 +67,7 @@ class Temperature extends React.Component {
 	}
 
 	static async fetchHistory (sensorId, min, max) {
-		let url = `${api.url}/tempSensors/${sensorId}/history?key=${api.key}&min=${min}`
-		if (max) {
-			url += `&max=${max}`
-		}
-		return (await fetch(url)).json()
+		return (await homeServerApi.get(`/tempSensors/${sensorId}/history`, {min, max})).json()
 	}
 
 	render () {

@@ -1,7 +1,6 @@
 'use strict'
 
-const api = require('../../../config').api
-api.url = `${api.protocol}://${api.host}:${api.port}`
+const homeServerApi = require('../../homeServerApi')
 
 const React = require('react')
 const PropTypes = require('prop-types')
@@ -25,7 +24,7 @@ class RfOutlets extends React.Component {
 
 	async componentDidMount () {
 		try {
-			const response = await fetch(`${api.url}/rfoutlets/outlet?key=${api.key}`)
+			const response = await homeServerApi.get(`/rfoutlets/outlet`)
 			const outlets = Object.values(await response.json())
 			this.setState({outlets})
 		} catch (e) {

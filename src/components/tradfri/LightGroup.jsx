@@ -1,7 +1,6 @@
 'use strict'
 
-const api = require('../../../config').api
-api.url = `${api.protocol}://${api.host}:${api.port}`
+const homeServerApi = require('../../homeServerApi')
 
 const React = require('react')
 const PropTypes = require('prop-types')
@@ -42,7 +41,7 @@ class LightGroup extends React.Component {
 	}
 
 	updateName = async (name) => {
-		await fetch(`${api.url}/tradfri/group/${this.props.id}/name/${name}?key=${api.key}`, {method: 'PUT'})
+		await homeServerApi.put(`/tradfri/group/${this.props.id}/name/${name}`)
 
 		this.setState({name, editMode: false})
 	}

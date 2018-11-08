@@ -1,7 +1,6 @@
 'use strict'
 
-const api = require('../../../config').api
-api.url = `${api.protocol}://${api.host}:${api.port}`
+const homeServerApi = require('../../homeServerApi')
 
 const React = require('react')
 const PropTypes = require('prop-types')
@@ -25,8 +24,8 @@ class Tradfri extends React.Component {
 
 	async componentDidMount () {
 		try {
-			const groups = await (await fetch(`${api.url}/tradfri/group?key=${api.key}`)).json()
-			const devices = await (await fetch(`${api.url}/tradfri/device?key=${api.key}`)).json()
+			const groups = await (await homeServerApi.get(`/tradfri/group`)).json()
+			const devices = await (await homeServerApi.get(`/tradfri/device`)).json()
 
 			groups.forEach(group => {
 				group.devices = []
