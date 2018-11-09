@@ -2,19 +2,21 @@
 
 const querystring = require('querystring')
 
-const api = require('../../config').api
-
 const call = async (method, action, params = {}) => {
-	params['key'] = api.key
+	params['key'] = module.exports.apiKey
 
 	if (!action.startsWith('/')) {
 		action = '/' + action
 	}
 
-	return fetch(`${api.url}${action}?${querystring.stringify(params)}`, { method: method })
+	return fetch(`${module.exports.apiUrl}${action}?${querystring.stringify(params)}`, { method: method })
 }
 
 module.exports = {
+
+	apiUrl: '',
+
+	apiKey: '',
 
 	get: async (action, params = {}) => call('GET', action, params),
 
