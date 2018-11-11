@@ -42,7 +42,7 @@ class Tradfri extends React.Component {
 
 	render () {
 		return (
-			<div>
+			<div id='tradfri'>
 				<h2>{this.props.title}</h2>
 				{this.state.errorMsg && <ErrorMessage message={this.state.errorMsg}/>}
 				{this.state.groups.map(group => <LightGroup key={group.name} id={group.id} name={group.name} devices={group.devices}/>)}

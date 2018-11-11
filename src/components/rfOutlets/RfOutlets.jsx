@@ -34,7 +34,7 @@ class RfOutlets extends React.Component {
 
 	render () {
 		return (
-			<div>
+			<div id='rfOutlets'>
 				<h2>{this.props.title}</h2>
 				{this.state.errorMsg && <ErrorMessage message={this.state.errorMsg}/>}
 				{this.state.outlets.map(outlet => <RfOutlet key={outlet.name} outlet={outlet}/>)}
