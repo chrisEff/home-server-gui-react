@@ -1,6 +1,6 @@
 module.exports = {
 	mode: 'development',
-	entry: './src/app.jsx',
+	entry: ['@babel/polyfill', './src/app.jsx'],
 	output: {
 		path: __dirname,
 		filename: './docs/bundle.js',

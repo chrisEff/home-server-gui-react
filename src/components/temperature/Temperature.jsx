@@ -76,7 +76,7 @@ class Temperature extends React.Component {
 		}
 
 		return (
-			<div>
+			<div id='temperature'>
 				<h2>{this.props.title}</h2>
 				{this.state.errorMsg && <ErrorMessage message={this.state.errorMsg}/>}
 				{this.state.tempSensors.map(sensor => <TemperatureSensor key={sensor.id} name={sensor.name} value={sensor.celsiusValue} history={sensor.history}/>)}
