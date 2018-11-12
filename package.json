@@ -41,7 +41,6 @@
 	},
 	"dependencies": {
 		"dateformat": "^3.0.3",
-		"express": "^4.16.4",
 		"lodash.sortby": "^4.7.0",
 		"prop-types": "^15.6.2",
 		"react": "^16.6.1",
