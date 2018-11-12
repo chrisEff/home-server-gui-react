@@ -1,14 +1,18 @@
 {
-	"name": "home-server-gui-js",
+	"name": "home-server-gui-react",
 	"version": "1.0.0",
-	"description": "",
-	"main": "index.js",
+	"description": "A React GUI for my home automation API.",
 	"scripts": {
 		"test": "jest"
 	},
 	"keywords": [],
 	"author": "chrisEff",
-	"license": "ISC",
+	"license": "MIT",
+	"homepage": "https://chriseff.github.io/home-server-gui-react/",
+	"repository": {
+		"type": "git",
+		"url": "git@github.com:chrisEff/home-server-gui-react.git"
+	},
 	"devDependencies": {
 		"@babel/core": "^7.1.5",
 		"@babel/polyfill": "^7.0.0",
