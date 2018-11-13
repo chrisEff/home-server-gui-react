@@ -21,16 +21,18 @@ class Wrapper extends React.Component {
 
 	async componentDidMount () {
 		if (window.localStorage.apiUrl) {
-			this.updateCredentials(window.localStorage.apiUrl, window.localStorage.apiKey)
+			this.updateCredentials(window.localStorage.apiUrl, window.localStorage.apiUser, window.localStorage.apiKey)
 		}
 	}
 
-	updateCredentials = (apiUrl, apiKey) => {
-		this.setState({ apiUrl, apiKey })
+	updateCredentials = (apiUrl, apiUser, apiKey) => {
+		this.setState({ apiUrl, apiUser, apiKey })
 		homeServerApi.apiUrl = apiUrl
+		homeServerApi.apiUser = apiUser
 		homeServerApi.apiKey = apiKey
 
 		window.localStorage.setItem('apiUrl', apiUrl)
+		window.localStorage.setItem('apiUser', apiUser)
 		window.localStorage.setItem('apiKey', apiKey)
 	}
 
