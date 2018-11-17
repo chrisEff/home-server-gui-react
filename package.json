@@ -4,8 +4,8 @@
 	"description": "A React GUI for my home automation API.",
 	"scripts": {
 		"test": "jest",
-		"cover": "jest --coverage",
-		"coveralls": "jest --coverage --coverageReporters=text-lcov | coveralls"
+		"cover": "jest --coverage --collectCoverageFrom=src/**/*",
+		"coveralls": "jest --coverage --collectCoverageFrom=src/**/* --coverageReporters=text-lcov | coveralls"
 	},
 	"keywords": [],
 	"author": "chrisEff",
