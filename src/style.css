@@ -24,7 +24,7 @@ h4 {
 	font-size: 0.9em;
 }
 
-.light, .outlet, .tempSensor {
+.light, .outlet, .tempSensor, .shutter {
 	background-color: rgb(60, 63, 65);
 	border-radius: 10px;
 	color: rgb(135, 147, 155);
@@ -42,6 +42,10 @@ h4 {
 
 .outlet {
 	height: 200px;
+}
+
+.shutter {
+	height: 120px;
 }
 
 .tempSensor {
@@ -63,6 +67,11 @@ h4 {
 	filter: grayscale(100%) blur(5px);
 	font-size: 80px;
 	padding-top: 15px;
+	user-select: none;
+}
+
+.shutter .button {
+	font-size: 40px;
 	user-select: none;
 }
 

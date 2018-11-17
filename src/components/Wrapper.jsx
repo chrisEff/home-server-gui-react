@@ -5,6 +5,7 @@ const React = require('react')
 const LoginForm = require('./LoginForm')
 const Tradfri = require('./tradfri/Tradfri')
 const RfOutlets = require('./rfOutlets/RfOutlets')
+const Shutters = require('./shutters/Shutters')
 const Temperature = require('./temperature/Temperature')
 
 const homeServerApi = require('../homeServerApi')
@@ -44,6 +45,7 @@ class Wrapper extends React.Component {
 			<div>
 				<Tradfri title='Licht'/>
 				<RfOutlets title='Steckdosen'/>
+				<Shutters title='Rollläden'/>
 				<Temperature title='Temperatur'/>
 			</div>
 		)
