@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Light should render correctly 1`] = `
+<div
+  className="light neutraål"
+>
+  <LightTitle
+    onChange={[Function]}
+    title="Decke"
+  />
+  <LightSwitch
+    onchange={[Function]}
+    state={0}
+  />
+  <BrightnessSlider
+    brightness={254}
+    onchange={[Function]}
+  />
+  <ColorSwitcher
+    bulbType="white-spectrum"
+    color="neutraål"
+    onchange={[Function]}
+  />
+</div>
+`;

@@ -1,0 +1,61 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LoginForm should render correctly 1`] = `
+<div
+  style={
+    Object {
+      "textAlign": "center",
+    }
+  }
+>
+  <br />
+  <br />
+  API URL:
+  <br />
+  <input
+    name="apiUrl"
+    style={
+      Object {
+        "width": 250,
+      }
+    }
+    type="text"
+  />
+  <br />
+  <br />
+  <br />
+  API User:
+  <br />
+  <input
+    name="apiUser"
+    style={
+      Object {
+        "width": 250,
+      }
+    }
+    type="text"
+  />
+  <br />
+  <br />
+  <br />
+  API Key:
+  <br />
+  <input
+    name="apiKey"
+    style={
+      Object {
+        "width": 250,
+      }
+    }
+    type="password"
+  />
+  <br />
+  <br />
+  <br />
+  <button
+    onClick={[Function]}
+  >
+    OK
+  </button>
+</div>
+`;

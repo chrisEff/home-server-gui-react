@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RfOutlet should render correctly 1`] = `
+<div
+  className="outlet"
+  onClick={[Function]}
+>
+  <h4>
+    Fernseher
+  </h4>
+  <div
+    className="plug"
+  >
+    🔌
+  </div>
+</div>
+`;

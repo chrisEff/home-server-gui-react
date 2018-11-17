@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LightTitle should render correctly 1`] = `
+<span
+  className="name"
+  onClick={[Function]}
+>
+  test
+</span>
+`;
