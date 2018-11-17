@@ -3,7 +3,9 @@
 	"version": "1.0.0",
 	"description": "A React GUI for my home automation API.",
 	"scripts": {
-		"test": "jest"
+		"test": "jest",
+		"cover": "jest --coverage",
+		"coveralls": "jest --coverage --coverageReporters=text-lcov | coveralls"
 	},
 	"keywords": [],
 	"author": "chrisEff",
@@ -24,6 +26,7 @@
 		"babel-jest": "^23.6.0",
 		"babel-loader": "^8.0.4",
 		"babel-plugin-transform-class-properties": "^6.24.1",
+		"coveralls": "^3.0.2",
 		"css-loader": "^1.0.1",
 		"enzyme": "^3.7.0",
 		"enzyme-adapter-react-16": "^1.7.0",
