@@ -43,6 +43,11 @@ class Wrapper extends React.Component {
 		}
 		return (
 			<div>
+				<div style={{float: 'right', backgroundColor: 'rgb(60, 63, 65)', padding: '10px', margin: '0 20px'}}>
+					<div onClick={() => this.updateCredentials(null, null, null)}>
+						Log out
+					</div>
+				</div>
 				<Tradfri title='Licht'/>
 				<RfOutlets title='Steckdosen'/>
 				<Shutters title='Rollläden'/>
