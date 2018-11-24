@@ -14,7 +14,7 @@ exports[`Shutter should render correctly 1`] = `
   >
     ⬆️
   </span>
-    
+  <br />
   <span
     className="button"
     onClick={[Function]}
