@@ -20,7 +20,7 @@ class Shutter extends React.Component {
 			<div className='shutter'>
 				<h4>{this.state.shutter.name}</h4>
 				<br/>
-				<span className='button' onClick={this.handleUpClick}>⬆️</span> &nbsp;
+				<span className='button' onClick={this.handleUpClick}>⬆️</span><br/>
 				<span className='button' onClick={this.handleDownClick}>⬇️</span>
 			</div>
 		)
