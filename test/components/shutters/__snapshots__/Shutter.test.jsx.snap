@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Shutter should render correctly 1`] = `
+<div
+  className="shutter"
+>
+  <h4>
+    Office
+  </h4>
+  <br />
+  <span
+    className="button"
+    onClick={[Function]}
+  >
+    ⬆️
+  </span>
+    
+  <span
+    className="button"
+    onClick={[Function]}
+  >
+    ⬇️
+  </span>
+</div>
+`;

@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TemperatureSensor should render correctly 1`] = `
+<div
+  className="tempSensor"
+>
+  <h4
+    className="name"
+  >
+    Office
+  </h4>
+  <div
+    className="value"
+  >
+    23.2
+    °C
+  </div>
+</div>
+`;
