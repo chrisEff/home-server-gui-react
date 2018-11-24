@@ -5,7 +5,9 @@
 	"scripts": {
 		"test": "jest",
 		"cover": "jest --coverage --collectCoverageFrom=src/**/*",
-		"coveralls": "jest --coverage --collectCoverageFrom=src/**/* --coverageReporters=text-lcov | coveralls"
+		"coveralls": "jest --coverage --collectCoverageFrom=src/**/* --coverageReporters=text-lcov | coveralls",
+		"eslint": "eslint 'src/**/*.jsx'",
+		"eslint-fix": "eslint 'src/**/*.jsx' --fix"
 	},
 	"keywords": [],
 	"author": "chrisEff",
@@ -20,7 +22,7 @@
 		"@babel/polyfill": "^7.0.0",
 		"@babel/preset-env": "^7.1.5",
 		"@babel/preset-react": "^7.0.0",
-		"@chriseff/eslint-config": "^1.0.1",
+		"@chriseff/eslint-config": "^1.0.2",
 		"babel-core": "^7.0.0-bridge.0",
 		"babel-eslint": "^10.0.1",
 		"babel-jest": "^23.6.0",

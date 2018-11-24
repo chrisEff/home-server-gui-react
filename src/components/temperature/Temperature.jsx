@@ -39,31 +39,31 @@ class Temperature extends React.Component {
 				const history = {}
 
 				const historyToday     = (await Temperature.fetchHistory(sensor.id, timestampStartOfToday))
-				const historyYesterday = (await Temperature.fetchHistory(sensor.id, timestampStartOfYesterday, timestampStartOfToday-1))
+				const historyYesterday = (await Temperature.fetchHistory(sensor.id, timestampStartOfYesterday, timestampStartOfToday - 1))
 
 				for (let entry of historyYesterday) {
 					if (entry.time % 120 === 0) {
 						const time = dateFormat(new Date(entry.time * 1000), 'HH:MM')
-						history[time] = { time: time, yesterday: entry.val }
+						history[time] = {time: time, yesterday: entry.val}
 					}
 				}
 				for (let entry of historyToday) {
 					const time = dateFormat(new Date(entry.time * 1000), 'HH:MM')
 					if (!history[time]) {
-						history[time] = { time }
+						history[time] = {time}
 					}
 					history[time].today = entry.val
 				}
 
 				sensor.history = sortBy(Object.values(history), ['time'])
-				sensor.history.push({ time: '24:00' })
+				sensor.history.push({time: '24:00'})
 
 				return sensor
 			}))
-			this.setState({ tempSensors })
+			this.setState({tempSensors})
 		} catch (e) {
 			console.log(e)
-			this.setState({ errorMsg: e.message })
+			this.setState({errorMsg: e.message})
 		}
 	}
 

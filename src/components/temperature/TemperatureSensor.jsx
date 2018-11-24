@@ -5,7 +5,7 @@ const PropTypes = require('prop-types')
 
 const TemperatureChart = require('./TemperatureChart')
 
-const TemperatureSensor = ({ name, value, history }) => (
+const TemperatureSensor = ({name, value, history}) => (
 	<div className='tempSensor'>
 		<h4 className='name'>{name}</h4>
 		<div className='value'>{Math.round(value * 10) / 10}°C</div>

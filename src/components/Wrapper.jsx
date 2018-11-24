@@ -27,7 +27,7 @@ class Wrapper extends React.Component {
 	}
 
 	updateCredentials = (apiUrl, apiUser, apiKey) => {
-		this.setState({ apiUrl, apiUser, apiKey })
+		this.setState({apiUrl, apiUser, apiKey})
 		homeServerApi.apiUrl = apiUrl
 		homeServerApi.apiUser = apiUser
 		homeServerApi.apiKey = apiKey
