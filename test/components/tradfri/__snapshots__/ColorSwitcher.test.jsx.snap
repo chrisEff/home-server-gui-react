@@ -1,6 +1,372 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`ColorSwitcher should render the rgb switcher correctly 1`] = `
+exports[`ColorSwitcher should render the rgb switcher correctly when blue is active 1`] = `
+<div
+  className="color-switcher"
+>
+  <div
+    className="color red"
+    onClick={[Function]}
+  >
+    <div />
+  </div>
+  <div
+    className="color green"
+    onClick={[Function]}
+  >
+    <div />
+  </div>
+  <div
+    className="color blue active"
+    onClick={[Function]}
+  >
+    <div />
+  </div>
+  <div
+    className="color yellow"
+    onClick={[Function]}
+  >
+    <div />
+  </div>
+  <div
+    className="color pink"
+    onClick={[Function]}
+  >
+    <div />
+  </div>
+  <div
+    className="color purple"
+    onClick={[Function]}
+  >
+    <div />
+  </div>
+  <div
+    className="color warm"
+    onClick={[Function]}
+  >
+    <div />
+  </div>
+  <div
+    className="color neutral"
+    onClick={[Function]}
+  >
+    <div />
+  </div>
+  <div
+    className="color cold"
+    onClick={[Function]}
+  >
+    <div />
+  </div>
+</div>
+`;
+
+exports[`ColorSwitcher should render the rgb switcher correctly when cold is active 1`] = `
+<div
+  className="color-switcher"
+>
+  <div
+    className="color red"
+    onClick={[Function]}
+  >
+    <div />
+  </div>
+  <div
+    className="color green"
+    onClick={[Function]}
+  >
+    <div />
+  </div>
+  <div
+    className="color blue"
+    onClick={[Function]}
+  >
+    <div />
+  </div>
+  <div
+    className="color yellow"
+    onClick={[Function]}
+  >
+    <div />
+  </div>
+  <div
+    className="color pink"
+    onClick={[Function]}
+  >
+    <div />
+  </div>
+  <div
+    className="color purple"
+    onClick={[Function]}
+  >
+    <div />
+  </div>
+  <div
+    className="color warm"
+    onClick={[Function]}
+  >
+    <div />
+  </div>
+  <div
+    className="color neutral"
+    onClick={[Function]}
+  >
+    <div />
+  </div>
+  <div
+    className="color cold active"
+    onClick={[Function]}
+  >
+    <div />
+  </div>
+</div>
+`;
+
+exports[`ColorSwitcher should render the rgb switcher correctly when green is active 1`] = `
+<div
+  className="color-switcher"
+>
+  <div
+    className="color red"
+    onClick={[Function]}
+  >
+    <div />
+  </div>
+  <div
+    className="color green active"
+    onClick={[Function]}
+  >
+    <div />
+  </div>
+  <div
+    className="color blue"
+    onClick={[Function]}
+  >
+    <div />
+  </div>
+  <div
+    className="color yellow"
+    onClick={[Function]}
+  >
+    <div />
+  </div>
+  <div
+    className="color pink"
+    onClick={[Function]}
+  >
+    <div />
+  </div>
+  <div
+    className="color purple"
+    onClick={[Function]}
+  >
+    <div />
+  </div>
+  <div
+    className="color warm"
+    onClick={[Function]}
+  >
+    <div />
+  </div>
+  <div
+    className="color neutral"
+    onClick={[Function]}
+  >
+    <div />
+  </div>
+  <div
+    className="color cold"
+    onClick={[Function]}
+  >
+    <div />
+  </div>
+</div>
+`;
+
+exports[`ColorSwitcher should render the rgb switcher correctly when neutral is active 1`] = `
+<div
+  className="color-switcher"
+>
+  <div
+    className="color red"
+    onClick={[Function]}
+  >
+    <div />
+  </div>
+  <div
+    className="color green"
+    onClick={[Function]}
+  >
+    <div />
+  </div>
+  <div
+    className="color blue"
+    onClick={[Function]}
+  >
+    <div />
+  </div>
+  <div
+    className="color yellow"
+    onClick={[Function]}
+  >
+    <div />
+  </div>
+  <div
+    className="color pink"
+    onClick={[Function]}
+  >
+    <div />
+  </div>
+  <div
+    className="color purple"
+    onClick={[Function]}
+  >
+    <div />
+  </div>
+  <div
+    className="color warm"
+    onClick={[Function]}
+  >
+    <div />
+  </div>
+  <div
+    className="color neutral active"
+    onClick={[Function]}
+  >
+    <div />
+  </div>
+  <div
+    className="color cold"
+    onClick={[Function]}
+  >
+    <div />
+  </div>
+</div>
+`;
+
+exports[`ColorSwitcher should render the rgb switcher correctly when pink is active 1`] = `
+<div
+  className="color-switcher"
+>
+  <div
+    className="color red"
+    onClick={[Function]}
+  >
+    <div />
+  </div>
+  <div
+    className="color green"
+    onClick={[Function]}
+  >
+    <div />
+  </div>
+  <div
+    className="color blue"
+    onClick={[Function]}
+  >
+    <div />
+  </div>
+  <div
+    className="color yellow"
+    onClick={[Function]}
+  >
+    <div />
+  </div>
+  <div
+    className="color pink active"
+    onClick={[Function]}
+  >
+    <div />
+  </div>
+  <div
+    className="color purple"
+    onClick={[Function]}
+  >
+    <div />
+  </div>
+  <div
+    className="color warm"
+    onClick={[Function]}
+  >
+    <div />
+  </div>
+  <div
+    className="color neutral"
+    onClick={[Function]}
+  >
+    <div />
+  </div>
+  <div
+    className="color cold"
+    onClick={[Function]}
+  >
+    <div />
+  </div>
+</div>
+`;
+
+exports[`ColorSwitcher should render the rgb switcher correctly when purple is active 1`] = `
+<div
+  className="color-switcher"
+>
+  <div
+    className="color red"
+    onClick={[Function]}
+  >
+    <div />
+  </div>
+  <div
+    className="color green"
+    onClick={[Function]}
+  >
+    <div />
+  </div>
+  <div
+    className="color blue"
+    onClick={[Function]}
+  >
+    <div />
+  </div>
+  <div
+    className="color yellow"
+    onClick={[Function]}
+  >
+    <div />
+  </div>
+  <div
+    className="color pink"
+    onClick={[Function]}
+  >
+    <div />
+  </div>
+  <div
+    className="color purple active"
+    onClick={[Function]}
+  >
+    <div />
+  </div>
+  <div
+    className="color warm"
+    onClick={[Function]}
+  >
+    <div />
+  </div>
+  <div
+    className="color neutral"
+    onClick={[Function]}
+  >
+    <div />
+  </div>
+  <div
+    className="color cold"
+    onClick={[Function]}
+  >
+    <div />
+  </div>
+</div>
+`;
+
+exports[`ColorSwitcher should render the rgb switcher correctly when red is active 1`] = `
 <div
   className="color-switcher"
 >
@@ -61,6 +427,128 @@ exports[`ColorSwitcher should render the rgb switcher correctly 1`] = `
 </div>
 `;
 
+exports[`ColorSwitcher should render the rgb switcher correctly when warm is active 1`] = `
+<div
+  className="color-switcher"
+>
+  <div
+    className="color red"
+    onClick={[Function]}
+  >
+    <div />
+  </div>
+  <div
+    className="color green"
+    onClick={[Function]}
+  >
+    <div />
+  </div>
+  <div
+    className="color blue"
+    onClick={[Function]}
+  >
+    <div />
+  </div>
+  <div
+    className="color yellow"
+    onClick={[Function]}
+  >
+    <div />
+  </div>
+  <div
+    className="color pink"
+    onClick={[Function]}
+  >
+    <div />
+  </div>
+  <div
+    className="color purple"
+    onClick={[Function]}
+  >
+    <div />
+  </div>
+  <div
+    className="color warm active"
+    onClick={[Function]}
+  >
+    <div />
+  </div>
+  <div
+    className="color neutral"
+    onClick={[Function]}
+  >
+    <div />
+  </div>
+  <div
+    className="color cold"
+    onClick={[Function]}
+  >
+    <div />
+  </div>
+</div>
+`;
+
+exports[`ColorSwitcher should render the rgb switcher correctly when yellow is active 1`] = `
+<div
+  className="color-switcher"
+>
+  <div
+    className="color red"
+    onClick={[Function]}
+  >
+    <div />
+  </div>
+  <div
+    className="color green"
+    onClick={[Function]}
+  >
+    <div />
+  </div>
+  <div
+    className="color blue"
+    onClick={[Function]}
+  >
+    <div />
+  </div>
+  <div
+    className="color yellow active"
+    onClick={[Function]}
+  >
+    <div />
+  </div>
+  <div
+    className="color pink"
+    onClick={[Function]}
+  >
+    <div />
+  </div>
+  <div
+    className="color purple"
+    onClick={[Function]}
+  >
+    <div />
+  </div>
+  <div
+    className="color warm"
+    onClick={[Function]}
+  >
+    <div />
+  </div>
+  <div
+    className="color neutral"
+    onClick={[Function]}
+  >
+    <div />
+  </div>
+  <div
+    className="color cold"
+    onClick={[Function]}
+  >
+    <div />
+  </div>
+</div>
+`;
+
 exports[`ColorSwitcher should render the white switcher correctly 1`] = `
 <div
   className="color-switcher white"
@@ -73,7 +561,57 @@ exports[`ColorSwitcher should render the white switcher correctly 1`] = `
 </div>
 `;
 
-exports[`ColorSwitcher should render the white-spectrum switcher correctly 1`] = `
+exports[`ColorSwitcher should render the white-spectrum switcher correctly when cold is active 1`] = `
+<div
+  className="color-switcher spectrum"
+>
+  <div
+    className="color warm"
+    onClick={[Function]}
+  >
+    <div />
+  </div>
+  <div
+    className="color neutral"
+    onClick={[Function]}
+  >
+    <div />
+  </div>
+  <div
+    className="color cold active"
+    onClick={[Function]}
+  >
+    <div />
+  </div>
+</div>
+`;
+
+exports[`ColorSwitcher should render the white-spectrum switcher correctly when neutral is active 1`] = `
+<div
+  className="color-switcher spectrum"
+>
+  <div
+    className="color warm"
+    onClick={[Function]}
+  >
+    <div />
+  </div>
+  <div
+    className="color neutral active"
+    onClick={[Function]}
+  >
+    <div />
+  </div>
+  <div
+    className="color cold"
+    onClick={[Function]}
+  >
+    <div />
+  </div>
+</div>
+`;
+
+exports[`ColorSwitcher should render the white-spectrum switcher correctly when warm is active 1`] = `
 <div
   className="color-switcher spectrum"
 >

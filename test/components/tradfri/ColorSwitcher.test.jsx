@@ -3,15 +3,29 @@ const ColorSwitcher = require('../../../src/components/tradfri/ColorSwitcher')
 
 const { shallow } = require('enzyme')
 
-describe('ColorSwitcher', () => {
+describe.only('ColorSwitcher', () => {
 
-	it('should render the rgb switcher correctly', () => {
-		const wrapper = shallow(<ColorSwitcher bulbType="rgb" color="red" />)
+	it.each([
+		['red'],
+		['green'],
+		['blue'],
+		['yellow'],
+		['pink'],
+		['purple'],
+		['warm'],
+		['neutral'],
+		['cold'],
+	])('should render the rgb switcher correctly when %s is active', (color) => {
+		const wrapper = shallow(<ColorSwitcher bulbType="rgb" color={color} />)
 		expect(wrapper).toMatchSnapshot()
 	})
 
-	it('should render the white-spectrum switcher correctly', () => {
-		const wrapper = shallow(<ColorSwitcher bulbType="white-spectrum" color="warm" />)
+	it.each([
+		['warm'],
+		['neutral'],
+		['cold'],
+	])('should render the white-spectrum switcher correctly when %s is active', (color) => {
+		const wrapper = shallow(<ColorSwitcher bulbType="white-spectrum" color={color} />)
 		expect(wrapper).toMatchSnapshot()
 	})
 
