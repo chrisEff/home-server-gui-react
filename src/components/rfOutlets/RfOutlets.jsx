@@ -28,6 +28,7 @@ class RfOutlets extends React.Component {
 			const outlets = Object.values(await response.json())
 			this.setState({outlets})
 		} catch (e) {
+			console.log(e)
 			this.setState({errorMsg: e.message})
 		}
 	}

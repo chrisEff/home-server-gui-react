@@ -36,6 +36,7 @@ class Tradfri extends React.Component {
 
 			this.setState({groups})
 		} catch (e) {
+			console.log(e)
 			this.setState({errorMsg: e.message})
 		}
 	}

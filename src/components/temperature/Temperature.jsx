@@ -62,6 +62,7 @@ class Temperature extends React.Component {
 			}))
 			this.setState({ tempSensors })
 		} catch (e) {
+			console.log(e)
 			this.setState({ errorMsg: e.message })
 		}
 	}

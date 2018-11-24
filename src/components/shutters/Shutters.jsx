@@ -28,6 +28,7 @@ class Shutters extends React.Component {
 			const shutters = Object.values(await response.json())
 			this.setState({shutters})
 		} catch (e) {
+			console.log(e)
 			this.setState({errorMsg: e.message})
 		}
 	}
