@@ -1,7 +1,7 @@
 const React = require('react')
 const RfOutlet = require('../../../src/components/rfOutlets/RfOutlet')
 
-const { shallow } = require('enzyme')
+const {shallow} = require('enzyme')
 
 describe('RfOutlet', () => {
 	it('should render correctly', () => {

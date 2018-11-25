@@ -1,7 +1,7 @@
 const React = require('react')
 const Shutter = require('../../../src/components/shutters/Shutter')
 
-const { shallow } = require('enzyme')
+const {shallow} = require('enzyme')
 
 describe('Shutter', () => {
 	it('should render correctly', () => {

@@ -1,7 +1,7 @@
 const React = require('react')
 const Light = require('../../../src/components/tradfri/Light')
 
-const { shallow } = require('enzyme')
+const {shallow} = require('enzyme')
 
 describe('Light', () => {
 	it('should render correctly', () => {

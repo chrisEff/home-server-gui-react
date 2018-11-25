@@ -1,7 +1,7 @@
 const React = require('react')
 const ColorSwitcher = require('../../../src/components/tradfri/ColorSwitcher')
 
-const { shallow } = require('enzyme')
+const {shallow} = require('enzyme')
 
 describe.only('ColorSwitcher', () => {
 

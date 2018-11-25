@@ -1,7 +1,7 @@
 const React = require('react')
 const LoginForm = require('../../src/components/LoginForm')
 
-const { shallow } = require('enzyme')
+const {shallow} = require('enzyme')
 
 describe('LoginForm', () => {
 	it('should render correctly', () => {

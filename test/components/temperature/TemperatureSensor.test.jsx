@@ -1,7 +1,7 @@
 const React = require('react')
 const TemperatureSensor = require('../../../src/components/temperature/TemperatureSensor')
 
-const { shallow } = require('enzyme')
+const {shallow} = require('enzyme')
 
 describe('TemperatureSensor', () => {
 	it('should render correctly', () => {

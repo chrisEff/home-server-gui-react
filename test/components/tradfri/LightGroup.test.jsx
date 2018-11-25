@@ -1,7 +1,7 @@
 const React = require('react')
 const LightGroup = require('../../../src/components/tradfri/LightGroup')
 
-const { shallow } = require('enzyme')
+const {shallow} = require('enzyme')
 
 describe('LightGroup', () => {
 	it('should render correctly', () => {

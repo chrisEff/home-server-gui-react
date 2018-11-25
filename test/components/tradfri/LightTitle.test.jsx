@@ -1,7 +1,7 @@
 const React = require('react')
 const LightTitle = require('../../../src/components/tradfri/LightTitle')
 
-const { shallow } = require('enzyme')
+const {shallow} = require('enzyme')
 
 describe('LightTitle', () => {
 	it('should render correctly', () => {

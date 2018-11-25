@@ -1,7 +1,7 @@
 const React = require('react')
 const ErrorMessage = require('../../src/components/ErrorMessage')
 
-const { shallow } = require('enzyme')
+const {shallow} = require('enzyme')
 
 describe('ErrorMessage', () => {
 	it('should render correctly', () => {
