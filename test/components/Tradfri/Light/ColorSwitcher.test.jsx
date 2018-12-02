@@ -1,5 +1,7 @@
+'use strict'
+
 const React = require('react')
-const ColorSwitcher = require('../../../src/components/tradfri/ColorSwitcher')
+const ColorSwitcher = require('../../../../src/components/Tradfri/Light/ColorSwitcher')
 
 const {shallow} = require('enzyme')
 

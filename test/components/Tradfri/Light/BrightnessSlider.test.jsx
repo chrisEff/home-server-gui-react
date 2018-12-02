@@ -1,5 +1,7 @@
+'use strict'
+
 const React = require('react')
-const BrightnessSlider = require('../../../src/components/tradfri/BrightnessSlider')
+const BrightnessSlider = require('../../../../src/components/Tradfri/Light/BrightnessSlider')
 
 const {shallow} = require('enzyme')
 

@@ -1,3 +1,5 @@
+'use strict'
+
 const React = require('react')
 const LoginForm = require('../../src/components/LoginForm')
 

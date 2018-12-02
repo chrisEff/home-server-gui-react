@@ -1,5 +1,7 @@
+'use strict'
+
 const React = require('react')
-const TemperatureSensor = require('../../../src/components/temperature/TemperatureSensor')
+const TemperatureSensor = require('../../../src/components/Temperature/TemperatureSensor')
 
 const {shallow} = require('enzyme')
 

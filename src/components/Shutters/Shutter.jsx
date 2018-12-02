@@ -1,3 +1,5 @@
+'use strict'
+
 const homeServerApi = require('../../homeServerApi')
 
 const React = require('react')

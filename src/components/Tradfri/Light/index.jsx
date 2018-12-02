@@ -1,6 +1,6 @@
 'use strict'
 
-const homeServerApi = require('../../homeServerApi')
+const homeServerApi = require('../../../homeServerApi')
 
 const React = require('react')
 const PropTypes = require('prop-types')

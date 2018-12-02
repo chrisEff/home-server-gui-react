@@ -3,10 +3,10 @@
 const React = require('react')
 
 const LoginForm = require('./LoginForm')
-const Tradfri = require('./tradfri/Tradfri')
-const RfOutlets = require('./rfOutlets/RfOutlets')
-const Shutters = require('./shutters/Shutters')
-const Temperature = require('./temperature/Temperature')
+const Tradfri = require('./Tradfri')
+const RfOutlets = require('./RfOutlets')
+const Shutters = require('./Shutters')
+const Temperature = require('./Temperature')
 
 const homeServerApi = require('../homeServerApi')
 

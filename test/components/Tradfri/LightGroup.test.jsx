@@ -1,5 +1,7 @@
+'use strict'
+
 const React = require('react')
-const LightGroup = require('../../../src/components/tradfri/LightGroup')
+const LightGroup = require('../../../src/components/Tradfri/LightGroup')
 
 const {shallow} = require('enzyme')
 

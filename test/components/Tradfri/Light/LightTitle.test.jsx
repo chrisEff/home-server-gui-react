@@ -1,5 +1,5 @@
 const React = require('react')
-const LightTitle = require('../../../src/components/tradfri/LightTitle')
+const LightTitle = require('../../../../src/components/Tradfri/Light/LightTitle')
 
 const {shallow} = require('enzyme')
 

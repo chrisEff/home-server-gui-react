@@ -1,5 +1,7 @@
+'use strict'
+
 const React = require('react')
-const RfOutlet = require('../../../src/components/rfOutlets/RfOutlet')
+const RfOutlet = require('../../../src/components/RfOutlets/RfOutlet')
 
 const {shallow} = require('enzyme')
 

@@ -1,5 +1,7 @@
+'use strict'
+
 const React = require('react')
-const Shutter = require('../../../src/components/shutters/Shutter')
+const Shutter = require('../../../src/components/Shutters/Shutter')
 
 const {shallow} = require('enzyme')
 
