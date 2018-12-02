@@ -5,10 +5,10 @@ const homeServerApi = require('../../../homeServerApi')
 const React = require('react')
 const PropTypes = require('prop-types')
 
-const LightTitle = require('./LightTitle')
+const Title = require('./Title')
 const BrightnessSlider = require('./BrightnessSlider')
 const ColorSwitcher = require('./ColorSwitcher')
-const LightSwitch = require('./LightSwitch')
+const Switch = require('./Switch')
 
 class Light extends React.Component {
 
@@ -26,9 +26,9 @@ class Light extends React.Component {
 		const className = bulb.state ? 'light on' : 'light'
 		return (
 			<div className={className + ' ' + bulb.color}>
-				<LightTitle title={bulb.name} onChange={this.updateName} />
+				<Title title={bulb.name} onChange={this.updateName} />
 
-				<LightSwitch state={bulb.state} onchange={this.updateState}/>
+				<Switch state={bulb.state} onchange={this.updateState}/>
 				<BrightnessSlider brightness={bulb.brightness} onchange={this.updateBrightness}/>
 				<ColorSwitcher bulbType={bulb.bulbType} color={bulb.color} onchange={this.updateColor}/>
 			</div>

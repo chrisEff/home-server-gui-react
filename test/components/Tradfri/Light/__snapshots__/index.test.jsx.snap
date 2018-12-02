@@ -4,11 +4,11 @@ exports[`Light should render correctly 1`] = `
 <div
   className="light neutraål"
 >
-  <LightTitle
+  <Title
     onChange={[Function]}
     title="Decke"
   />
-  <LightSwitch
+  <Switch
     onchange={[Function]}
     state={0}
   />

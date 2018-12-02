@@ -3,7 +3,7 @@
 const React = require('react')
 const PropTypes = require('prop-types')
 
-class LightTitle extends React.Component {
+class Title extends React.Component {
 
 	static propTypes = {
 		title: PropTypes.string.isRequired,
@@ -33,4 +33,4 @@ class LightTitle extends React.Component {
 	}
 }
 
-module.exports = LightTitle
+module.exports = Title
