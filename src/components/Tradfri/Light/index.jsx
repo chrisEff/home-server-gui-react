@@ -37,10 +37,12 @@ class Light extends React.Component {
 
 	updateName = async (name) => {
 		const bulb = this.state.bulb
-		await homeServerApi.put(`/tradfri/device/${bulb.id}/name/${name}`)
+		if (name !== bulb.name) {
+			await homeServerApi.put(`/tradfri/device/${bulb.id}/name/${name}`)
 
-		bulb.name = name
-		this.setState({bulb})
+			bulb.name = name
+			this.setState({bulb})
+		}
 	}
 
 	updateState = async (state) => {
