@@ -1,12 +1,12 @@
 'use strict'
 
-const homeServerApi = require('../../homeServerApi')
+import homeServerApi from '../../homeServerApi'
 
-const React = require('react')
-const PropTypes = require('prop-types')
+import React from 'react'
+import PropTypes from 'prop-types'
 
-const Shutter = require('./Shutter')
-const ErrorMessage = require('../ErrorMessage')
+import Shutter from './Shutter'
+import ErrorMessage from '../ErrorMessage'
 
 class Shutters extends React.Component {
 
@@ -44,4 +44,4 @@ class Shutters extends React.Component {
 	}
 }
 
-module.exports = Shutters
+export default Shutters

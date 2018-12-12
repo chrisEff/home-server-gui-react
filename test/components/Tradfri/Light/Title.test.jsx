@@ -1,9 +1,9 @@
 'use strict'
 
-const React = require('react')
-const Title = require('../../../../src/components/Tradfri/Light/Title')
+import React from 'react'
+import Title from '../../../../src/components/Tradfri/Light/Title'
 
-const {shallow} = require('enzyme')
+import {shallow} from 'enzyme'
 
 describe('Title', () => {
 	it('should render correctly', () => {

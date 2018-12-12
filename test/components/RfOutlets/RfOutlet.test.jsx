@@ -1,9 +1,9 @@
 'use strict'
 
-const React = require('react')
-const RfOutlet = require('../../../src/components/RfOutlets/RfOutlet')
+import React from 'react'
+import RfOutlet from '../../../src/components/RfOutlets/RfOutlet'
 
-const {shallow} = require('enzyme')
+import {shallow} from 'enzyme'
 
 describe('RfOutlet', () => {
 	it('should render correctly', () => {

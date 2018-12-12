@@ -1,10 +1,10 @@
 'use strict'
 
-const homeServerApi = require('../../homeServerApi')
+import homeServerApi from '../../homeServerApi'
 
-const React = require('react')
-const PropTypes = require('prop-types')
-const Light = require('./Light')
+import React from 'react'
+import PropTypes from 'prop-types'
+import Light from './Light'
 
 class LightGroup extends React.Component {
 
@@ -47,4 +47,4 @@ class LightGroup extends React.Component {
 	}
 }
 
-module.exports = LightGroup
+export default LightGroup

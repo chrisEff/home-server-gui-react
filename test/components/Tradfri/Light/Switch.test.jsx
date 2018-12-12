@@ -1,9 +1,9 @@
 'use strict'
 
-const React = require('react')
-const Switch = require('../../../../src/components/Tradfri/Light/Switch')
+import React from 'react'
+import Switch from '../../../../src/components/Tradfri/Light/Switch'
 
-const {shallow} = require('enzyme')
+import {shallow} from 'enzyme'
 
 describe('Switch', () => {
 	it('should render correctly', () => {

@@ -1,12 +1,12 @@
 'use strict'
 
-const homeServerApi = require('../../homeServerApi')
+import homeServerApi from '../../homeServerApi'
 
-const React = require('react')
-const PropTypes = require('prop-types')
+import React from 'react'
+import PropTypes from 'prop-types'
 
-const LightGroup = require('./LightGroup')
-const ErrorMessage = require('../ErrorMessage')
+import LightGroup from './LightGroup'
+import ErrorMessage from '../ErrorMessage'
 
 class Tradfri extends React.Component {
 
@@ -52,4 +52,4 @@ class Tradfri extends React.Component {
 	}
 }
 
-module.exports = Tradfri
+export default Tradfri

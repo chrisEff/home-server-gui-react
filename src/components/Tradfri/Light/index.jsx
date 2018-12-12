@@ -1,14 +1,14 @@
 'use strict'
 
-const homeServerApi = require('../../../homeServerApi')
+import homeServerApi from '../../../homeServerApi'
 
-const React = require('react')
-const PropTypes = require('prop-types')
+import React from 'react'
+import PropTypes from 'prop-types'
 
-const Title = require('./Title')
-const BrightnessSlider = require('./BrightnessSlider')
-const ColorSwitcher = require('./ColorSwitcher')
-const Switch = require('./Switch')
+import Title from './Title'
+import BrightnessSlider from './BrightnessSlider'
+import ColorSwitcher from './ColorSwitcher'
+import Switch from './Switch'
 
 class Light extends React.Component {
 
@@ -70,4 +70,4 @@ class Light extends React.Component {
 	}
 }
 
-module.exports = Light
+export default Light

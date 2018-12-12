@@ -1,9 +1,9 @@
 'use strict'
 
-const React = require('react')
-const ColorSwitcher = require('../../../../src/components/Tradfri/Light/ColorSwitcher')
+import React from 'react'
+import ColorSwitcher from '../../../../src/components/Tradfri/Light/ColorSwitcher'
 
-const {shallow} = require('enzyme')
+import {shallow} from 'enzyme'
 
 describe.only('ColorSwitcher', () => {
 

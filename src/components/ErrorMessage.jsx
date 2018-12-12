@@ -1,6 +1,8 @@
 'use strict'
 
-const React = require('react')
+import React from 'react'
 
-module.exports = ({message}) =>
+const ErrorMessage = ({message}) =>
 	<div style={{color: 'red'}}>{message}</div>
+
+export default ErrorMessage

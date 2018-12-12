@@ -1,9 +1,9 @@
 'use strict'
 
-const React = require('react')
-const Light = require('../../../../src/components/Tradfri/Light')
+import React from 'react'
+import Light from '../../../../src/components/Tradfri/Light'
 
-const {shallow} = require('enzyme')
+import {shallow} from 'enzyme'
 
 describe('Light', () => {
 	it('should render correctly', () => {

@@ -1,9 +1,9 @@
 'use strict'
 
-const React = require('react')
-const LightGroup = require('../../../src/components/Tradfri/LightGroup')
+import React from 'react'
+import LightGroup from '../../../src/components/Tradfri/LightGroup'
 
-const {shallow} = require('enzyme')
+import {shallow} from 'enzyme'
 
 describe('LightGroup', () => {
 	it('should render correctly', () => {

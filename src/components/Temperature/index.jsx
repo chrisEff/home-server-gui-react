@@ -1,14 +1,14 @@
 'use strict'
 
-const homeServerApi = require('../../homeServerApi')
+import homeServerApi from '../../homeServerApi'
 
-const React = require('react')
-const PropTypes = require('prop-types')
-const dateFormat = require('dateformat')
-const sortBy = require('lodash.sortby')
+import React from 'react'
+import PropTypes from 'prop-types'
+import dateFormat from 'dateformat'
+import sortBy from 'lodash.sortby'
 
-const TemperatureSensor = require('./TemperatureSensor')
-const ErrorMessage = require('../ErrorMessage')
+import TemperatureSensor from './TemperatureSensor'
+import ErrorMessage from '../ErrorMessage'
 
 class Temperature extends React.Component {
 
@@ -86,4 +86,4 @@ class Temperature extends React.Component {
 	}
 }
 
-module.exports = Temperature
+export default Temperature

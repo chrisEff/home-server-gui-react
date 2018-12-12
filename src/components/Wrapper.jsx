@@ -1,14 +1,14 @@
 'use strict'
 
-const React = require('react')
+import homeServerApi from '../homeServerApi'
 
-const LoginForm = require('./LoginForm')
-const Tradfri = require('./Tradfri')
-const RfOutlets = require('./RfOutlets')
-const Shutters = require('./Shutters')
-const Temperature = require('./Temperature')
+import React from 'react'
 
-const homeServerApi = require('../homeServerApi')
+import LoginForm from './LoginForm'
+import Tradfri from './Tradfri'
+import RfOutlets from './RfOutlets'
+import Shutters from './Shutters'
+import Temperature from './Temperature'
 
 class Wrapper extends React.Component {
 
@@ -57,4 +57,4 @@ class Wrapper extends React.Component {
 	}
 }
 
-module.exports = Wrapper
+export default Wrapper

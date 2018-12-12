@@ -7,16 +7,16 @@ const call = async (method, action, params = {}) => {
 		action = '/' + action
 	}
 
-	return fetch(`${module.exports.apiUrl}${action}?${querystring.stringify(params)}`, {
+	return fetch(`${api.apiUrl}${action}?${querystring.stringify(params)}`, {
 		method: method,
 		headers: {
-			apiuser: module.exports.apiUser,
-			apikey: module.exports.apiKey,
+			apiuser: api.apiUser,
+			apikey: api.apiKey,
 		},
 	})
 }
 
-module.exports = {
+const api = {
 
 	apiUrl: '',
 
@@ -33,3 +33,5 @@ module.exports = {
 	delete: async (action, params = {}) => call('DELETE', action, params),
 
 }
+
+export default api

@@ -1,12 +1,12 @@
 'use strict'
 
-const homeServerApi = require('../../homeServerApi')
+import homeServerApi from '../../homeServerApi'
 
-const React = require('react')
-const PropTypes = require('prop-types')
+import React from 'react'
+import PropTypes from 'prop-types'
 
-const RfOutlet = require('./RfOutlet')
-const ErrorMessage = require('../ErrorMessage')
+import RfOutlet from './RfOutlet'
+import ErrorMessage from '../ErrorMessage'
 
 class RfOutlets extends React.Component {
 
@@ -44,4 +44,4 @@ class RfOutlets extends React.Component {
 	}
 }
 
-module.exports = RfOutlets
+export default RfOutlets

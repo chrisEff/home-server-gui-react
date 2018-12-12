@@ -1,6 +1,6 @@
 'use strict'
 
-const React = require('react')
+import React from 'react'
 
 class LoginForm extends React.Component {
 
@@ -25,4 +25,4 @@ class LoginForm extends React.Component {
 
 }
 
-module.exports = LoginForm
+export default LoginForm

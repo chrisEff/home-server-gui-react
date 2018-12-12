@@ -1,9 +1,9 @@
 'use strict'
 
-const React = require('react')
-const ErrorMessage = require('../../src/components/ErrorMessage')
+import React from 'react'
+import ErrorMessage from '../../src/components/ErrorMessage'
 
-const {shallow} = require('enzyme')
+import {shallow} from 'enzyme'
 
 describe('ErrorMessage', () => {
 	it('should render correctly', () => {

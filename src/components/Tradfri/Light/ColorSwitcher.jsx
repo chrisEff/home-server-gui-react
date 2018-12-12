@@ -1,7 +1,7 @@
 'use strict'
 
-const React = require('react')
-const PropTypes = require('prop-types')
+import React from 'react'
+import PropTypes from 'prop-types'
 
 const ColorSwitcher = ({bulbType, color, onchange}) => {
 	if (bulbType === 'rgb') {
@@ -44,4 +44,4 @@ ColorSwitcher.propTypes = {
 	onchange: PropTypes.func,
 }
 
-module.exports = ColorSwitcher
+export default ColorSwitcher

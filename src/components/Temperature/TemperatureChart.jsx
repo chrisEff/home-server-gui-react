@@ -1,7 +1,7 @@
 'use strict'
 
-const React = require('react')
-const PropTypes = require('prop-types')
+import React from 'react'
+import PropTypes from 'prop-types'
 
 const {CartesianGrid, Line, LineChart, Tooltip, XAxis, YAxis} = require('recharts')
 
@@ -20,4 +20,4 @@ TemperatureChart.propTypes = {
 	data: PropTypes.array,
 }
 
-module.exports = TemperatureChart
+export default TemperatureChart

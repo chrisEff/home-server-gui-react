@@ -1,9 +1,9 @@
 'use strict'
 
-const React = require('react')
-const Shutter = require('../../../src/components/Shutters/Shutter')
+import React from 'react'
+import Shutter from '../../../src/components/Shutters/Shutter'
 
-const {shallow} = require('enzyme')
+import {shallow} from 'enzyme'
 
 describe('Shutter', () => {
 	it('should render correctly', () => {

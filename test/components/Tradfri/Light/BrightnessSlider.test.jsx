@@ -1,9 +1,9 @@
 'use strict'
 
-const React = require('react')
-const BrightnessSlider = require('../../../../src/components/Tradfri/Light/BrightnessSlider')
+import React from 'react'
+import BrightnessSlider from '../../../../src/components/Tradfri/Light/BrightnessSlider'
 
-const {shallow} = require('enzyme')
+import {shallow} from 'enzyme'
 
 describe('BrightnessSlider', () => {
 	it('should render correctly', () => {

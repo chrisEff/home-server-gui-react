@@ -1,9 +1,9 @@
 'use strict'
 
-const React = require('react')
-const PropTypes = require('prop-types')
+import React from 'react'
+import PropTypes from 'prop-types'
 
-const TemperatureChart = require('./TemperatureChart')
+import TemperatureChart from './TemperatureChart'
 
 const TemperatureSensor = ({name, value, history}) => (
 	<div className='tempSensor'>
@@ -20,4 +20,4 @@ TemperatureSensor.propTypes = {
 	history: PropTypes.array,
 }
 
-module.exports = TemperatureSensor
+export default TemperatureSensor

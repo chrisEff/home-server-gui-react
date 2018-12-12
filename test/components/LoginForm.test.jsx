@@ -1,9 +1,9 @@
 'use strict'
 
-const React = require('react')
-const LoginForm = require('../../src/components/LoginForm')
+import React from 'react'
+import LoginForm from '../../src/components/LoginForm'
 
-const {shallow} = require('enzyme')
+import {shallow} from 'enzyme'
 
 describe('LoginForm', () => {
 	it('should render correctly', () => {

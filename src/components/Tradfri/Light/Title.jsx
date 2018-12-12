@@ -1,7 +1,7 @@
 'use strict'
 
-const React = require('react')
-const PropTypes = require('prop-types')
+import React from 'react'
+import PropTypes from 'prop-types'
 
 class Title extends React.Component {
 
@@ -33,4 +33,4 @@ class Title extends React.Component {
 	}
 }
 
-module.exports = Title
+export default Title

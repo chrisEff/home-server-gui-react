@@ -1,7 +1,7 @@
 'use strict'
 
-const React = require('react')
-const PropTypes = require('prop-types')
+import React from 'react'
+import PropTypes from 'prop-types'
 
 const BrightnessSlider = ({brightness, onchange}) =>
 	<input
@@ -18,4 +18,4 @@ BrightnessSlider.propTypes = {
 	onchange: PropTypes.func,
 }
 
-module.exports = BrightnessSlider
+export default BrightnessSlider

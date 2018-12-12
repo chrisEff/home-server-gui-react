@@ -1,9 +1,9 @@
 'use strict'
 
-const React = require('react')
-const TemperatureSensor = require('../../../src/components/Temperature/TemperatureSensor')
+import React from 'react'
+import TemperatureSensor from '../../../src/components/Temperature/TemperatureSensor'
 
-const {shallow} = require('enzyme')
+import {shallow} from 'enzyme'
 
 describe('TemperatureSensor', () => {
 	it('should render correctly', () => {
