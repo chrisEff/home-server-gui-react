@@ -4,9 +4,12 @@ import homeServerApi from '../../homeServerApi'
 
 import React from 'react'
 import PropTypes from 'prop-types'
+import {connect} from 'react-redux'
 
 import Shutter from './Shutter'
 import ErrorMessage from '../ErrorMessage'
+
+import {setShutters} from '../../actions'
 
 class Shutters extends React.Component {
 
@@ -17,7 +20,6 @@ class Shutters extends React.Component {
 	constructor (props) {
 		super(props)
 		this.state = {
-			shutters: [],
 			errorMsg: null,
 		}
 	}
@@ -26,7 +28,7 @@ class Shutters extends React.Component {
 		try {
 			const response = await homeServerApi.get(`/shutters/shutter`)
 			const shutters = Object.values(await response.json())
-			this.setState({shutters})
+			this.props.onLoad(shutters)
 		} catch (e) {
 			console.log(e)
 			this.setState({errorMsg: e.message})
@@ -38,10 +40,18 @@ class Shutters extends React.Component {
 			<div id='shutters'>
 				<h2>{this.props.title}</h2>
 				{this.state.errorMsg && <ErrorMessage message={this.state.errorMsg}/>}
-				{this.state.shutters.map(shutter => <Shutter key={shutter.name} shutter={shutter}/>)}
+				{this.props.shutters.map(shutter => <Shutter key={shutter.name} shutter={shutter}/>)}
 			</div>
 		)
 	}
 }
 
-export default Shutters
+const mapStateToProps = state => ({
+	shutters: state.shutters,
+})
+
+const mapDispatchToProps = dispatch => ({
+	onLoad: shutters => dispatch(setShutters(shutters)),
+})
+
+export default connect(mapStateToProps, mapDispatchToProps)(Shutters)

@@ -4,9 +4,12 @@ import homeServerApi from '../../homeServerApi'
 
 import React from 'react'
 import PropTypes from 'prop-types'
+import {connect} from 'react-redux'
 
 import RfOutlet from './RfOutlet'
 import ErrorMessage from '../ErrorMessage'
+
+import {setOutlets} from '../../actions'
 
 class RfOutlets extends React.Component {
 
@@ -17,7 +20,6 @@ class RfOutlets extends React.Component {
 	constructor (props) {
 		super(props)
 		this.state = {
-			outlets: [],
 			errorMsg: null,
 		}
 	}
@@ -26,7 +28,7 @@ class RfOutlets extends React.Component {
 		try {
 			const response = await homeServerApi.get(`/rfoutlets/outlet`)
 			const outlets = Object.values(await response.json())
-			this.setState({outlets})
+			this.props.onLoad(outlets)
 		} catch (e) {
 			console.log(e)
 			this.setState({errorMsg: e.message})
@@ -38,10 +40,18 @@ class RfOutlets extends React.Component {
 			<div id='rfOutlets'>
 				<h2>{this.props.title}</h2>
 				{this.state.errorMsg && <ErrorMessage message={this.state.errorMsg}/>}
-				{this.state.outlets.map(outlet => <RfOutlet key={outlet.name} outlet={outlet}/>)}
+				{this.props.outlets.map(outlet => <RfOutlet key={outlet.name} id={outlet.id}/>)}
 			</div>
 		)
 	}
 }
 
-export default RfOutlets
+const mapStateToProps = state => ({
+	outlets: state.outlets,
+})
+
+const mapDispatchToProps = dispatch => ({
+	onLoad: outlets => dispatch(setOutlets(outlets)),
+})
+
+export default connect(mapStateToProps, mapDispatchToProps)(RfOutlets)

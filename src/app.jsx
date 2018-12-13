@@ -1,8 +1,18 @@
 import React from 'react'
-import ReactDOM from 'react-dom'
+import {render} from 'react-dom'
+import {Provider} from 'react-redux'
+import {createStore} from 'redux'
+import rootReducer from './reducers'
 import Wrapper from './components/Wrapper'
 
 // eslint-disable-next-line import/no-webpack-loader-syntax
 require('style-loader!css-loader!./style.css')
 
-ReactDOM.render(<Wrapper />, document.querySelector('#wrapper'))
+const store = createStore(rootReducer)
+
+render(
+	<Provider store={store}>
+		<Wrapper />
+	</Provider>,
+	document.querySelector('#wrapper')
+)
