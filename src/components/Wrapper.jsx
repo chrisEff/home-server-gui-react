@@ -3,7 +3,9 @@
 import homeServerApi from '../homeServerApi'
 
 import React from 'react'
+import {connect} from 'react-redux'
 
+import ErrorMessage from './ErrorMessage'
 import LoginForm from './LoginForm'
 import Tradfri from './Tradfri'
 import RfOutlets from './RfOutlets'
@@ -48,6 +50,7 @@ class Wrapper extends React.Component {
 						Log out
 					</div>
 				</div>
+				{this.props.errorMessage && <ErrorMessage message={this.props.errorMessage} />}
 				<Tradfri title='Licht'/>
 				<RfOutlets title='Steckdosen'/>
 				<Shutters title='Rollläden'/>
@@ -57,4 +60,13 @@ class Wrapper extends React.Component {
 	}
 }
 
-export default Wrapper
+const mapStateToProps = state => ({
+	errorMessage: state.errorMessage,
+})
+
+const mapDispatchToProps = dispatch => ({
+})
+
+export default connect(mapStateToProps, mapDispatchToProps)(Wrapper)
+export {Wrapper}
+

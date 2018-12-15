@@ -1,37 +1,24 @@
 'use strict'
 
-import homeServerApi from '../../homeServerApi'
-
 import React from 'react'
 import PropTypes from 'prop-types'
-
-import {toggleOutlet} from '../../actions'
 import {connect} from 'react-redux'
 
-class RfOutlet extends React.Component {
+import {setOutletState} from '../../actions'
 
-	static propTypes = {
-		id: PropTypes.number,
-		outlet: PropTypes.object.isRequired,
-		onToggle: PropTypes.func,
-	}
+const RfOutlet = ({outlet, onToggle}) => {
+	return (
+		<div className={outlet.state ? 'outlet on' : 'outlet'} onClick={() => onToggle(outlet.id, outlet.state ? 0 : 1)}>
+			<h4>{outlet.name}</h4>
+			<div className='plug'>🔌</div>
+		</div>
+	)
+}
 
-	render () {
-		const className = this.props.outlet.state ? 'outlet on' : 'outlet'
-		return (
-			<div className={className} onClick={this.handleClick}>
-				<h4>{this.props.outlet.name}</h4>
-				<div className='plug'>🔌</div>
-			</div>
-		)
-	}
-
-	handleClick = async () => {
-		const outlet = this.props.outlet
-		await homeServerApi.put(`/rfoutlets/outlet/${outlet.id}/${outlet.state ? 0 : 1}`)
-
-		this.props.onToggle(outlet.id)
-	}
+RfOutlet.propTypes = {
+	id: PropTypes.number.isRequired,
+	outlet: PropTypes.object.isRequired,
+	onToggle: PropTypes.func,
 }
 
 const mapStateToProps = (state, ownProps) => ({
@@ -39,7 +26,7 @@ const mapStateToProps = (state, ownProps) => ({
 })
 
 const mapDispatchToProps = dispatch => ({
-	onToggle: id => dispatch(toggleOutlet(id)),
+	onToggle: (id, state) => dispatch(setOutletState(id, state)),
 })
 
 export default connect(mapStateToProps, mapDispatchToProps)(RfOutlet)

@@ -1,45 +1,28 @@
 'use strict'
 
-import homeServerApi from '../../homeServerApi'
-
 import React from 'react'
 import PropTypes from 'prop-types'
 import {connect} from 'react-redux'
 
 import RfOutlet from './RfOutlet'
-import ErrorMessage from '../ErrorMessage'
 
-import {setOutlets} from '../../actions'
+import {loadOutlets} from '../../actions'
 
 class RfOutlets extends React.Component {
 
 	static propTypes = {
 		title: PropTypes.string,
-	}
-
-	constructor (props) {
-		super(props)
-		this.state = {
-			errorMsg: null,
-		}
+		outlets: PropTypes.array,
 	}
 
 	async componentDidMount () {
-		try {
-			const response = await homeServerApi.get(`/rfoutlets/outlet`)
-			const outlets = Object.values(await response.json())
-			this.props.onLoad(outlets)
-		} catch (e) {
-			console.log(e)
-			this.setState({errorMsg: e.message})
-		}
+		this.props.onLoad()
 	}
 
 	render () {
 		return (
 			<div id='rfOutlets'>
 				<h2>{this.props.title}</h2>
-				{this.state.errorMsg && <ErrorMessage message={this.state.errorMsg}/>}
 				{this.props.outlets.map(outlet => <RfOutlet key={outlet.name} id={outlet.id}/>)}
 			</div>
 		)
@@ -51,7 +34,7 @@ const mapStateToProps = state => ({
 })
 
 const mapDispatchToProps = dispatch => ({
-	onLoad: outlets => dispatch(setOutlets(outlets)),
+	onLoad: () => dispatch(loadOutlets()),
 })
 
 export default connect(mapStateToProps, mapDispatchToProps)(RfOutlets)

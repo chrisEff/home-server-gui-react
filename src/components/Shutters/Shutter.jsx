@@ -1,40 +1,37 @@
 'use strict'
 
-import homeServerApi from '../../homeServerApi'
-
 import React from 'react'
 import PropTypes from 'prop-types'
+import {connect} from 'react-redux'
 
-class Shutter extends React.Component {
+import {moveShutterUp, moveShutterDown} from '../../actions'
 
-	static propTypes = {
-		shutter: PropTypes.object.isRequired,
-	}
-
-	constructor (props) {
-		super(props)
-		this.state = {shutter: props.shutter}
-	}
-
-
-	render () {
-		return (
-			<div className='shutter'>
-				<h4>{this.state.shutter.name}</h4>
-				<br/>
-				<span className='button' onClick={this.handleUpClick}>⬆️</span><br/>
-				<span className='button' onClick={this.handleDownClick}>⬇️</span>
-			</div>
-		)
-	}
-
-	handleUpClick = async () => {
-		await homeServerApi.put(`/shutters/shutter/${this.props.shutter.id}/up`)
-	}
-
-	handleDownClick = async () => {
-		await homeServerApi.put(`/shutters/shutter/${this.props.shutter.id}/down`)
-	}
+const Shutter = ({shutter, onUp, onDown}) => {
+	return (
+		<div className='shutter'>
+			<h4>{shutter.name}</h4>
+			<br/>
+			<span className='button' onClick={() => onUp(shutter.id)}>⬆️</span><br/>
+			<span className='button' onClick={() => onDown(shutter.id)}>⬇️</span>
+		</div>
+	)
 }
 
-export default Shutter
+Shutter.propTypes = {
+	id: PropTypes.number.isRequired,
+	shutter: PropTypes.object.isRequired,
+	onUp: PropTypes.func,
+	onDown: PropTypes.func,
+}
+
+const mapStateToProps = (state, ownProps) => ({
+	shutter: state.shutters.find(shutter => shutter.id === ownProps.id),
+})
+
+const mapDispatchToProps = dispatch => ({
+	onUp: (id, state) => dispatch(moveShutterUp(id, state)),
+	onDown: (id, state) => dispatch(moveShutterDown(id, state)),
+})
+
+export default connect(mapStateToProps, mapDispatchToProps)(Shutter)
+export {Shutter}
