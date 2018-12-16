@@ -13,10 +13,10 @@ const Light = ({bulb}) => {
 	const className = bulb.state ? 'light on' : 'light'
 	return (
 		<div className={className + ' ' + bulb.color}>
-			<Title deviceid={bulb.id} title={bulb.name} />
-			<Switch deviceid={bulb.id} state={bulb.state} />
-			<BrightnessSlider deviceid={bulb.id} brightness={bulb.brightness} />
-			<ColorSwitcher deviceid={bulb.id} bulbType={bulb.bulbType} color={bulb.color} />
+			<Title deviceId={bulb.id} title={bulb.name} />
+			<Switch deviceId={bulb.id} state={bulb.state} />
+			<BrightnessSlider deviceId={bulb.id} brightness={bulb.brightness} />
+			<ColorSwitcher deviceId={bulb.id} bulbType={bulb.bulbType} color={bulb.color} />
 		</div>
 	)
 }
