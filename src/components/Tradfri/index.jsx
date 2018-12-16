@@ -5,7 +5,7 @@ import PropTypes from 'prop-types'
 import {connect} from 'react-redux'
 
 import LightGroup from './LightGroup'
-import {loadTradfriDevices, loadTradfriGroups} from '../../actions'
+import {loadGroups, loadDevices} from '../../actions/tradfri'
 
 class Tradfri extends React.Component {
 
@@ -34,8 +34,8 @@ const mapStateToProps = state => ({
 
 const mapDispatchToProps = dispatch => ({
 	onLoad: () => {
-		dispatch(loadTradfriGroups())
-		dispatch(loadTradfriDevices())
+		dispatch(loadGroups())
+		dispatch(loadDevices())
 	},
 })
 

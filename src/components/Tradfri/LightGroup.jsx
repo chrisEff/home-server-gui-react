@@ -5,7 +5,7 @@ import PropTypes from 'prop-types'
 import {connect} from 'react-redux'
 
 import Light from './Light'
-import {setTradfriGroupName} from '../../actions'
+import {setGroupName} from '../../actions/tradfri'
 
 class LightGroup extends React.Component {
 
@@ -46,7 +46,7 @@ const mapStateToProps = (state, ownProps) => ({
 })
 
 const mapDispatchToProps = dispatch => ({
-	onSaveName: (id, name) => dispatch(setTradfriGroupName(id, name)),
+	onSaveName: (id, name) => dispatch(setGroupName(id, name)),
 })
 
 export default connect(mapStateToProps, mapDispatchToProps)(LightGroup)

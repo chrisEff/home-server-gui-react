@@ -6,7 +6,7 @@ import {connect} from 'react-redux'
 
 import RfOutlet from './RfOutlet'
 
-import {loadOutlets} from '../../actions'
+import {loadOutlets} from '../../actions/outlets'
 
 class RfOutlets extends React.Component {
 

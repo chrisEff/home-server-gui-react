@@ -4,7 +4,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import {connect} from 'react-redux'
 
-import {setOutletState} from '../../actions'
+import {setOutletState} from '../../actions/outlets'
 
 const RfOutlet = ({outlet, onToggle}) => {
 	return (

@@ -4,7 +4,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import {connect} from 'react-redux'
 
-import {moveShutterUp, moveShutterDown} from '../../actions'
+import {moveShutterUp, moveShutterDown} from '../../actions/shutters'
 
 const Shutter = ({shutter, onUp, onDown}) => {
 	return (

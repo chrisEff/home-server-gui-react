@@ -3,7 +3,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import {connect} from 'react-redux'
-import {setTradfriiDeviceBrightness} from '../../../actions'
+import {setDeviceBrightness} from '../../../actions/tradfri'
 
 const BrightnessSlider = ({deviceId, brightness, onChange}) =>
 	<input
@@ -24,7 +24,7 @@ BrightnessSlider.propTypes = {
 const mapStateToProps = (state, ownProps) => ({
 })
 const mapDispatchToProps = dispatch => ({
-	onChange: (id, brightness) => dispatch(setTradfriiDeviceBrightness(id, brightness)),
+	onChange: (id, brightness) => dispatch(setDeviceBrightness(id, brightness)),
 })
 
 export default connect(mapStateToProps, mapDispatchToProps)(BrightnessSlider)

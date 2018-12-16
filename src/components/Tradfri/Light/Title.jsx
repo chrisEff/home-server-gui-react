@@ -3,7 +3,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import {connect} from 'react-redux'
-import {setTradfriDeviceName} from '../../../actions'
+import {setDeviceName} from '../../../actions/tradfri'
 
 class Title extends React.Component {
 
@@ -39,7 +39,7 @@ class Title extends React.Component {
 const mapStateToProps = (state, ownProps) => ({
 })
 const mapDispatchToProps = dispatch => ({
-	onChange: (id, name) => dispatch(setTradfriDeviceName(id, name)),
+	onChange: (id, name) => dispatch(setDeviceName(id, name)),
 })
 
 export default connect(mapStateToProps, mapDispatchToProps)(Title)
