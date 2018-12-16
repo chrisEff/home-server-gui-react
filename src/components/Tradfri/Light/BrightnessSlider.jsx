@@ -12,7 +12,7 @@ const BrightnessSlider = ({deviceId, brightness, onChange}) =>
 		min='0'
 		max='254'
 		defaultValue={brightness}
-		onMouseUp={(e) => onChange(deviceId, e.target.value)}
+		onMouseUp={(e) => onChange(deviceId, parseInt(e.target.value))}
 	/>
 
 BrightnessSlider.propTypes = {
