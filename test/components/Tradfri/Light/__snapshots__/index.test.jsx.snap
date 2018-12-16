@@ -5,21 +5,21 @@ exports[`Light should render correctly 1`] = `
   className="light neutraål"
 >
   <Connect(Title)
-    deviceid={65537}
+    deviceId={65537}
     title="Decke"
   />
   <Connect(Switch)
-    deviceid={65537}
+    deviceId={65537}
     state={0}
   />
   <Connect(BrightnessSlider)
     brightness={254}
-    deviceid={65537}
+    deviceId={65537}
   />
   <Connect(ColorSwitcher)
     bulbType="white-spectrum"
     color="neutraål"
-    deviceid={65537}
+    deviceId={65537}
   />
 </div>
 `;
