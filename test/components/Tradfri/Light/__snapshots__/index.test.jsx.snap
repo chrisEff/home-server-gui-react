@@ -4,22 +4,22 @@ exports[`Light should render correctly 1`] = `
 <div
   className="light neutraål"
 >
-  <Title
-    onChange={[Function]}
+  <Connect(Title)
+    deviceid={65537}
     title="Decke"
   />
-  <Switch
-    onchange={[Function]}
+  <Connect(Switch)
+    deviceid={65537}
     state={0}
   />
-  <BrightnessSlider
+  <Connect(BrightnessSlider)
     brightness={254}
-    onchange={[Function]}
+    deviceid={65537}
   />
-  <ColorSwitcher
+  <Connect(ColorSwitcher)
     bulbType="white-spectrum"
     color="neutraål"
-    onchange={[Function]}
+    deviceid={65537}
   />
 </div>
 `;

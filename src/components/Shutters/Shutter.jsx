@@ -18,7 +18,7 @@ const Shutter = ({shutter, onUp, onDown}) => {
 }
 
 Shutter.propTypes = {
-	id: PropTypes.number.isRequired,
+	id: PropTypes.number,
 	shutter: PropTypes.object.isRequired,
 	onUp: PropTypes.func,
 	onDown: PropTypes.func,

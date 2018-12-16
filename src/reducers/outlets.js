@@ -3,15 +3,7 @@ const outlets = (state = [], action) => {
 		case 'SET_OUTLETS':
 			return action.outlets
 		case 'SET_OUTLET_STATE':
-			return state.map(outlet => {
-				if (outlet.id !== action.id) {
-					return outlet
-				}
-				return {
-					...outlet,
-					state: action.state,
-				}
-			})
+			return state.map(outlet => outlet.id !== action.id ? outlet : {...outlet, state: action.state})
 		default:
 			return state
 	}

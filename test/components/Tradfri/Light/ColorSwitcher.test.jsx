@@ -1,7 +1,7 @@
 'use strict'
 
 import React from 'react'
-import ColorSwitcher from '../../../../src/components/Tradfri/Light/ColorSwitcher'
+import {ColorSwitcher} from '../../../../src/components/Tradfri/Light/ColorSwitcher'
 
 import {shallow} from 'enzyme'
 
@@ -18,7 +18,7 @@ describe.only('ColorSwitcher', () => {
 		['neutral'],
 		['cold'],
 	])('should render the rgb switcher correctly when %s is active', (color) => {
-		const wrapper = shallow(<ColorSwitcher bulbType="rgb" color={color} />)
+		const wrapper = shallow(<ColorSwitcher deviceId={1} bulbType="rgb" color={color} />)
 		expect(wrapper).toMatchSnapshot()
 	})
 
@@ -27,12 +27,12 @@ describe.only('ColorSwitcher', () => {
 		['neutral'],
 		['cold'],
 	])('should render the white-spectrum switcher correctly when %s is active', (color) => {
-		const wrapper = shallow(<ColorSwitcher bulbType="white-spectrum" color={color} />)
+		const wrapper = shallow(<ColorSwitcher deviceId={1} bulbType="white-spectrum" color={color} />)
 		expect(wrapper).toMatchSnapshot()
 	})
 
 	it('should render the white switcher correctly', () => {
-		const wrapper = shallow(<ColorSwitcher bulbType="white" color="neutral" />)
+		const wrapper = shallow(<ColorSwitcher deviceId={1} bulbType="white" color="neutral" />)
 		expect(wrapper).toMatchSnapshot()
 	})
 

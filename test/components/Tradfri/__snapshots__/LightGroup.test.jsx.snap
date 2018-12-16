@@ -7,23 +7,9 @@ exports[`LightGroup should render correctly 1`] = `
   <h3
     className="name"
     onClick={[Function]}
-  >
-    Test Group
-  </h3>
-  <Light
-    bulb={
-      Object {
-        "brightness": 254,
-        "bulbType": "white-spectrum",
-        "color": "neutraål",
-        "firmware": "1.2.217",
-        "id": 65537,
-        "model": "TRADFRI bulb E27 WS opal 980lm",
-        "name": "Decke",
-        "state": 0,
-        "type": "bulb",
-      }
-    }
+  />
+  <Connect(Light)
+    id={65537}
     key="Decke"
   />
 </div>

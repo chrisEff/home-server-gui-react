@@ -1,10 +1,11 @@
 'use strict'
 
-import homeServerApi from '../../homeServerApi'
-
 import React from 'react'
 import PropTypes from 'prop-types'
+import {connect} from 'react-redux'
+
 import Light from './Light'
+import {setTradfriGroupName} from '../../actions'
 
 class LightGroup extends React.Component {
 
@@ -17,7 +18,6 @@ class LightGroup extends React.Component {
 	constructor (props) {
 		super(props)
 		this.state = {
-			name: props.name,
 			editMode: false,
 		}
 	}
@@ -27,24 +27,27 @@ class LightGroup extends React.Component {
 			<div className='lightGroup'>
 				{!this.state.editMode && <h3 className='name' onClick={() => { this.setState({editMode: true}) }}>{this.state.name}</h3>}
 				{this.state.editMode && <div>
-					<input ref='name' defaultValue={this.state.name} />
-					<button onClick={() => { this.updateName(this.refs.name.value) }}>OK</button>
+					<input ref='name' defaultValue={this.props.name} />
+					<button onClick={() => { this.props.onSaveName(this.props.id, this.refs.name.value) }}>OK</button>
 				</div>}
 
 				{
 					this.props.devices
 						.filter(device => device.type === 'bulb')
-						.map(device => <Light key={device.name} bulb={device}/>)
+						.map(device => <Light key={device.name} id={device.id} />)
 				}
 			</div>
 		)
 	}
-
-	updateName = async (name) => {
-		await homeServerApi.put(`/tradfri/group/${this.props.id}/name/${name}`)
-
-		this.setState({name, editMode: false})
-	}
 }
 
-export default LightGroup
+const mapStateToProps = (state, ownProps) => ({
+	devices: state.tradfriDevices.filter(device => ownProps.deviceIds.includes(device.id)),
+})
+
+const mapDispatchToProps = dispatch => ({
+	onSaveName: (id, name) => dispatch(setTradfriGroupName(id, name)),
+})
+
+export default connect(mapStateToProps, mapDispatchToProps)(LightGroup)
+export {LightGroup}

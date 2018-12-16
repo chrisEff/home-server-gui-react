@@ -16,7 +16,7 @@ const RfOutlet = ({outlet, onToggle}) => {
 }
 
 RfOutlet.propTypes = {
-	id: PropTypes.number.isRequired,
+	id: PropTypes.number,
 	outlet: PropTypes.object.isRequired,
 	onToggle: PropTypes.func,
 }
