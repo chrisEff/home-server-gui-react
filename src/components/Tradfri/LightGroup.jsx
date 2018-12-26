@@ -34,6 +34,7 @@ class LightGroup extends React.Component {
 				{
 					this.props.devices
 						.filter(device => device.type === 'bulb')
+						.sort((a, b) => a.name.localeCompare(b.name))
 						.map(device => <Light key={device.name} id={device.id} />)
 				}
 			</div>
