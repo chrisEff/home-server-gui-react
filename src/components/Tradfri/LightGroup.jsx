@@ -25,7 +25,7 @@ class LightGroup extends React.Component {
 	render () {
 		return (
 			<div className='lightGroup'>
-				{!this.state.editMode && <h3 className='name' onClick={() => { this.setState({editMode: true}) }}>{this.state.name}</h3>}
+				{!this.state.editMode && <h3 className='name' onClick={() => { this.setState({editMode: true}) }}>{this.props.name}</h3>}
 				{this.state.editMode && <div>
 					<input ref='name' defaultValue={this.props.name} />
 					<button onClick={() => { this.props.onSaveName(this.props.id, this.refs.name.value) }}>OK</button>
