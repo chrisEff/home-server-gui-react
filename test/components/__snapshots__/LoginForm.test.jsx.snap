@@ -5,7 +5,6 @@ exports[`LoginForm should render correctly 1`] = `
   className="loginForm"
 >
   <br />
-  <br />
   <input
     name="apiUrl"
     placeholder="API URL"

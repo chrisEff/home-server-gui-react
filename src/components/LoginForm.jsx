@@ -7,7 +7,7 @@ class LoginForm extends React.Component {
 	render () {
 		return (
 			<div className='loginForm'>
-				<br/><br/>
+				<br/>
 
 				<input placeholder='API URL' type='text' name='apiUrl' ref='apiUrl' /><br/>
 				<input placeholder='API User' type='text' name='apiUser' ref='apiUser' /><br/>
