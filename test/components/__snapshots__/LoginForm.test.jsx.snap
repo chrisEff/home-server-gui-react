@@ -2,55 +2,27 @@
 
 exports[`LoginForm should render correctly 1`] = `
 <div
-  style={
-    Object {
-      "textAlign": "center",
-    }
-  }
+  className="loginForm"
 >
   <br />
   <br />
-  API URL:
-  <br />
   <input
     name="apiUrl"
-    style={
-      Object {
-        "width": 250,
-      }
-    }
+    placeholder="API URL"
     type="text"
   />
-  <br />
-  <br />
-  <br />
-  API User:
   <br />
   <input
     name="apiUser"
-    style={
-      Object {
-        "width": 250,
-      }
-    }
+    placeholder="API User"
     type="text"
   />
   <br />
-  <br />
-  <br />
-  API Key:
-  <br />
   <input
     name="apiKey"
-    style={
-      Object {
-        "width": 250,
-      }
-    }
+    placeholder="API Key"
     type="password"
   />
-  <br />
-  <br />
   <br />
   <button
     onClick={[Function]}
