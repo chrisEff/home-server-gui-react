@@ -199,3 +199,20 @@ h4 {
 .color-switcher .yellow div  { background-color: yellow; }
 .color-switcher .pink div    { background-color: deeppink; }
 .color-switcher .purple div  { background-color: mediumpurple; }
+
+.loginForm {
+	text-align: center;
+}
+
+.loginForm input {
+	border-width: 0 0 1px 0;
+}
+
+.loginForm input, .loginForm button {
+	background-color: transparent;
+	color: white;
+	font-size: 1.2em;
+	margin: 30px;
+	padding: 5px;
+	width: 350px;
+}
