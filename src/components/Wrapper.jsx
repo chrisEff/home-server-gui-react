@@ -39,14 +39,25 @@ class Wrapper extends React.Component {
 		window.localStorage.setItem('apiKey', apiKey)
 	}
 
+	unsetCredentials = () => {
+		this.setState({apiUrl: undefined, apiUser: undefined, apiKey: undefined})
+		homeServerApi.apiUrl = undefined
+		homeServerApi.apiUser = undefined
+		homeServerApi.apiKey = undefined
+
+		window.localStorage.removeItem('apiUrl')
+		window.localStorage.removeItem('apiUser')
+		window.localStorage.removeItem('apiKey')
+	}
+
 	render () {
-		if (!this.state.apiUrl) {
+		if (!homeServerApi.apiUrl) {
 			return <LoginForm onLogin={this.updateCredentials} />
 		}
 		return (
 			<div>
 				<div style={{float: 'right', backgroundColor: 'rgb(60, 63, 65)', padding: '10px', margin: '0 20px'}}>
-					<div onClick={() => this.updateCredentials(null, null, null)}>
+					<div onClick={this.unsetCredentials}>
 						Log out
 					</div>
 				</div>
