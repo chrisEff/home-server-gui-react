@@ -1,7 +1,7 @@
 'use strict'
 
 import React from 'react'
-import LoginForm from '../../src/components/LoginForm'
+import LoginForm from 'src/components/LoginForm'
 
 import {shallow} from 'enzyme'
 

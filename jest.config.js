@@ -23,4 +23,7 @@ module.exports = {
 		'./test/jestSetup.js',
 	],
 	testURL: 'http://localhost',
+	moduleNameMapper: {
+		'^src/(.*)$': '<rootDir>/src/$1',
+	},
 }
