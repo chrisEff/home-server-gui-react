@@ -2,22 +2,34 @@
 
 import React from 'react'
 import PropTypes from 'prop-types'
+import {connect} from 'react-redux'
 
 import TemperatureChart from './TemperatureChart'
 
-const TemperatureSensor = ({name, value, history}) => (
+const TemperatureSensor = ({sensor}) => (
 	<div className='tempSensor'>
-		<h4 className='name'>{name}</h4>
-		<div className='value'>{Math.round(value * 10) / 10}°C</div>
+		<h4 className='name'>{sensor.name}</h4>
+		<div className='value'>{Math.round(sensor.celsiusValue * 10) / 10}°C</div>
 
-		{ history && <TemperatureChart data={history} /> }
+		{ sensor.history && <TemperatureChart data={sensor.history} /> }
 	</div>
 )
 
 TemperatureSensor.propTypes = {
-	name: PropTypes.string.isRequired,
-	value: PropTypes.number,
-	history: PropTypes.array,
+	id: PropTypes.number,
+	sensor: PropTypes.shape({
+		name: PropTypes.string,
+		celsiusValue: PropTypes.number,
+		history: PropTypes.array,
+	}).isRequired,
 }
 
-export default TemperatureSensor
+const mapStateToProps = (state, ownProps) => ({
+	sensor: state.tempSensors.find(sensor => sensor.id === ownProps.id),
+})
+
+const mapDispatchToProps = dispatch => ({
+})
+
+export default connect(mapStateToProps, mapDispatchToProps)(TemperatureSensor)
+export {TemperatureSensor}

@@ -26,7 +26,7 @@ class Temperature extends React.Component {
 			<div id='temperature'>
 				<h2>{this.props.title}</h2>
 				{this.props.tempSensors.map(sensor =>
-					<TemperatureSensor key={sensor.id} name={sensor.name} value={sensor.celsiusValue} history={sensor.history}/>
+					<TemperatureSensor key={sensor.id}  id={sensor.id}/>
 				)}
 			</div>
 		)
