@@ -12,7 +12,9 @@ class Temperature extends React.Component {
 
 	static propTypes = {
 		title: PropTypes.string,
-		tempSensors: PropTypes.array,
+		tempSensors: PropTypes.arrayOf(
+			PropTypes.object
+		),
 	}
 
 	async componentDidMount () {

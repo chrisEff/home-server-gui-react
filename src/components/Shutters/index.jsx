@@ -11,8 +11,10 @@ import {loadShutters} from '../../actions/shutters'
 class Shutters extends React.Component {
 
 	static propTypes = {
-		title: PropTypes.string,
-		shutters: PropTypes.array,
+		title: PropTypes.string.isRequired,
+		shutters: PropTypes.arrayOf(
+			PropTypes.object
+		),
 	}
 
 	async componentDidMount () {
@@ -20,10 +22,12 @@ class Shutters extends React.Component {
 	}
 
 	render () {
-		return (
+		return !this.props.shutters ? <div/> : (
 			<div id='shutters'>
 				<h2>{this.props.title}</h2>
-				{this.props.shutters.map(shutter => <Shutter key={shutter.name} id={shutter.id}/>)}
+				{this.props.shutters.map(shutter =>
+					<Shutter key={shutter.name} id={shutter.id}/>
+				)}
 			</div>
 		)
 	}
