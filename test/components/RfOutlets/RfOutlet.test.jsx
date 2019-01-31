@@ -1,7 +1,7 @@
 'use strict'
 
 import React from 'react'
-import {RfOutlet} from 'src/components/RfOutlets/RfOutlet'
+import {RfOutlet} from '@/components/RfOutlets/RfOutlet'
 
 import {shallow} from 'enzyme'
 

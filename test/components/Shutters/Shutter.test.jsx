@@ -1,7 +1,7 @@
 'use strict'
 
 import React from 'react'
-import {Shutter} from 'src/components/Shutters/Shutter'
+import {Shutter} from '@/components/Shutters/Shutter'
 
 import {shallow} from 'enzyme'
 

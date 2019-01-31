@@ -3,7 +3,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import {connect} from 'react-redux'
-import {setDeviceState} from '../../../actions/tradfri'
+import {setDeviceState} from '@/actions/tradfri'
 
 let Switch = ({deviceId, state, onChange}) =>
 	<div className='bulb' onClick={() => onChange(deviceId, state ? 0 : 1)}>💡</div>

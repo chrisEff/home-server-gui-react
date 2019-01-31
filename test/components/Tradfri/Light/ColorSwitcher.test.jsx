@@ -1,7 +1,7 @@
 'use strict'
 
 import React from 'react'
-import {ColorSwitcher} from 'src/components/Tradfri/Light/ColorSwitcher'
+import {ColorSwitcher} from '@/components/Tradfri/Light/ColorSwitcher'
 
 import {shallow} from 'enzyme'
 

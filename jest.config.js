@@ -24,6 +24,7 @@ module.exports = {
 	],
 	testURL: 'http://localhost',
 	moduleNameMapper: {
-		'^src/(.*)$': '<rootDir>/src/$1',
+		// This is only for jest. Separate alias for webpack in webpack.config.js.
+		'^@/(.*)$': '<rootDir>/src/$1',
 	},
 }

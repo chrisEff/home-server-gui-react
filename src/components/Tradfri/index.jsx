@@ -6,7 +6,7 @@ import {connect} from 'react-redux'
 
 import LightGroup from './LightGroup'
 
-import {loadGroups, loadDevices} from '../../actions/tradfri'
+import {loadGroups, loadDevices} from '@/actions/tradfri'
 
 class Tradfri extends React.Component {
 

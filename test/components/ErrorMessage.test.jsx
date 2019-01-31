@@ -1,7 +1,7 @@
 'use strict'
 
 import React from 'react'
-import ErrorMessage from 'src/components/ErrorMessage'
+import ErrorMessage from '@/components/ErrorMessage'
 
 import {shallow} from 'enzyme'
 

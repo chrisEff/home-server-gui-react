@@ -5,7 +5,7 @@ import PropTypes from 'prop-types'
 import {connect} from 'react-redux'
 
 import Light from './Light'
-import {setGroupName} from '../../actions/tradfri'
+import {setGroupName} from '@/actions/tradfri'
 
 class LightGroup extends React.Component {
 

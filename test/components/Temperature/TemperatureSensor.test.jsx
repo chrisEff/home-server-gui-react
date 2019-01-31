@@ -1,7 +1,7 @@
 'use strict'
 
 import React from 'react'
-import {TemperatureSensor} from 'src/components/Temperature/TemperatureSensor'
+import {TemperatureSensor} from '@/components/Temperature/TemperatureSensor'
 
 import {shallow} from 'enzyme'
 

@@ -6,7 +6,7 @@ import {connect} from 'react-redux'
 
 import TemperatureSensor from './TemperatureSensor'
 
-import {loadTempSensors} from '../../actions/temperature'
+import {loadTempSensors} from '@/actions/temperature'
 
 class Temperature extends React.Component {
 

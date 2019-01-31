@@ -1,7 +1,7 @@
 'use strict'
 
 import React from 'react'
-import {Light} from 'src/components/Tradfri/Light'
+import {Light} from '@/components/Tradfri/Light'
 
 import {shallow} from 'enzyme'
 

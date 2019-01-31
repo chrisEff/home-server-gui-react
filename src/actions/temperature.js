@@ -1,6 +1,6 @@
 'use strict'
 
-import homeServerApi from '../homeServerApi'
+import homeServerApi from '@/homeServerApi'
 import {setErrorMessage} from './errorMessage'
 import dateFormat from 'dateformat'
 import sortBy from 'lodash.sortby'

@@ -3,7 +3,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import {connect} from 'react-redux'
-import {setDeviceBrightness} from '../../../actions/tradfri'
+import {setDeviceBrightness} from '@/actions/tradfri'
 
 const BrightnessSlider = ({deviceId, brightness, onChange}) =>
 	<input

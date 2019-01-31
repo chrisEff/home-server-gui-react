@@ -1,6 +1,6 @@
 'use strict'
 
-import homeServerApi from '../homeServerApi'
+import homeServerApi from '@/homeServerApi'
 
 import React from 'react'
 import {connect} from 'react-redux'

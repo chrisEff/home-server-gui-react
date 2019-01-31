@@ -6,7 +6,7 @@ import {connect} from 'react-redux'
 
 import Shutter from './Shutter'
 
-import {loadShutters} from '../../actions/shutters'
+import {loadShutters} from '@/actions/shutters'
 
 class Shutters extends React.Component {
 

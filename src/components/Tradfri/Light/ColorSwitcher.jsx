@@ -3,7 +3,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import {connect} from 'react-redux'
-import {setBulbColor} from '../../../actions/tradfri'
+import {setBulbColor} from '@/actions/tradfri'
 
 const ColorSwitcher = ({deviceId, bulbType, color, onChange}) => {
 	if (bulbType === 'rgb') {
