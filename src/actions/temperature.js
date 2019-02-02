@@ -6,13 +6,13 @@ import dateFormat from 'dateformat'
 import sortBy from 'lodash.sortby'
 
 const fetchHistory = async (sensorId, min, max) => {
-	return (await homeServerApi.get(`/tempSensors/${sensorId}/history`, {min, max})).json()
+	return homeServerApi.getTempSensorHistory(sensorId, min, max)
 }
 
 export const loadTempSensors = () => {
 	return async (dispatch) => {
 		try {
-			const response = await homeServerApi.get(`/tempSensors/`)
+			const response = await homeServerApi.getTempSensors()
 
 			const date = new Date()
 			date.setHours(0, 0, 0, 0)
@@ -21,7 +21,7 @@ export const loadTempSensors = () => {
 			date.setDate(date.getDate() - 1)
 			const timestampStartOfYesterday = Math.floor(date.getTime() / 1000)
 
-			const tempSensors = await Promise.all(Object.values(await response.json()).map(async sensor => {
+			const tempSensors = await Promise.all(Object.values(response).map(async sensor => {
 				const history = {}
 
 				const historyToday     = (await fetchHistory(sensor.id, timestampStartOfToday))
@@ -48,7 +48,7 @@ export const loadTempSensors = () => {
 			}))
 			dispatch({type: 'SET_TEMP_SENSORS', tempSensors})
 		} catch (e) {
-			dispatch(setErrorMessage('failed to load shutters: ' + e.message))
+			dispatch(setErrorMessage('failed to load temperature sensors: ' + e.message))
 		}
 	}
 }

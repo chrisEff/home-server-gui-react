@@ -3,7 +3,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import {connect} from 'react-redux'
-import {setBulbColor} from '@/actions/tradfri'
+import {setDeviceColor} from '@/actions/tradfri'
 
 const ColorSwitcher = ({deviceId, bulbType, color, onChange}) => {
 	if (bulbType === 'rgb') {
@@ -50,7 +50,7 @@ ColorSwitcher.propTypes = {
 const mapStateToProps = (state, ownProps) => ({
 })
 const mapDispatchToProps = dispatch => ({
-	onChange: (id, color) => dispatch(setBulbColor(id, color)),
+	onChange: (id, color) => dispatch(setDeviceColor(id, color)),
 })
 
 export default connect(mapStateToProps, mapDispatchToProps)(ColorSwitcher)

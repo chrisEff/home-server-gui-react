@@ -6,58 +6,77 @@ import {setErrorMessage} from './errorMessage'
 export const loadGroups = () => {
 	return async (dispatch) => {
 		try {
-			const groups = await (await homeServerApi.get(`/tradfri/group`)).json()
+			const groups = await homeServerApi.getTradfriGroups()
 			groups.sort((a, b) => a.name.localeCompare(b.name))
-
 			dispatch({type: 'SET_TRADFRI_GROUPS', groups})
 		} catch (e) {
 			dispatch(setErrorMessage('failed to load tradfri groups: ' + e.message))
 		}
 	}
 }
+
 export const loadDevices = () => {
 	return async (dispatch) => {
 		try {
-			const devices = await (await homeServerApi.get(`/tradfri/device`)).json()
-
+			const devices = await homeServerApi.getTradfriDevices()
 			dispatch({type: 'SET_TRADFRI_DEVICES', devices})
 		} catch (e) {
 			dispatch(setErrorMessage('failed to load tradfri devices: ' + e.message))
 		}
 	}
 }
+
 export const setGroupName = (id, name) => {
 	return async (dispatch) => {
 		try {
-			await homeServerApi.put(`/tradfri/group/${id}/name/${name}`)
-
+			await homeServerApi.setTradfriGroupName(id, name)
 			dispatch({type: 'SET_TRADFRI_GROUP_NAME', id, name})
 		} catch (e) {
-			dispatch(setErrorMessage('failed to load tradfri group name: ' + e.message))
+			dispatch(setErrorMessage('failed to set tradfri group name: ' + e.message))
 		}
 	}
 }
+
 export const setDeviceName = (id, name) => {
 	return async (dispatch) => {
-		await homeServerApi.put(`/tradfri/device/${id}/name/${name}`)
-		dispatch({type: 'SET_TRADFRI_DEVICE_NAME', id, name})
+		try {
+			await homeServerApi.setTradfriDeviceName(id, name)
+			dispatch({type: 'SET_TRADFRI_DEVICE_NAME', id, name})
+		} catch (e) {
+			dispatch(setErrorMessage('failed to set tradfri device name: ' + e.message))
+		}
 	}
 }
+
 export const setDeviceState = (id, state) => {
 	return async (dispatch) => {
-		await homeServerApi.put(`/tradfri/device/${id}/state/${state}`)
-		dispatch({type: 'SET_TRADFRI_DEVICE_STATE', id, state})
+		try {
+			await homeServerApi.setTradfriDeviceState(id, state)
+			dispatch({type: 'SET_TRADFRI_DEVICE_STATE', id, state})
+		} catch (e) {
+			dispatch(setErrorMessage('failed to set tradfri device state: ' + e.message))
+		}
 	}
 }
+
 export const setDeviceBrightness = (id, brightness) => {
 	return async (dispatch) => {
-		await homeServerApi.put(`/tradfri/device/${id}/brightness/${brightness}`)
-		dispatch({type: 'SET_TRADFRI_DEVICE_BRIGHTNESS', id, brightness})
+		try {
+			await homeServerApi.setTradfriDeviceBrightness(id, brightness)
+			dispatch({type: 'SET_TRADFRI_DEVICE_BRIGHTNESS', id, brightness})
+		} catch (e) {
+			dispatch(setErrorMessage('failed to set tradfri device brightness: ' + e.message))
+		}
 	}
 }
-export const setBulbColor = (id, color) => {
+
+export const setDeviceColor = (id, color) => {
 	return async (dispatch) => {
-		await homeServerApi.put(`/tradfri/device/${id}/color/${color}`)
-		dispatch({type: 'SET_TRADFRI_DEVICE_COLOR', id, color})
+		try {
+			await homeServerApi.setTradfriDeviceColor(id, color)
+			dispatch({type: 'SET_TRADFRI_DEVICE_COLOR', id, color})
+		} catch (e) {
+			dispatch(setErrorMessage('failed to set tradfri device color: ' + e.message))
+		}
 	}
 }
