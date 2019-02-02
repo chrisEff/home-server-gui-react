@@ -7,7 +7,7 @@ import {connect} from 'react-redux'
 import TemperatureChart from './TemperatureChart'
 
 const TemperatureSensor = ({sensor}) => (
-	<div className='tempSensor'>
+	<div style={styles.tempSensor} className='tempSensor'>
 		<h4 className='name'>{sensor.name}</h4>
 		<div className='value'>{Math.round(sensor.celsiusValue * 10) / 10}°C</div>
 
@@ -22,6 +22,13 @@ TemperatureSensor.propTypes = {
 		celsiusValue: PropTypes.number,
 		history: PropTypes.array,
 	}).isRequired,
+}
+
+const styles = {
+	tempSensor: {
+		height: '920px',
+		width: '280px',
+	},
 }
 
 const mapStateToProps = (state, ownProps) => ({

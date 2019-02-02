@@ -8,7 +8,7 @@ import {setOutletState} from '@/actions/outlets'
 
 const RfOutlet = ({outlet, onToggle}) => {
 	return (
-		<div className={outlet.state ? 'outlet on' : 'outlet'} onClick={() => onToggle(outlet.id, outlet.state ? 0 : 1)}>
+		<div style={styles.outlet} className={outlet.state ? 'outlet on' : 'outlet'} onClick={() => onToggle(outlet.id, outlet.state ? 0 : 1)}>
 			<h4>{outlet.name}</h4>
 			<div className='plug'>🔌</div>
 		</div>
@@ -19,6 +19,12 @@ RfOutlet.propTypes = {
 	id: PropTypes.number,
 	outlet: PropTypes.object.isRequired,
 	onToggle: PropTypes.func,
+}
+
+const styles = {
+	outlet: {
+		height: '200px',
+	},
 }
 
 const mapStateToProps = (state, ownProps) => ({

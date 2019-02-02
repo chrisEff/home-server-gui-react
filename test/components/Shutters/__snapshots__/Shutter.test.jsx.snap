@@ -3,6 +3,11 @@
 exports[`Shutter should render correctly 1`] = `
 <div
   className="shutter"
+  style={
+    Object {
+      "height": "200px",
+    }
+  }
 >
   <h4>
     Office

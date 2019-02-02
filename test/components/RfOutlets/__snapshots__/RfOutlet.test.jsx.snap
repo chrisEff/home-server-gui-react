@@ -4,6 +4,11 @@ exports[`RfOutlet should render correctly 1`] = `
 <div
   className="outlet"
   onClick={[Function]}
+  style={
+    Object {
+      "height": "200px",
+    }
+  }
 >
   <h4>
     Fernseher

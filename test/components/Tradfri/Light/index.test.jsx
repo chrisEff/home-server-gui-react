@@ -10,7 +10,7 @@ describe('Light', () => {
 		const wrapper = shallow(<Light bulb={{
 			brightness: 254,
 			bulbType: 'white-spectrum',
-			color: 'neutraål',
+			color: 'neutral',
 			firmware: '1.2.217',
 			id: 65537,
 			model: 'TRADFRI bulb E27 WS opal 980lm',

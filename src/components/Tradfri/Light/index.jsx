@@ -12,11 +12,11 @@ import Switch from './Switch'
 const Light = ({bulb}) => {
 	const className = bulb.state ? 'light on' : 'light'
 	return (
-		<div className={className + ' ' + bulb.color}>
+		<div style={styles.light} className={className + ' ' + bulb.color}>
 			<Title deviceId={bulb.id} title={bulb.name} />
 			<Switch deviceId={bulb.id} state={bulb.state} />
-			<BrightnessSlider deviceId={bulb.id} brightness={bulb.brightness} />
-			<ColorSwitcher deviceId={bulb.id} bulbType={bulb.bulbType} color={bulb.color} />
+			{!!bulb.state && <BrightnessSlider deviceId={bulb.id} brightness={bulb.brightness} />}
+			{!!bulb.state && <ColorSwitcher deviceId={bulb.id} bulbType={bulb.bulbType} selected={bulb.colors} />}
 		</div>
 	)
 }
@@ -24,6 +24,12 @@ const Light = ({bulb}) => {
 Light.propTypes = {
 	id: PropTypes.number,
 	bulb: PropTypes.object.isRequired,
+}
+
+const styles = {
+	light: {
+		height: '316px',
+	},
 }
 
 const mapStateToProps = (state, ownProps) => ({

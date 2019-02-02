@@ -2,7 +2,12 @@
 
 exports[`Light should render correctly 1`] = `
 <div
-  className="light neutraål"
+  className="light neutral"
+  style={
+    Object {
+      "height": "316px",
+    }
+  }
 >
   <Connect(Title)
     deviceId={65537}
@@ -11,15 +16,6 @@ exports[`Light should render correctly 1`] = `
   <Connect(Switch)
     deviceId={65537}
     state={0}
-  />
-  <Connect(BrightnessSlider)
-    brightness={254}
-    deviceId={65537}
-  />
-  <Connect(ColorSwitcher)
-    bulbType="white-spectrum"
-    color="neutraål"
-    deviceId={65537}
   />
 </div>
 `;

@@ -3,6 +3,12 @@
 exports[`TemperatureSensor should render correctly 1`] = `
 <div
   className="tempSensor"
+  style={
+    Object {
+      "height": "920px",
+      "width": "280px",
+    }
+  }
 >
   <h4
     className="name"

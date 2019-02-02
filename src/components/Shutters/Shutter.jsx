@@ -8,7 +8,7 @@ import {moveShutterUp, moveShutterDown} from '@/actions/shutters'
 
 const Shutter = ({shutter, onUp, onDown}) => {
 	return (
-		<div className='shutter'>
+		<div style={styles.shutter} className='shutter'>
 			<h4>{shutter.name}</h4>
 			<br/>
 			<span className='button' onClick={() => onUp(shutter.id)}>⬆️</span><br/>
@@ -22,6 +22,12 @@ Shutter.propTypes = {
 	shutter: PropTypes.object.isRequired,
 	onUp: PropTypes.func,
 	onDown: PropTypes.func,
+}
+
+const styles = {
+	shutter: {
+		height: '200px',
+	},
 }
 
 const mapStateToProps = (state, ownProps) => ({

@@ -7,7 +7,7 @@ import {setDeviceBrightness} from '@/actions/tradfri'
 
 const BrightnessSlider = ({deviceId, brightness, onChange}) =>
 	<input
-		className='brightness-slider'
+		style={styles.brightnessSlider}
 		type='range'
 		min='0'
 		max='254'
@@ -19,6 +19,13 @@ BrightnessSlider.propTypes = {
 	deviceId: PropTypes.number.isRequired,
 	brightness: PropTypes.number.isRequired,
 	onchange: PropTypes.func,
+}
+
+const styles = {
+	brightnessSlider: {
+		margin: '20px 0',
+		width: '120px',
+	},
 }
 
 const mapStateToProps = (state, ownProps) => ({

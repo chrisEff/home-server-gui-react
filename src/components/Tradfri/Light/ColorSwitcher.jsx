@@ -5,46 +5,58 @@ import PropTypes from 'prop-types'
 import {connect} from 'react-redux'
 import {setDeviceColor} from '@/actions/tradfri'
 
-const ColorSwitcher = ({deviceId, bulbType, color, onChange}) => {
+const ColorSwitcher = ({deviceId, bulbType, selected, onChange}) => {
+	let colors = ['neutral']
 	if (bulbType === 'rgb') {
-		return (
-			<div className='color-switcher'>
-				<div className={color === 'red'     ? 'color red active'     : 'color red'}     onClick={() => onChange(deviceId, 'red')}><div></div></div>
-				<div className={color === 'green'   ? 'color green active'   : 'color green'}   onClick={() => onChange(deviceId, 'green')}><div></div></div>
-				<div className={color === 'blue'    ? 'color blue active'    : 'color blue'}    onClick={() => onChange(deviceId, 'blue')}><div></div></div>
-				<div className={color === 'yellow'  ? 'color yellow active'  : 'color yellow'}  onClick={() => onChange(deviceId, 'yellow')}><div></div></div>
-				<div className={color === 'pink'    ? 'color pink active'    : 'color pink'}    onClick={() => onChange(deviceId, 'pink')}><div></div></div>
-				<div className={color === 'purple'  ? 'color purple active'  : 'color purple'}  onClick={() => onChange(deviceId, 'purple')}><div></div></div>
-				<div className={color === 'warm'    ? 'color warm active'    : 'color warm'}    onClick={() => onChange(deviceId, 'warm')}><div></div></div>
-				<div className={color === 'neutral' ? 'color neutral active' : 'color neutral'} onClick={() => onChange(deviceId, 'neutral')}><div></div></div>
-				<div className={color === 'cold'    ? 'color cold active'    : 'color cold'}    onClick={() => onChange(deviceId, 'cold')}><div></div></div>
-			</div>
-		)
+		colors = ['red', 'green', 'blue', 'yellow', 'pink', 'purple', 'warm', 'neutral', 'cold']
+	} else if (bulbType === 'white-spectrum') {
+		colors = ['warm', 'neutral', 'cold']
 	}
-	if (bulbType === 'white-spectrum') {
-		return (
-			<div className='color-switcher spectrum'>
-				<div className={color === 'warm'    ? 'color warm active'    : 'color warm'}    onClick={() => onChange(deviceId, 'warm')}><div></div></div>
-				<div className={color === 'neutral' ? 'color neutral active' : 'color neutral'} onClick={() => onChange(deviceId, 'neutral')}><div></div></div>
-				<div className={color === 'cold'    ? 'color cold active'    : 'color cold'}    onClick={() => onChange(deviceId, 'cold')}><div></div></div>
-			</div>
-		)
-	}
-	if (bulbType === 'white') {
-		return (
-			<div className='color-switcher white'>
-				<div className='color neutral active'><div></div></div>
-			</div>
-		)
-	}
-	return <div/>
+
+	return (
+		<div style={styles.colorSwitcher}>
+			{colors.map(color => (
+				<div key={`${deviceId}-color-${color}`} style={styles.color(selected === color)} onClick={() => onChange(deviceId, color)}>
+					<div style={{...styles.inner, ...styles.colors[color]}} />
+				</div>
+			))}
+		</div>
+	)
 }
 
 ColorSwitcher.propTypes = {
 	deviceId: PropTypes.number.isRequired,
 	bulbType: PropTypes.string.isRequired,
-	color: PropTypes.string,
+	selected: PropTypes.string,
 	onchange: PropTypes.func,
+}
+
+const styles = {
+	colorSwitcher: {
+		fontSize: 0,
+	},
+	color: (active) => ({
+		borderRadius: '20px',
+		border: active ? '2px solid #eee' : '2px solid transparent',
+		display: 'inline-block',
+	}),
+	inner: {
+		borderRadius: '15px',
+		margin: '3px',
+		height: '29px',
+		width: '29px',
+	},
+	colors: {
+		warm:    {backgroundColor: '#efd275'},
+		neutral: {backgroundColor: '#f1e0b5'},
+		cold:    {backgroundColor: '#f5faf6'},
+		red:     {backgroundColor: 'red'},
+		green:   {backgroundColor: 'green'},
+		blue:    {backgroundColor: 'blue'},
+		yellow:  {backgroundColor: 'yellow'},
+		pink:    {backgroundColor: 'deeppink'},
+		purple:  {backgroundColor: 'mediumpurple'},
+	},
 }
 
 const mapStateToProps = (state, ownProps) => ({
