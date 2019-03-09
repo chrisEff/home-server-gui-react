@@ -36,8 +36,10 @@ const styles = {
 		fontSize: 0,
 	},
 	color: (active) => ({
+		borderColor: active ? '#eee' : 'transparent',
 		borderRadius: '20px',
-		border: active ? '2px solid #eee' : '2px solid transparent',
+		borderStyle: 'solid',
+		borderWidth: 2,
 		display: 'inline-block',
 	}),
 	inner: {

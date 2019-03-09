@@ -24,7 +24,7 @@ class LightGroup extends React.Component {
 
 	render () {
 		return (
-			<div className='lightGroup'>
+			<div style={styles.lightGroup} className='lightGroup'>
 				{!this.state.editMode && <h3 className='name' onClick={() => { this.setState({editMode: true}) }}>{this.props.name}</h3>}
 				{this.state.editMode && <div>
 					<input ref='name' defaultValue={this.props.name} />
@@ -40,6 +40,12 @@ class LightGroup extends React.Component {
 			</div>
 		)
 	}
+}
+
+const styles = {
+	lightGroup: {
+		display: 'inline-block',
+	},
 }
 
 const mapStateToProps = (state, ownProps) => ({

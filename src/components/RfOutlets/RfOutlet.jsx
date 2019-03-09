@@ -10,7 +10,7 @@ const RfOutlet = ({outlet, onToggle}) => {
 	return (
 		<div style={styles.outlet} className={outlet.state ? 'outlet on' : 'outlet'} onClick={() => onToggle(outlet.id, outlet.state ? 0 : 1)}>
 			<h4>{outlet.name}</h4>
-			<div className='plug'>🔌</div>
+			<div style={outlet.state ? {...styles.plug, ...styles.on} : styles.plug} className='plug'>🔌</div>
 		</div>
 	)
 }
@@ -24,6 +24,17 @@ RfOutlet.propTypes = {
 const styles = {
 	outlet: {
 		height: '200px',
+	},
+	plug: {
+		filter: 'grayscale(100%) blur(5px)',
+		fontSize: 80,
+		paddingTop: '40px',
+		textAlign: 'center',
+		userSelect: 'none',
+	},
+	on: {
+		filter: 'none',
+		textShadow: '0 0 1px black, 0 0 50px #f5faf6',
 	},
 }
 

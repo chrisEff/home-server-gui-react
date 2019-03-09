@@ -3,6 +3,11 @@
 exports[`LightGroup should render correctly 1`] = `
 <div
   className="lightGroup"
+  style={
+    Object {
+      "display": "inline-block",
+    }
+  }
 >
   <h3
     className="name"

@@ -13,8 +13,10 @@ exports[`ColorSwitcher should render the rgb switcher correctly when blue is act
     onClick={[Function]}
     style={
       Object {
-        "border": "2px solid transparent",
+        "borderColor": "transparent",
         "borderRadius": "20px",
+        "borderStyle": "solid",
+        "borderWidth": 2,
         "display": "inline-block",
       }
     }
@@ -36,8 +38,10 @@ exports[`ColorSwitcher should render the rgb switcher correctly when blue is act
     onClick={[Function]}
     style={
       Object {
-        "border": "2px solid transparent",
+        "borderColor": "transparent",
         "borderRadius": "20px",
+        "borderStyle": "solid",
+        "borderWidth": 2,
         "display": "inline-block",
       }
     }
@@ -59,8 +63,10 @@ exports[`ColorSwitcher should render the rgb switcher correctly when blue is act
     onClick={[Function]}
     style={
       Object {
-        "border": "2px solid transparent",
+        "borderColor": "transparent",
         "borderRadius": "20px",
+        "borderStyle": "solid",
+        "borderWidth": 2,
         "display": "inline-block",
       }
     }
@@ -82,8 +88,10 @@ exports[`ColorSwitcher should render the rgb switcher correctly when blue is act
     onClick={[Function]}
     style={
       Object {
-        "border": "2px solid transparent",
+        "borderColor": "transparent",
         "borderRadius": "20px",
+        "borderStyle": "solid",
+        "borderWidth": 2,
         "display": "inline-block",
       }
     }
@@ -105,8 +113,10 @@ exports[`ColorSwitcher should render the rgb switcher correctly when blue is act
     onClick={[Function]}
     style={
       Object {
-        "border": "2px solid transparent",
+        "borderColor": "transparent",
         "borderRadius": "20px",
+        "borderStyle": "solid",
+        "borderWidth": 2,
         "display": "inline-block",
       }
     }
@@ -128,8 +138,10 @@ exports[`ColorSwitcher should render the rgb switcher correctly when blue is act
     onClick={[Function]}
     style={
       Object {
-        "border": "2px solid transparent",
+        "borderColor": "transparent",
         "borderRadius": "20px",
+        "borderStyle": "solid",
+        "borderWidth": 2,
         "display": "inline-block",
       }
     }
@@ -151,8 +163,10 @@ exports[`ColorSwitcher should render the rgb switcher correctly when blue is act
     onClick={[Function]}
     style={
       Object {
-        "border": "2px solid transparent",
+        "borderColor": "transparent",
         "borderRadius": "20px",
+        "borderStyle": "solid",
+        "borderWidth": 2,
         "display": "inline-block",
       }
     }
@@ -174,8 +188,10 @@ exports[`ColorSwitcher should render the rgb switcher correctly when blue is act
     onClick={[Function]}
     style={
       Object {
-        "border": "2px solid transparent",
+        "borderColor": "transparent",
         "borderRadius": "20px",
+        "borderStyle": "solid",
+        "borderWidth": 2,
         "display": "inline-block",
       }
     }
@@ -197,8 +213,10 @@ exports[`ColorSwitcher should render the rgb switcher correctly when blue is act
     onClick={[Function]}
     style={
       Object {
-        "border": "2px solid transparent",
+        "borderColor": "transparent",
         "borderRadius": "20px",
+        "borderStyle": "solid",
+        "borderWidth": 2,
         "display": "inline-block",
       }
     }
@@ -231,8 +249,10 @@ exports[`ColorSwitcher should render the rgb switcher correctly when cold is act
     onClick={[Function]}
     style={
       Object {
-        "border": "2px solid transparent",
+        "borderColor": "transparent",
         "borderRadius": "20px",
+        "borderStyle": "solid",
+        "borderWidth": 2,
         "display": "inline-block",
       }
     }
@@ -254,8 +274,10 @@ exports[`ColorSwitcher should render the rgb switcher correctly when cold is act
     onClick={[Function]}
     style={
       Object {
-        "border": "2px solid transparent",
+        "borderColor": "transparent",
         "borderRadius": "20px",
+        "borderStyle": "solid",
+        "borderWidth": 2,
         "display": "inline-block",
       }
     }
@@ -277,8 +299,10 @@ exports[`ColorSwitcher should render the rgb switcher correctly when cold is act
     onClick={[Function]}
     style={
       Object {
-        "border": "2px solid transparent",
+        "borderColor": "transparent",
         "borderRadius": "20px",
+        "borderStyle": "solid",
+        "borderWidth": 2,
         "display": "inline-block",
       }
     }
@@ -300,8 +324,10 @@ exports[`ColorSwitcher should render the rgb switcher correctly when cold is act
     onClick={[Function]}
     style={
       Object {
-        "border": "2px solid transparent",
+        "borderColor": "transparent",
         "borderRadius": "20px",
+        "borderStyle": "solid",
+        "borderWidth": 2,
         "display": "inline-block",
       }
     }
@@ -323,8 +349,10 @@ exports[`ColorSwitcher should render the rgb switcher correctly when cold is act
     onClick={[Function]}
     style={
       Object {
-        "border": "2px solid transparent",
+        "borderColor": "transparent",
         "borderRadius": "20px",
+        "borderStyle": "solid",
+        "borderWidth": 2,
         "display": "inline-block",
       }
     }
@@ -346,8 +374,10 @@ exports[`ColorSwitcher should render the rgb switcher correctly when cold is act
     onClick={[Function]}
     style={
       Object {
-        "border": "2px solid transparent",
+        "borderColor": "transparent",
         "borderRadius": "20px",
+        "borderStyle": "solid",
+        "borderWidth": 2,
         "display": "inline-block",
       }
     }
@@ -369,8 +399,10 @@ exports[`ColorSwitcher should render the rgb switcher correctly when cold is act
     onClick={[Function]}
     style={
       Object {
-        "border": "2px solid transparent",
+        "borderColor": "transparent",
         "borderRadius": "20px",
+        "borderStyle": "solid",
+        "borderWidth": 2,
         "display": "inline-block",
       }
     }
@@ -392,8 +424,10 @@ exports[`ColorSwitcher should render the rgb switcher correctly when cold is act
     onClick={[Function]}
     style={
       Object {
-        "border": "2px solid transparent",
+        "borderColor": "transparent",
         "borderRadius": "20px",
+        "borderStyle": "solid",
+        "borderWidth": 2,
         "display": "inline-block",
       }
     }
@@ -415,8 +449,10 @@ exports[`ColorSwitcher should render the rgb switcher correctly when cold is act
     onClick={[Function]}
     style={
       Object {
-        "border": "2px solid transparent",
+        "borderColor": "transparent",
         "borderRadius": "20px",
+        "borderStyle": "solid",
+        "borderWidth": 2,
         "display": "inline-block",
       }
     }
@@ -449,8 +485,10 @@ exports[`ColorSwitcher should render the rgb switcher correctly when green is ac
     onClick={[Function]}
     style={
       Object {
-        "border": "2px solid transparent",
+        "borderColor": "transparent",
         "borderRadius": "20px",
+        "borderStyle": "solid",
+        "borderWidth": 2,
         "display": "inline-block",
       }
     }
@@ -472,8 +510,10 @@ exports[`ColorSwitcher should render the rgb switcher correctly when green is ac
     onClick={[Function]}
     style={
       Object {
-        "border": "2px solid transparent",
+        "borderColor": "transparent",
         "borderRadius": "20px",
+        "borderStyle": "solid",
+        "borderWidth": 2,
         "display": "inline-block",
       }
     }
@@ -495,8 +535,10 @@ exports[`ColorSwitcher should render the rgb switcher correctly when green is ac
     onClick={[Function]}
     style={
       Object {
-        "border": "2px solid transparent",
+        "borderColor": "transparent",
         "borderRadius": "20px",
+        "borderStyle": "solid",
+        "borderWidth": 2,
         "display": "inline-block",
       }
     }
@@ -518,8 +560,10 @@ exports[`ColorSwitcher should render the rgb switcher correctly when green is ac
     onClick={[Function]}
     style={
       Object {
-        "border": "2px solid transparent",
+        "borderColor": "transparent",
         "borderRadius": "20px",
+        "borderStyle": "solid",
+        "borderWidth": 2,
         "display": "inline-block",
       }
     }
@@ -541,8 +585,10 @@ exports[`ColorSwitcher should render the rgb switcher correctly when green is ac
     onClick={[Function]}
     style={
       Object {
-        "border": "2px solid transparent",
+        "borderColor": "transparent",
         "borderRadius": "20px",
+        "borderStyle": "solid",
+        "borderWidth": 2,
         "display": "inline-block",
       }
     }
@@ -564,8 +610,10 @@ exports[`ColorSwitcher should render the rgb switcher correctly when green is ac
     onClick={[Function]}
     style={
       Object {
-        "border": "2px solid transparent",
+        "borderColor": "transparent",
         "borderRadius": "20px",
+        "borderStyle": "solid",
+        "borderWidth": 2,
         "display": "inline-block",
       }
     }
@@ -587,8 +635,10 @@ exports[`ColorSwitcher should render the rgb switcher correctly when green is ac
     onClick={[Function]}
     style={
       Object {
-        "border": "2px solid transparent",
+        "borderColor": "transparent",
         "borderRadius": "20px",
+        "borderStyle": "solid",
+        "borderWidth": 2,
         "display": "inline-block",
       }
     }
@@ -610,8 +660,10 @@ exports[`ColorSwitcher should render the rgb switcher correctly when green is ac
     onClick={[Function]}
     style={
       Object {
-        "border": "2px solid transparent",
+        "borderColor": "transparent",
         "borderRadius": "20px",
+        "borderStyle": "solid",
+        "borderWidth": 2,
         "display": "inline-block",
       }
     }
@@ -633,8 +685,10 @@ exports[`ColorSwitcher should render the rgb switcher correctly when green is ac
     onClick={[Function]}
     style={
       Object {
-        "border": "2px solid transparent",
+        "borderColor": "transparent",
         "borderRadius": "20px",
+        "borderStyle": "solid",
+        "borderWidth": 2,
         "display": "inline-block",
       }
     }
@@ -667,8 +721,10 @@ exports[`ColorSwitcher should render the rgb switcher correctly when neutral is 
     onClick={[Function]}
     style={
       Object {
-        "border": "2px solid transparent",
+        "borderColor": "transparent",
         "borderRadius": "20px",
+        "borderStyle": "solid",
+        "borderWidth": 2,
         "display": "inline-block",
       }
     }
@@ -690,8 +746,10 @@ exports[`ColorSwitcher should render the rgb switcher correctly when neutral is 
     onClick={[Function]}
     style={
       Object {
-        "border": "2px solid transparent",
+        "borderColor": "transparent",
         "borderRadius": "20px",
+        "borderStyle": "solid",
+        "borderWidth": 2,
         "display": "inline-block",
       }
     }
@@ -713,8 +771,10 @@ exports[`ColorSwitcher should render the rgb switcher correctly when neutral is 
     onClick={[Function]}
     style={
       Object {
-        "border": "2px solid transparent",
+        "borderColor": "transparent",
         "borderRadius": "20px",
+        "borderStyle": "solid",
+        "borderWidth": 2,
         "display": "inline-block",
       }
     }
@@ -736,8 +796,10 @@ exports[`ColorSwitcher should render the rgb switcher correctly when neutral is 
     onClick={[Function]}
     style={
       Object {
-        "border": "2px solid transparent",
+        "borderColor": "transparent",
         "borderRadius": "20px",
+        "borderStyle": "solid",
+        "borderWidth": 2,
         "display": "inline-block",
       }
     }
@@ -759,8 +821,10 @@ exports[`ColorSwitcher should render the rgb switcher correctly when neutral is 
     onClick={[Function]}
     style={
       Object {
-        "border": "2px solid transparent",
+        "borderColor": "transparent",
         "borderRadius": "20px",
+        "borderStyle": "solid",
+        "borderWidth": 2,
         "display": "inline-block",
       }
     }
@@ -782,8 +846,10 @@ exports[`ColorSwitcher should render the rgb switcher correctly when neutral is 
     onClick={[Function]}
     style={
       Object {
-        "border": "2px solid transparent",
+        "borderColor": "transparent",
         "borderRadius": "20px",
+        "borderStyle": "solid",
+        "borderWidth": 2,
         "display": "inline-block",
       }
     }
@@ -805,8 +871,10 @@ exports[`ColorSwitcher should render the rgb switcher correctly when neutral is 
     onClick={[Function]}
     style={
       Object {
-        "border": "2px solid transparent",
+        "borderColor": "transparent",
         "borderRadius": "20px",
+        "borderStyle": "solid",
+        "borderWidth": 2,
         "display": "inline-block",
       }
     }
@@ -828,8 +896,10 @@ exports[`ColorSwitcher should render the rgb switcher correctly when neutral is 
     onClick={[Function]}
     style={
       Object {
-        "border": "2px solid transparent",
+        "borderColor": "transparent",
         "borderRadius": "20px",
+        "borderStyle": "solid",
+        "borderWidth": 2,
         "display": "inline-block",
       }
     }
@@ -851,8 +921,10 @@ exports[`ColorSwitcher should render the rgb switcher correctly when neutral is 
     onClick={[Function]}
     style={
       Object {
-        "border": "2px solid transparent",
+        "borderColor": "transparent",
         "borderRadius": "20px",
+        "borderStyle": "solid",
+        "borderWidth": 2,
         "display": "inline-block",
       }
     }
@@ -885,8 +957,10 @@ exports[`ColorSwitcher should render the rgb switcher correctly when pink is act
     onClick={[Function]}
     style={
       Object {
-        "border": "2px solid transparent",
+        "borderColor": "transparent",
         "borderRadius": "20px",
+        "borderStyle": "solid",
+        "borderWidth": 2,
         "display": "inline-block",
       }
     }
@@ -908,8 +982,10 @@ exports[`ColorSwitcher should render the rgb switcher correctly when pink is act
     onClick={[Function]}
     style={
       Object {
-        "border": "2px solid transparent",
+        "borderColor": "transparent",
         "borderRadius": "20px",
+        "borderStyle": "solid",
+        "borderWidth": 2,
         "display": "inline-block",
       }
     }
@@ -931,8 +1007,10 @@ exports[`ColorSwitcher should render the rgb switcher correctly when pink is act
     onClick={[Function]}
     style={
       Object {
-        "border": "2px solid transparent",
+        "borderColor": "transparent",
         "borderRadius": "20px",
+        "borderStyle": "solid",
+        "borderWidth": 2,
         "display": "inline-block",
       }
     }
@@ -954,8 +1032,10 @@ exports[`ColorSwitcher should render the rgb switcher correctly when pink is act
     onClick={[Function]}
     style={
       Object {
-        "border": "2px solid transparent",
+        "borderColor": "transparent",
         "borderRadius": "20px",
+        "borderStyle": "solid",
+        "borderWidth": 2,
         "display": "inline-block",
       }
     }
@@ -977,8 +1057,10 @@ exports[`ColorSwitcher should render the rgb switcher correctly when pink is act
     onClick={[Function]}
     style={
       Object {
-        "border": "2px solid transparent",
+        "borderColor": "transparent",
         "borderRadius": "20px",
+        "borderStyle": "solid",
+        "borderWidth": 2,
         "display": "inline-block",
       }
     }
@@ -1000,8 +1082,10 @@ exports[`ColorSwitcher should render the rgb switcher correctly when pink is act
     onClick={[Function]}
     style={
       Object {
-        "border": "2px solid transparent",
+        "borderColor": "transparent",
         "borderRadius": "20px",
+        "borderStyle": "solid",
+        "borderWidth": 2,
         "display": "inline-block",
       }
     }
@@ -1023,8 +1107,10 @@ exports[`ColorSwitcher should render the rgb switcher correctly when pink is act
     onClick={[Function]}
     style={
       Object {
-        "border": "2px solid transparent",
+        "borderColor": "transparent",
         "borderRadius": "20px",
+        "borderStyle": "solid",
+        "borderWidth": 2,
         "display": "inline-block",
       }
     }
@@ -1046,8 +1132,10 @@ exports[`ColorSwitcher should render the rgb switcher correctly when pink is act
     onClick={[Function]}
     style={
       Object {
-        "border": "2px solid transparent",
+        "borderColor": "transparent",
         "borderRadius": "20px",
+        "borderStyle": "solid",
+        "borderWidth": 2,
         "display": "inline-block",
       }
     }
@@ -1069,8 +1157,10 @@ exports[`ColorSwitcher should render the rgb switcher correctly when pink is act
     onClick={[Function]}
     style={
       Object {
-        "border": "2px solid transparent",
+        "borderColor": "transparent",
         "borderRadius": "20px",
+        "borderStyle": "solid",
+        "borderWidth": 2,
         "display": "inline-block",
       }
     }
@@ -1103,8 +1193,10 @@ exports[`ColorSwitcher should render the rgb switcher correctly when purple is a
     onClick={[Function]}
     style={
       Object {
-        "border": "2px solid transparent",
+        "borderColor": "transparent",
         "borderRadius": "20px",
+        "borderStyle": "solid",
+        "borderWidth": 2,
         "display": "inline-block",
       }
     }
@@ -1126,8 +1218,10 @@ exports[`ColorSwitcher should render the rgb switcher correctly when purple is a
     onClick={[Function]}
     style={
       Object {
-        "border": "2px solid transparent",
+        "borderColor": "transparent",
         "borderRadius": "20px",
+        "borderStyle": "solid",
+        "borderWidth": 2,
         "display": "inline-block",
       }
     }
@@ -1149,8 +1243,10 @@ exports[`ColorSwitcher should render the rgb switcher correctly when purple is a
     onClick={[Function]}
     style={
       Object {
-        "border": "2px solid transparent",
+        "borderColor": "transparent",
         "borderRadius": "20px",
+        "borderStyle": "solid",
+        "borderWidth": 2,
         "display": "inline-block",
       }
     }
@@ -1172,8 +1268,10 @@ exports[`ColorSwitcher should render the rgb switcher correctly when purple is a
     onClick={[Function]}
     style={
       Object {
-        "border": "2px solid transparent",
+        "borderColor": "transparent",
         "borderRadius": "20px",
+        "borderStyle": "solid",
+        "borderWidth": 2,
         "display": "inline-block",
       }
     }
@@ -1195,8 +1293,10 @@ exports[`ColorSwitcher should render the rgb switcher correctly when purple is a
     onClick={[Function]}
     style={
       Object {
-        "border": "2px solid transparent",
+        "borderColor": "transparent",
         "borderRadius": "20px",
+        "borderStyle": "solid",
+        "borderWidth": 2,
         "display": "inline-block",
       }
     }
@@ -1218,8 +1318,10 @@ exports[`ColorSwitcher should render the rgb switcher correctly when purple is a
     onClick={[Function]}
     style={
       Object {
-        "border": "2px solid transparent",
+        "borderColor": "transparent",
         "borderRadius": "20px",
+        "borderStyle": "solid",
+        "borderWidth": 2,
         "display": "inline-block",
       }
     }
@@ -1241,8 +1343,10 @@ exports[`ColorSwitcher should render the rgb switcher correctly when purple is a
     onClick={[Function]}
     style={
       Object {
-        "border": "2px solid transparent",
+        "borderColor": "transparent",
         "borderRadius": "20px",
+        "borderStyle": "solid",
+        "borderWidth": 2,
         "display": "inline-block",
       }
     }
@@ -1264,8 +1368,10 @@ exports[`ColorSwitcher should render the rgb switcher correctly when purple is a
     onClick={[Function]}
     style={
       Object {
-        "border": "2px solid transparent",
+        "borderColor": "transparent",
         "borderRadius": "20px",
+        "borderStyle": "solid",
+        "borderWidth": 2,
         "display": "inline-block",
       }
     }
@@ -1287,8 +1393,10 @@ exports[`ColorSwitcher should render the rgb switcher correctly when purple is a
     onClick={[Function]}
     style={
       Object {
-        "border": "2px solid transparent",
+        "borderColor": "transparent",
         "borderRadius": "20px",
+        "borderStyle": "solid",
+        "borderWidth": 2,
         "display": "inline-block",
       }
     }
@@ -1321,8 +1429,10 @@ exports[`ColorSwitcher should render the rgb switcher correctly when red is acti
     onClick={[Function]}
     style={
       Object {
-        "border": "2px solid transparent",
+        "borderColor": "transparent",
         "borderRadius": "20px",
+        "borderStyle": "solid",
+        "borderWidth": 2,
         "display": "inline-block",
       }
     }
@@ -1344,8 +1454,10 @@ exports[`ColorSwitcher should render the rgb switcher correctly when red is acti
     onClick={[Function]}
     style={
       Object {
-        "border": "2px solid transparent",
+        "borderColor": "transparent",
         "borderRadius": "20px",
+        "borderStyle": "solid",
+        "borderWidth": 2,
         "display": "inline-block",
       }
     }
@@ -1367,8 +1479,10 @@ exports[`ColorSwitcher should render the rgb switcher correctly when red is acti
     onClick={[Function]}
     style={
       Object {
-        "border": "2px solid transparent",
+        "borderColor": "transparent",
         "borderRadius": "20px",
+        "borderStyle": "solid",
+        "borderWidth": 2,
         "display": "inline-block",
       }
     }
@@ -1390,8 +1504,10 @@ exports[`ColorSwitcher should render the rgb switcher correctly when red is acti
     onClick={[Function]}
     style={
       Object {
-        "border": "2px solid transparent",
+        "borderColor": "transparent",
         "borderRadius": "20px",
+        "borderStyle": "solid",
+        "borderWidth": 2,
         "display": "inline-block",
       }
     }
@@ -1413,8 +1529,10 @@ exports[`ColorSwitcher should render the rgb switcher correctly when red is acti
     onClick={[Function]}
     style={
       Object {
-        "border": "2px solid transparent",
+        "borderColor": "transparent",
         "borderRadius": "20px",
+        "borderStyle": "solid",
+        "borderWidth": 2,
         "display": "inline-block",
       }
     }
@@ -1436,8 +1554,10 @@ exports[`ColorSwitcher should render the rgb switcher correctly when red is acti
     onClick={[Function]}
     style={
       Object {
-        "border": "2px solid transparent",
+        "borderColor": "transparent",
         "borderRadius": "20px",
+        "borderStyle": "solid",
+        "borderWidth": 2,
         "display": "inline-block",
       }
     }
@@ -1459,8 +1579,10 @@ exports[`ColorSwitcher should render the rgb switcher correctly when red is acti
     onClick={[Function]}
     style={
       Object {
-        "border": "2px solid transparent",
+        "borderColor": "transparent",
         "borderRadius": "20px",
+        "borderStyle": "solid",
+        "borderWidth": 2,
         "display": "inline-block",
       }
     }
@@ -1482,8 +1604,10 @@ exports[`ColorSwitcher should render the rgb switcher correctly when red is acti
     onClick={[Function]}
     style={
       Object {
-        "border": "2px solid transparent",
+        "borderColor": "transparent",
         "borderRadius": "20px",
+        "borderStyle": "solid",
+        "borderWidth": 2,
         "display": "inline-block",
       }
     }
@@ -1505,8 +1629,10 @@ exports[`ColorSwitcher should render the rgb switcher correctly when red is acti
     onClick={[Function]}
     style={
       Object {
-        "border": "2px solid transparent",
+        "borderColor": "transparent",
         "borderRadius": "20px",
+        "borderStyle": "solid",
+        "borderWidth": 2,
         "display": "inline-block",
       }
     }
@@ -1539,8 +1665,10 @@ exports[`ColorSwitcher should render the rgb switcher correctly when warm is act
     onClick={[Function]}
     style={
       Object {
-        "border": "2px solid transparent",
+        "borderColor": "transparent",
         "borderRadius": "20px",
+        "borderStyle": "solid",
+        "borderWidth": 2,
         "display": "inline-block",
       }
     }
@@ -1562,8 +1690,10 @@ exports[`ColorSwitcher should render the rgb switcher correctly when warm is act
     onClick={[Function]}
     style={
       Object {
-        "border": "2px solid transparent",
+        "borderColor": "transparent",
         "borderRadius": "20px",
+        "borderStyle": "solid",
+        "borderWidth": 2,
         "display": "inline-block",
       }
     }
@@ -1585,8 +1715,10 @@ exports[`ColorSwitcher should render the rgb switcher correctly when warm is act
     onClick={[Function]}
     style={
       Object {
-        "border": "2px solid transparent",
+        "borderColor": "transparent",
         "borderRadius": "20px",
+        "borderStyle": "solid",
+        "borderWidth": 2,
         "display": "inline-block",
       }
     }
@@ -1608,8 +1740,10 @@ exports[`ColorSwitcher should render the rgb switcher correctly when warm is act
     onClick={[Function]}
     style={
       Object {
-        "border": "2px solid transparent",
+        "borderColor": "transparent",
         "borderRadius": "20px",
+        "borderStyle": "solid",
+        "borderWidth": 2,
         "display": "inline-block",
       }
     }
@@ -1631,8 +1765,10 @@ exports[`ColorSwitcher should render the rgb switcher correctly when warm is act
     onClick={[Function]}
     style={
       Object {
-        "border": "2px solid transparent",
+        "borderColor": "transparent",
         "borderRadius": "20px",
+        "borderStyle": "solid",
+        "borderWidth": 2,
         "display": "inline-block",
       }
     }
@@ -1654,8 +1790,10 @@ exports[`ColorSwitcher should render the rgb switcher correctly when warm is act
     onClick={[Function]}
     style={
       Object {
-        "border": "2px solid transparent",
+        "borderColor": "transparent",
         "borderRadius": "20px",
+        "borderStyle": "solid",
+        "borderWidth": 2,
         "display": "inline-block",
       }
     }
@@ -1677,8 +1815,10 @@ exports[`ColorSwitcher should render the rgb switcher correctly when warm is act
     onClick={[Function]}
     style={
       Object {
-        "border": "2px solid transparent",
+        "borderColor": "transparent",
         "borderRadius": "20px",
+        "borderStyle": "solid",
+        "borderWidth": 2,
         "display": "inline-block",
       }
     }
@@ -1700,8 +1840,10 @@ exports[`ColorSwitcher should render the rgb switcher correctly when warm is act
     onClick={[Function]}
     style={
       Object {
-        "border": "2px solid transparent",
+        "borderColor": "transparent",
         "borderRadius": "20px",
+        "borderStyle": "solid",
+        "borderWidth": 2,
         "display": "inline-block",
       }
     }
@@ -1723,8 +1865,10 @@ exports[`ColorSwitcher should render the rgb switcher correctly when warm is act
     onClick={[Function]}
     style={
       Object {
-        "border": "2px solid transparent",
+        "borderColor": "transparent",
         "borderRadius": "20px",
+        "borderStyle": "solid",
+        "borderWidth": 2,
         "display": "inline-block",
       }
     }
@@ -1757,8 +1901,10 @@ exports[`ColorSwitcher should render the rgb switcher correctly when yellow is a
     onClick={[Function]}
     style={
       Object {
-        "border": "2px solid transparent",
+        "borderColor": "transparent",
         "borderRadius": "20px",
+        "borderStyle": "solid",
+        "borderWidth": 2,
         "display": "inline-block",
       }
     }
@@ -1780,8 +1926,10 @@ exports[`ColorSwitcher should render the rgb switcher correctly when yellow is a
     onClick={[Function]}
     style={
       Object {
-        "border": "2px solid transparent",
+        "borderColor": "transparent",
         "borderRadius": "20px",
+        "borderStyle": "solid",
+        "borderWidth": 2,
         "display": "inline-block",
       }
     }
@@ -1803,8 +1951,10 @@ exports[`ColorSwitcher should render the rgb switcher correctly when yellow is a
     onClick={[Function]}
     style={
       Object {
-        "border": "2px solid transparent",
+        "borderColor": "transparent",
         "borderRadius": "20px",
+        "borderStyle": "solid",
+        "borderWidth": 2,
         "display": "inline-block",
       }
     }
@@ -1826,8 +1976,10 @@ exports[`ColorSwitcher should render the rgb switcher correctly when yellow is a
     onClick={[Function]}
     style={
       Object {
-        "border": "2px solid transparent",
+        "borderColor": "transparent",
         "borderRadius": "20px",
+        "borderStyle": "solid",
+        "borderWidth": 2,
         "display": "inline-block",
       }
     }
@@ -1849,8 +2001,10 @@ exports[`ColorSwitcher should render the rgb switcher correctly when yellow is a
     onClick={[Function]}
     style={
       Object {
-        "border": "2px solid transparent",
+        "borderColor": "transparent",
         "borderRadius": "20px",
+        "borderStyle": "solid",
+        "borderWidth": 2,
         "display": "inline-block",
       }
     }
@@ -1872,8 +2026,10 @@ exports[`ColorSwitcher should render the rgb switcher correctly when yellow is a
     onClick={[Function]}
     style={
       Object {
-        "border": "2px solid transparent",
+        "borderColor": "transparent",
         "borderRadius": "20px",
+        "borderStyle": "solid",
+        "borderWidth": 2,
         "display": "inline-block",
       }
     }
@@ -1895,8 +2051,10 @@ exports[`ColorSwitcher should render the rgb switcher correctly when yellow is a
     onClick={[Function]}
     style={
       Object {
-        "border": "2px solid transparent",
+        "borderColor": "transparent",
         "borderRadius": "20px",
+        "borderStyle": "solid",
+        "borderWidth": 2,
         "display": "inline-block",
       }
     }
@@ -1918,8 +2076,10 @@ exports[`ColorSwitcher should render the rgb switcher correctly when yellow is a
     onClick={[Function]}
     style={
       Object {
-        "border": "2px solid transparent",
+        "borderColor": "transparent",
         "borderRadius": "20px",
+        "borderStyle": "solid",
+        "borderWidth": 2,
         "display": "inline-block",
       }
     }
@@ -1941,8 +2101,10 @@ exports[`ColorSwitcher should render the rgb switcher correctly when yellow is a
     onClick={[Function]}
     style={
       Object {
-        "border": "2px solid transparent",
+        "borderColor": "transparent",
         "borderRadius": "20px",
+        "borderStyle": "solid",
+        "borderWidth": 2,
         "display": "inline-block",
       }
     }
@@ -1975,8 +2137,10 @@ exports[`ColorSwitcher should render the white switcher correctly 1`] = `
     onClick={[Function]}
     style={
       Object {
-        "border": "2px solid transparent",
+        "borderColor": "transparent",
         "borderRadius": "20px",
+        "borderStyle": "solid",
+        "borderWidth": 2,
         "display": "inline-block",
       }
     }
@@ -2009,8 +2173,10 @@ exports[`ColorSwitcher should render the white-spectrum switcher correctly when 
     onClick={[Function]}
     style={
       Object {
-        "border": "2px solid transparent",
+        "borderColor": "transparent",
         "borderRadius": "20px",
+        "borderStyle": "solid",
+        "borderWidth": 2,
         "display": "inline-block",
       }
     }
@@ -2032,8 +2198,10 @@ exports[`ColorSwitcher should render the white-spectrum switcher correctly when 
     onClick={[Function]}
     style={
       Object {
-        "border": "2px solid transparent",
+        "borderColor": "transparent",
         "borderRadius": "20px",
+        "borderStyle": "solid",
+        "borderWidth": 2,
         "display": "inline-block",
       }
     }
@@ -2055,8 +2223,10 @@ exports[`ColorSwitcher should render the white-spectrum switcher correctly when 
     onClick={[Function]}
     style={
       Object {
-        "border": "2px solid transparent",
+        "borderColor": "transparent",
         "borderRadius": "20px",
+        "borderStyle": "solid",
+        "borderWidth": 2,
         "display": "inline-block",
       }
     }
@@ -2089,8 +2259,10 @@ exports[`ColorSwitcher should render the white-spectrum switcher correctly when 
     onClick={[Function]}
     style={
       Object {
-        "border": "2px solid transparent",
+        "borderColor": "transparent",
         "borderRadius": "20px",
+        "borderStyle": "solid",
+        "borderWidth": 2,
         "display": "inline-block",
       }
     }
@@ -2112,8 +2284,10 @@ exports[`ColorSwitcher should render the white-spectrum switcher correctly when 
     onClick={[Function]}
     style={
       Object {
-        "border": "2px solid transparent",
+        "borderColor": "transparent",
         "borderRadius": "20px",
+        "borderStyle": "solid",
+        "borderWidth": 2,
         "display": "inline-block",
       }
     }
@@ -2135,8 +2309,10 @@ exports[`ColorSwitcher should render the white-spectrum switcher correctly when 
     onClick={[Function]}
     style={
       Object {
-        "border": "2px solid transparent",
+        "borderColor": "transparent",
         "borderRadius": "20px",
+        "borderStyle": "solid",
+        "borderWidth": 2,
         "display": "inline-block",
       }
     }
@@ -2169,8 +2345,10 @@ exports[`ColorSwitcher should render the white-spectrum switcher correctly when 
     onClick={[Function]}
     style={
       Object {
-        "border": "2px solid transparent",
+        "borderColor": "transparent",
         "borderRadius": "20px",
+        "borderStyle": "solid",
+        "borderWidth": 2,
         "display": "inline-block",
       }
     }
@@ -2192,8 +2370,10 @@ exports[`ColorSwitcher should render the white-spectrum switcher correctly when 
     onClick={[Function]}
     style={
       Object {
-        "border": "2px solid transparent",
+        "borderColor": "transparent",
         "borderRadius": "20px",
+        "borderStyle": "solid",
+        "borderWidth": 2,
         "display": "inline-block",
       }
     }
@@ -2215,8 +2395,10 @@ exports[`ColorSwitcher should render the white-spectrum switcher correctly when 
     onClick={[Function]}
     style={
       Object {
-        "border": "2px solid transparent",
+        "borderColor": "transparent",
         "borderRadius": "20px",
+        "borderStyle": "solid",
+        "borderWidth": 2,
         "display": "inline-block",
       }
     }

@@ -1,4 +1,4 @@
-const shutters = (state = [], action) => {
+const tempSensors = (state = [], action) => {
 	switch (action.type) {
 		case 'SET_TEMP_SENSORS':
 			return action.tempSensors
@@ -7,4 +7,4 @@ const shutters = (state = [], action) => {
 	}
 }
 
-export default shutters
+export default tempSensors

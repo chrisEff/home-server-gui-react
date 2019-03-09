@@ -4,6 +4,15 @@ exports[`Switch should render correctly 1`] = `
 <div
   className="bulb"
   onClick={[Function]}
+  style={
+    Object {
+      "filter": "none",
+      "fontSize": 80,
+      "paddingTop": "15px",
+      "textAlign": "center",
+      "userSelect": "none",
+    }
+  }
 >
   💡
 </div>

@@ -15,10 +15,6 @@ h4 {
 	margin: 0;
 }
 
-.lightGroup {
-	display: inline-block;
-}
-
 .lightGroup .name:hover:after {
 	content: ' ✏️';
 	font-size: 0.9em;
@@ -52,26 +48,9 @@ h4 {
 	color: #eee;
 }
 
-.light .bulb, .outlet .plug {
-	text-align: center;
-	filter: grayscale(100%) blur(5px);
-	font-size: 80px;
-	padding-top: 15px;
-	user-select: none;
-}
-
 .shutter .button {
 	font-size: 60px;
 	user-select: none;
-}
-
-.light.on .bulb, .outlet.on .plug {
-	filter: none;
-}
-
-.outlet.on .plug {
-	filter: none;
-	text-shadow: 0 0 1px black, 0 0 50px #f5faf6;
 }
 
 .tempSensor .name {
@@ -111,7 +90,7 @@ h4 {
 .light.on .bulb:before{
 	color: transparent;
 	content: '💡';
-	opacity: 0.2;
+	opacity: 0.3;
 	position: absolute;
 	font-size: 80px;
 	filter: none;
@@ -129,9 +108,7 @@ h4 {
 .light.on.pink .bulb:before    { text-shadow: 0 0 0 deeppink; }
 .light.on.purple .bulb:before  { text-shadow: 0 0 0 mediumpurple; }
 
-.outlet .plug {
-	padding-top: 40px;
-}
+/* --- */
 
 .loginForm {
 	text-align: center;

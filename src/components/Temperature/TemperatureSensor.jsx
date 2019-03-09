@@ -22,6 +22,7 @@ TemperatureSensor.propTypes = {
 		celsiusValue: PropTypes.number,
 		history: PropTypes.array,
 	}).isRequired,
+	history: PropTypes.array,
 }
 
 const styles = {
