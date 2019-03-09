@@ -5,8 +5,8 @@ exports[`TemperatureSensor should render correctly 1`] = `
   className="tempSensor"
   style={
     Object {
-      "height": "920px",
-      "width": "280px",
+      "height": "280px",
+      "width": "920px",
     }
   }
 >
