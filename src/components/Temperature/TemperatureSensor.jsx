@@ -26,8 +26,8 @@ TemperatureSensor.propTypes = {
 
 const styles = {
 	tempSensor: {
-		height: '920px',
-		width: '280px',
+		height: '280px',
+		width: '920px',
 	},
 }
 
