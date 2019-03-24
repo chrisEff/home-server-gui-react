@@ -1,7 +1,7 @@
 const path = require('path')
 
 module.exports = {
-	mode: 'development',
+	mode: 'production',
 	entry: ['@babel/polyfill', './src/app.jsx'],
 	output: {
 		path: __dirname,
