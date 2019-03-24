@@ -24,7 +24,7 @@ h4 {
 	display: inline-block;
 }
 
-.light, .outlet, .tempSensor, .shutter {
+.tempSensor, .shutter {
 	background-color: rgb(60, 63, 65);
 	border-radius: 10px;
 	display: inline-block;
@@ -38,14 +38,6 @@ h4 {
 .tempSensor h4 {
 	margin-left: 20px;
 	margin-top: 5px;
-}
-
-.light, .outlet {
-	color: rgb(135, 147, 155);
-}
-
-.light.on, .outlet.on {
-	color: #eee;
 }
 
 .shutter .button {
