@@ -1,6 +1,6 @@
 'use strict'
 
-const querystring = require('querystring')
+import querystring from 'querystring'
 
 const call = async (method, action, params = {}) => {
 	if (!action.startsWith('/')) {

@@ -3,7 +3,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-const {CartesianGrid, Line, LineChart, Tooltip, XAxis, YAxis} = require('recharts')
+import {CartesianGrid, Line, LineChart, Tooltip, XAxis, YAxis} from 'recharts'
 
 const TemperatureChart = ({data}) => (
 	<LineChart syncId='temp' width={900} height={240} data={data} margin={{top: 5, right: 5, left: -5, bottom: 5}}>
