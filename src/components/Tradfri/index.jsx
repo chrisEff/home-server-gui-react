@@ -39,7 +39,6 @@ class Tradfri extends React.Component {
 
 const mapStateToProps = state => ({
 	tradfriGroups: state.tradfriGroups,
-	tradfriDevices: state.tradfriDevices,
 })
 
 const mapDispatchToProps = dispatch => ({

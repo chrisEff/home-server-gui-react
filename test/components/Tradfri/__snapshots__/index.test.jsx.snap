@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Tradfri should render correctly 1`] = `
+<div
+  id="tradfri"
+>
+  <h2>
+    test
+  </h2>
+  <ConnectFunction
+    deviceIds={
+      Array [
+        65603,
+        65537,
+        65602,
+      ]
+    }
+    id={131092}
+    key="Office"
+    name="Office"
+  />
+</div>
+`;

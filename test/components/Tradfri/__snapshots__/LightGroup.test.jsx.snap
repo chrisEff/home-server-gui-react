@@ -21,3 +21,29 @@ exports[`LightGroup should render correctly 1`] = `
   />
 </div>
 `;
+
+exports[`LightGroup should go into edit mode on click 1`] = `
+<div
+  className="lightGroup"
+  style={
+    Object {
+      "display": "inline-block",
+    }
+  }
+>
+  <div>
+    <input
+      defaultValue="Test Group"
+    />
+    <button
+      onClick={[Function]}
+    >
+      OK
+    </button>
+  </div>
+  <ConnectFunction
+    id={65537}
+    key="Decke"
+  />
+</div>
+`;

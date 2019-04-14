@@ -8,3 +8,22 @@ exports[`Title should render correctly 1`] = `
   test
 </span>
 `;
+
+exports[`Title should go into edit mode on click 1`] = `
+<div>
+  <input
+    defaultValue="test"
+    style={
+      Object {
+        "width": 110,
+      }
+    }
+    type="text"
+  />
+  <button
+    onClick={[Function]}
+  >
+    OK
+  </button>
+</div>
+`;
