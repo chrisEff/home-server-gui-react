@@ -2,28 +2,14 @@
 
 exports[`RfOutlet should render correctly 1`] = `
 <div
-  className="outlet"
-  onClick={[Function]}
-  style={
-    Object {
-      "height": "200px",
-    }
-  }
+  className="device_n9mjiu-o_O-outlet_zf5bi4-o_O-off_1x9dv6u"
 >
   <h4>
     Fernseher
   </h4>
   <div
-    className="plug"
-    style={
-      Object {
-        "filter": "grayscale(100%) blur(5px)",
-        "fontSize": 80,
-        "paddingTop": "40px",
-        "textAlign": "center",
-        "userSelect": "none",
-      }
-    }
+    className="plug_ujscnj-o_O-plugOff_1pr3crw"
+    onClick={[Function]}
   >
     🔌
   </div>

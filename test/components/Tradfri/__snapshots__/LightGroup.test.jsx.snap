@@ -15,7 +15,7 @@ exports[`LightGroup should render correctly 1`] = `
   >
     Test Group
   </h3>
-  <Connect(Light)
+  <ConnectFunction
     id={65537}
     key="Decke"
   />
