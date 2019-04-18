@@ -5,7 +5,7 @@ script:
   - npm t
   - npm run coveralls
   - npm run eslint
-  - webpack
+  - npm run build
 deploy:
   provider: pages
   skip-cleanup: true

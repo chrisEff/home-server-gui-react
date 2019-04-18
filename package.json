@@ -3,6 +3,8 @@
 	"version": "1.0.0",
 	"description": "A React GUI for my home automation API.",
 	"scripts": {
+		"build": "webpack --env=prod",
+		"build-dev": "webpack --env=dev",
 		"test": "jest",
 		"cover": "jest --coverage --collectCoverageFrom=src/**/*",
 		"coveralls": "jest --coverage --collectCoverageFrom=src/**/* --coverageReporters=text-lcov | coveralls",
@@ -43,7 +45,8 @@
 		"jest": "^24.7.1",
 		"style-loader": "^0.23.1",
 		"webpack": "^4.30.0",
-		"webpack-cli": "^3.3.0"
+		"webpack-cli": "^3.3.0",
+		"webpack-merge": "^4.2.1"
 	},
 	"dependencies": {
 		"aphrodite": "^2.3.1",
