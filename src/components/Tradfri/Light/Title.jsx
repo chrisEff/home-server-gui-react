@@ -3,6 +3,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import {connect} from 'react-redux'
+
 import {setDeviceName} from '@/actions/tradfri'
 
 class Title extends React.Component {
@@ -15,7 +16,9 @@ class Title extends React.Component {
 
 	constructor (props) {
 		super(props)
-		this.state = {editMode: false}
+		this.state = {
+			editMode: false,
+		}
 	}
 
 	render () {
