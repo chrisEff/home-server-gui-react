@@ -5,7 +5,7 @@ module.exports = {
 	entry: ['@babel/polyfill', './src/app.jsx'],
 	output: {
 		path: __dirname,
-		filename: './docs/bundle.js',
+		filename: './dist/bundle.js',
 	},
 	resolve: {
 		alias: {
