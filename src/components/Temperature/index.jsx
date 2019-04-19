@@ -13,7 +13,9 @@ class Temperature extends React.Component {
 	static propTypes = {
 		title: PropTypes.string,
 		tempSensors: PropTypes.arrayOf(
-			PropTypes.object
+			PropTypes.shape({
+				id: PropTypes.number,
+			})
 		),
 	}
 

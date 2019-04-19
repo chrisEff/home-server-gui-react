@@ -13,7 +13,9 @@ class RfOutlets extends React.Component {
 	static propTypes = {
 		title: PropTypes.string.isRequired,
 		outlets: PropTypes.arrayOf(
-			PropTypes.object
+			PropTypes.shape({
+				id: PropTypes.number,
+			})
 		),
 	}
 
@@ -26,7 +28,7 @@ class RfOutlets extends React.Component {
 			<div id='rfOutlets'>
 				<h2>{this.props.title}</h2>
 				{this.props.outlets.map(outlet =>
-					<RfOutlet key={outlet.name} id={outlet.id}/>
+					<RfOutlet key={outlet.id} id={outlet.id}/>
 				)}
 			</div>
 		)

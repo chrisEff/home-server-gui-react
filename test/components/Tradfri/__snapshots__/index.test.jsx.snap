@@ -16,7 +16,7 @@ exports[`Tradfri should render correctly 1`] = `
       ]
     }
     id={131092}
-    key="Office"
+    key="131092"
     name="Office"
   />
 </div>

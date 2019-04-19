@@ -5,6 +5,7 @@
 	"scripts": {
 		"build": "webpack --env=prod",
 		"build-dev": "webpack --env=dev",
+		"watch": "webpack -w --env=dev",
 		"test": "jest",
 		"cover": "jest --coverage --collectCoverageFrom=src/**/*",
 		"coveralls": "jest --coverage --collectCoverageFrom=src/**/* --coverageReporters=text-lcov | coveralls",

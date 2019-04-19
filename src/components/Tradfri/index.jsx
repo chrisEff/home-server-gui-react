@@ -30,7 +30,7 @@ class Tradfri extends React.Component {
 			<div id='tradfri'>
 				<h2>{this.props.title}</h2>
 				{this.props.tradfriGroups.map(group =>
-					<LightGroup key={group.name} id={group.id} name={group.name} deviceIds={group.deviceIds}/>
+					<LightGroup key={group.id} id={group.id} name={group.name} deviceIds={group.deviceIds}/>
 				)}
 			</div>
 		)

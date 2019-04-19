@@ -13,7 +13,9 @@ class Shutters extends React.Component {
 	static propTypes = {
 		title: PropTypes.string.isRequired,
 		shutters: PropTypes.arrayOf(
-			PropTypes.object
+			PropTypes.shape({
+				id: PropTypes.number,
+			})
 		),
 	}
 
@@ -26,7 +28,7 @@ class Shutters extends React.Component {
 			<div id='shutters'>
 				<h2>{this.props.title}</h2>
 				{this.props.shutters.map(shutter =>
-					<Shutter key={shutter.name} id={shutter.id}/>
+					<Shutter key={shutter.id} id={shutter.id}/>
 				)}
 			</div>
 		)
