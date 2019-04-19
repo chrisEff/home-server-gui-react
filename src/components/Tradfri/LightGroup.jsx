@@ -1,45 +1,39 @@
 'use strict'
 
-import React from 'react'
+import React, {useRef, useState} from 'react'
 import PropTypes from 'prop-types'
 import {connect} from 'react-redux'
 
 import Light from './Light'
 import {setGroupName} from '@/actions/tradfri'
 
-class LightGroup extends React.Component {
+const LightGroup = ({id, name, devices, onSaveName}) => {
+	const [editMode, setEditMode] = useState(false)
+	const nameInput = useRef(name)
 
-	static propTypes = {
-		id: PropTypes.number.isRequired,
-		name: PropTypes.string.isRequired,
-		devices: PropTypes.array.isRequired,
-	}
+	return (
+		<div style={styles.lightGroup} className='lightGroup'>
+			{!editMode && <h3 className='name' onClick={() => { setEditMode(true) }}>{name}</h3>}
+			{editMode && <div>
+				<input ref={nameInput} defaultValue={name} />
+				<button onClick={() => { setEditMode(false); onSaveName(id, nameInput.current.value) }}>OK</button>
+			</div>}
 
-	constructor (props) {
-		super(props)
-		this.state = {
-			editMode: false,
-		}
-	}
+			{
+				devices
+					.filter(device => device.type === 'bulb')
+					.sort((a, b) => a.name.localeCompare(b.name))
+					.map(device => <Light key={device.name} id={device.id} />)
+			}
+		</div>
+	)
+}
 
-	render () {
-		return (
-			<div style={styles.lightGroup} className='lightGroup'>
-				{!this.state.editMode && <h3 className='name' onClick={() => { this.setState({editMode: true}) }}>{this.props.name}</h3>}
-				{this.state.editMode && <div>
-					<input ref='name' defaultValue={this.props.name} />
-					<button onClick={() => { this.setState({editMode: false}); this.props.onSaveName(this.props.id, this.refs.name.value) }}>OK</button>
-				</div>}
-
-				{
-					this.props.devices
-						.filter(device => device.type === 'bulb')
-						.sort((a, b) => a.name.localeCompare(b.name))
-						.map(device => <Light key={device.name} id={device.id} />)
-				}
-			</div>
-		)
-	}
+LightGroup.propTypes = {
+	id: PropTypes.number.isRequired,
+	name: PropTypes.string.isRequired,
+	devices: PropTypes.array.isRequired,
+	onSaveName: PropTypes.func,
 }
 
 const styles = {
