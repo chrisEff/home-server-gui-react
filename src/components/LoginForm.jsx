@@ -1,23 +1,23 @@
 'use strict'
 
-import React from 'react'
+import React, {useRef} from 'react'
 
-class LoginForm extends React.Component {
+const LoginForm = ({onLogin}) => {
+	const apiUrlInput = useRef('')
+	const apiUserInput = useRef('')
+	const apiKeyInput = useRef('')
 
-	render () {
-		return (
-			<div className='loginForm'>
-				<br/>
+	return (
+		<div className='loginForm'>
+			<br/>
 
-				<input placeholder='API URL' type='text' name='apiUrl' ref='apiUrl' /><br/>
-				<input placeholder='API User' type='text' name='apiUser' ref='apiUser' /><br/>
-				<input placeholder='API Key' type='password' name='apiKey' ref='apiKey' /><br/>
+			<input placeholder='API URL' type='text' name='apiUrl' ref={apiUrlInput} /><br/>
+			<input placeholder='API User' type='text' name='apiUser' ref={apiUserInput} /><br/>
+			<input placeholder='API Key' type='password' name='apiKey' ref={apiKeyInput} /><br/>
 
-				<button onClick={ () => this.props.onLogin(this.refs.apiUrl.value, this.refs.apiUser.value, this.refs.apiKey.value) }>OK</button>
-			</div>
-		)
-	}
-
+			<button onClick={ () => onLogin(apiUrlInput.current.value, apiUserInput.current.value, apiKeyInput.current.value) }>OK</button>
+		</div>
+	)
 }
 
 export default LoginForm
