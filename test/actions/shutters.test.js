@@ -1,6 +1,6 @@
 import configureMockStore from 'redux-mock-store'
 import thunk from 'redux-thunk'
-import {loadShutters} from '@/actions/shutters'
+import {loadShutters, moveShutterUp, moveShutterDown} from '@/actions/shutters'
 import fetchMock from 'fetch-mock'
 
 const middlewares = [thunk]
@@ -13,7 +13,7 @@ describe('shutters actions', () => {
 
 	describe('loadShutters', () => {
 		it('should create SET_SHUTTERS', async () => {
-			fetchMock.getOnce('/shutters/shutter', {
+			fetchMock.get('/shutters/shutter', {
 				body: [{id: 0}],
 			})
 			const store = mockStore({shutters: []})
@@ -25,12 +25,38 @@ describe('shutters actions', () => {
 		})
 
 		it('should set an error message on failure', async () => {
-			fetchMock.getOnce('/shutters/shutter', 500)
+			fetchMock.get('/shutters/shutter', 500)
 			const store = mockStore({outlets: []})
 
 			await store.dispatch(loadShutters())
 			expect(store.getActions()).toEqual([{
-				message: 'failed to load shutters: invalid json response body at /shutters/shutter reason: Unexpected end of JSON input',
+				message: 'failed to load shutters: API responded with 500 Internal Server Error',
+				type: 'SET_ERROR_MESSAGE',
+			}])
+		})
+	})
+
+	describe('moveShutterUp', () => {
+		it('should set an error message on failure', async () => {
+			fetchMock.put('/shutters/shutter/1/up', 500)
+			const store = mockStore({outlets: []})
+
+			await store.dispatch(moveShutterUp(1))
+			expect(store.getActions()).toEqual([{
+				message: 'failed to move shutter #1 up: API responded with 500 Internal Server Error',
+				type: 'SET_ERROR_MESSAGE',
+			}])
+		})
+	})
+
+	describe('moveShutterDown', () => {
+		it('should set an error message on failure', async () => {
+			fetchMock.put('/shutters/shutter/1/down', 500)
+			const store = mockStore({outlets: []})
+
+			await store.dispatch(moveShutterDown(1))
+			expect(store.getActions()).toEqual([{
+				message: 'failed to move shutter #1 down: API responded with 500 Internal Server Error',
 				type: 'SET_ERROR_MESSAGE',
 			}])
 		})

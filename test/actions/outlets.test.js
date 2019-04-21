@@ -30,7 +30,7 @@ describe('outlets actions', () => {
 
 			await store.dispatch(loadOutlets())
 			expect(store.getActions()).toEqual([{
-				message: 'failed to load outlets: invalid json response body at /rfoutlets/outlet reason: Unexpected end of JSON input',
+				message: 'failed to load outlets: API responded with 500 Internal Server Error',
 				type: 'SET_ERROR_MESSAGE',
 			}])
 		})
@@ -57,7 +57,7 @@ describe('outlets actions', () => {
 
 			await store.dispatch(setOutletState(1, 0))
 			expect(store.getActions()).toEqual([{
-				message: 'failed to set state of outlet #1: invalid json response body at /rfoutlets/outlet/1/0 reason: Unexpected end of JSON input',
+				message: 'failed to set state of outlet #1: API responded with 500 Internal Server Error',
 				type: 'SET_ERROR_MESSAGE',
 			}])
 		})

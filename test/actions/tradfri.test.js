@@ -13,7 +13,7 @@ describe('tradfri actions', () => {
 
 	describe('loadGroups', () => {
 		it('should create SET_TRADFRI_GROUPS', async () => {
-			fetchMock.getOnce('/tradfri/group', {
+			fetchMock.get('/tradfri/group', {
 				body: [{id: 0}],
 			})
 			const store = mockStore({tradfriGroups: []})
@@ -23,11 +23,22 @@ describe('tradfri actions', () => {
 				{groups: [{id: 0}], type: 'SET_TRADFRI_GROUPS'},
 			])
 		})
+
+		it('should set an error message on failure', async () => {
+			fetchMock.get('/tradfri/group', 500)
+			const store = mockStore({tradfriGroups: []})
+
+			await store.dispatch(loadGroups())
+			expect(store.getActions()).toEqual([{
+				message: 'failed to load tradfri groups: API responded with 500 Internal Server Error',
+				type: 'SET_ERROR_MESSAGE',
+			}])
+		})
 	})
 
 	describe('loadDevices', () => {
 		it('should create SET_TRADFRI_DEVICES', async () => {
-			fetchMock.getOnce('/tradfri/device', {
+			fetchMock.get('/tradfri/device', {
 				body: [{id: 0}],
 			})
 			const store = mockStore({tradfriDevices: []})

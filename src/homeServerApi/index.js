@@ -14,6 +14,9 @@ const call = async (method, action, params = {}) => {
 			apikey: api.apiKey,
 		},
 	})
+	if (response.status >= 400) {
+		throw new Error(`API responded with ${response.status} ${response.statusText}`)
+	}
 	return response.json()
 }
 
