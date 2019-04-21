@@ -1,3 +1,5 @@
+'use strict'
+
 import configureMockStore from 'redux-mock-store'
 import thunk from 'redux-thunk'
 import {loadShutters, moveShutterUp, moveShutterDown} from '@/actions/shutters'
