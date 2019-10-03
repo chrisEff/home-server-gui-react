@@ -29,6 +29,10 @@ const api = {
 	apiUser: '',
 	apiKey: '',
 
+	setApiUrl: (apiUrl) => {
+		api.apiUrl = (apiUrl && apiUrl.endsWith('/')) ? apiUrl.slice(0, -1) : apiUrl
+	},
+
 	get: async (action, params = {}) => call('GET', action, params),
 	post: async (action, params = {}) => call('POST', action, params),
 	put: async (action, params = {}) => call('PUT', action, params),

@@ -30,7 +30,7 @@ class Wrapper extends React.Component {
 
 	updateCredentials = (apiUrl, apiUser, apiKey) => {
 		this.setState({apiUrl, apiUser, apiKey})
-		homeServerApi.apiUrl = apiUrl
+		homeServerApi.setApiUrl(apiUrl)
 		homeServerApi.apiUser = apiUser
 		homeServerApi.apiKey = apiKey
 
@@ -41,7 +41,7 @@ class Wrapper extends React.Component {
 
 	unsetCredentials = () => {
 		this.setState({apiUrl: undefined, apiUser: undefined, apiKey: undefined})
-		homeServerApi.apiUrl = undefined
+		homeServerApi.setApiUrl(undefined)
 		homeServerApi.apiUser = undefined
 		homeServerApi.apiKey = undefined
 
