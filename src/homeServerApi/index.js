@@ -7,7 +7,10 @@ const call = async (method, action, params = {}) => {
 		action = '/' + action
 	}
 
-	const response = await fetch(`${api.apiUrl}${action}?${querystring.stringify(params)}`, {
+	const url = `${api.apiUrl}${action}?${querystring.stringify(params)}`
+	console.log('fetching URL:', url)
+
+	const response = await fetch(url, {
 		method: method,
 		headers: {
 			apiuser: api.apiUser,
