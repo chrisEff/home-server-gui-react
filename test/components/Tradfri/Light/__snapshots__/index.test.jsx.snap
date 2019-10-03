@@ -4,11 +4,11 @@ exports[`Light should render correctly 1`] = `
 <div
   className="device_n9mjiu-o_O-light_1c3yuai-o_O-off_1x9dv6u light neutral"
 >
-  <ConnectFunction
+  <Connect(Title)
     deviceId={65537}
     title="Decke"
   />
-  <ConnectFunction
+  <Connect(Switch)
     deviceId={65537}
     state={0}
   />

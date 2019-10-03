@@ -1,27 +1,5 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`LightGroup should render correctly 1`] = `
-<div
-  className="lightGroup"
-  style={
-    Object {
-      "display": "inline-block",
-    }
-  }
->
-  <h3
-    className="name"
-    onClick={[Function]}
-  >
-    Test Group
-  </h3>
-  <ConnectFunction
-    id={65537}
-    key="Decke"
-  />
-</div>
-`;
-
 exports[`LightGroup should go into edit mode on click 1`] = `
 <div
   className="lightGroup"
@@ -41,7 +19,29 @@ exports[`LightGroup should go into edit mode on click 1`] = `
       OK
     </button>
   </div>
-  <ConnectFunction
+  <Connect(Light)
+    id={65537}
+    key="Decke"
+  />
+</div>
+`;
+
+exports[`LightGroup should render correctly 1`] = `
+<div
+  className="lightGroup"
+  style={
+    Object {
+      "display": "inline-block",
+    }
+  }
+>
+  <h3
+    className="name"
+    onClick={[Function]}
+  >
+    Test Group
+  </h3>
+  <Connect(Light)
     id={65537}
     key="Decke"
   />
