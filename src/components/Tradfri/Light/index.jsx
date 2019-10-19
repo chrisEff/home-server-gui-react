@@ -16,9 +16,9 @@ const Light = ({bulb}) => {
 	return (
 		<div className={css([theme.styles.device, styles.light, bulb.state ? styles.on : styles.off]) + ' ' + className + ' ' + bulb.color}>
 			<Title deviceId={bulb.id} title={bulb.name} />
-			<Switch deviceId={bulb.id} state={bulb.state} />
+			<Switch deviceId={bulb.id} state={bulb.state} color={bulb.color} />
 			{!!bulb.state && <BrightnessSlider deviceId={bulb.id} brightness={bulb.brightness} />}
-			{!!bulb.state && <ColorSwitcher deviceId={bulb.id} bulbType={bulb.bulbType} selected={bulb.colors} />}
+			{!!bulb.state && <ColorSwitcher deviceId={bulb.id} bulbType={bulb.bulbType} selected={bulb.color} />}
 		</div>
 	)
 }

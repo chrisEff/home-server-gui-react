@@ -2,12 +2,7 @@
 
 exports[`LightGroup should go into edit mode on click 1`] = `
 <div
-  className="lightGroup"
-  style={
-    Object {
-      "display": "inline-block",
-    }
-  }
+  className="lightGroup_36rlri"
 >
   <div>
     <input
@@ -28,15 +23,10 @@ exports[`LightGroup should go into edit mode on click 1`] = `
 
 exports[`LightGroup should render correctly 1`] = `
 <div
-  className="lightGroup"
-  style={
-    Object {
-      "display": "inline-block",
-    }
-  }
+  className="lightGroup_36rlri"
 >
   <h3
-    className="name"
+    className="name_7bdam5"
     onClick={[Function]}
   >
     Test Group

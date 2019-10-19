@@ -1,14 +1,15 @@
 'use strict'
 
 import React from 'react'
+import {StyleSheet, css} from 'aphrodite'
 
 const ErrorMessage = ({message}) =>
-	<div style={styles.errorMessage}>{message}</div>
+	<div className={css([styles.errorMessage])}>{message}</div>
 
-const styles = {
+const styles = StyleSheet.create({
 	errorMessage: {
 		color: 'red',
 	},
-}
+})
 
 export default ErrorMessage

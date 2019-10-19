@@ -2,26 +2,21 @@
 
 exports[`Shutter should render correctly 1`] = `
 <div
-  className="shutter"
-  style={
-    Object {
-      "height": "200px",
-    }
-  }
+  className="device_n9mjiu-o_O-shutter_zf5bi4"
 >
-  <h4>
+  <span>
     Office
-  </h4>
+  </span>
   <br />
   <span
-    className="button"
+    className="button_j63qv8"
     onClick={[Function]}
   >
     ⬆️
   </span>
   <br />
   <span
-    className="button"
+    className="button_j63qv8"
     onClick={[Function]}
   >
     ⬇️

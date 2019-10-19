@@ -2,21 +2,15 @@
 
 exports[`TemperatureSensor should render correctly 1`] = `
 <div
-  className="tempSensor"
-  style={
-    Object {
-      "height": "280px",
-      "width": "920px",
-    }
-  }
+  className="device_n9mjiu-o_O-tempSensor_1kmafzr"
 >
-  <h4
-    className="name"
+  <span
+    className="name_5lbt9x"
   >
     Office
-  </h4>
+  </span>
   <div
-    className="value"
+    className="value_sha13j"
   >
     23.2
     °C

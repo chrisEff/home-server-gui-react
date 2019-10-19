@@ -2,235 +2,87 @@
 
 exports[`ColorSwitcher should render the rgb switcher correctly when blue is active 1`] = `
 <div
-  style={
-    Object {
-      "fontSize": 0,
-    }
-  }
+  className="colorSwitcher_1osgznj"
 >
   <div
+    className="color_17zglbt"
     key="1-color-red"
     onClick={[Function]}
-    style={
-      Object {
-        "borderColor": "transparent",
-        "borderRadius": "20px",
-        "borderStyle": "solid",
-        "borderWidth": 2,
-        "display": "inline-block",
-      }
-    }
   >
     <div
-      style={
-        Object {
-          "backgroundColor": "red",
-          "borderRadius": "15px",
-          "height": "29px",
-          "margin": "3px",
-          "width": "29px",
-        }
-      }
+      className="inner_16vgkgb-o_O-red_k554e1"
     />
   </div>
   <div
+    className="color_17zglbt"
     key="1-color-green"
     onClick={[Function]}
-    style={
-      Object {
-        "borderColor": "transparent",
-        "borderRadius": "20px",
-        "borderStyle": "solid",
-        "borderWidth": 2,
-        "display": "inline-block",
-      }
-    }
   >
     <div
-      style={
-        Object {
-          "backgroundColor": "green",
-          "borderRadius": "15px",
-          "height": "29px",
-          "margin": "3px",
-          "width": "29px",
-        }
-      }
+      className="inner_16vgkgb-o_O-green_22ph69"
     />
   </div>
   <div
+    className="color_17zglbt"
     key="1-color-blue"
     onClick={[Function]}
-    style={
-      Object {
-        "borderColor": "transparent",
-        "borderRadius": "20px",
-        "borderStyle": "solid",
-        "borderWidth": 2,
-        "display": "inline-block",
-      }
-    }
   >
     <div
-      style={
-        Object {
-          "backgroundColor": "blue",
-          "borderRadius": "15px",
-          "height": "29px",
-          "margin": "3px",
-          "width": "29px",
-        }
-      }
+      className="inner_16vgkgb-o_O-blue_106q26s"
     />
   </div>
   <div
+    className="color_17zglbt"
     key="1-color-yellow"
     onClick={[Function]}
-    style={
-      Object {
-        "borderColor": "transparent",
-        "borderRadius": "20px",
-        "borderStyle": "solid",
-        "borderWidth": 2,
-        "display": "inline-block",
-      }
-    }
   >
     <div
-      style={
-        Object {
-          "backgroundColor": "yellow",
-          "borderRadius": "15px",
-          "height": "29px",
-          "margin": "3px",
-          "width": "29px",
-        }
-      }
+      className="inner_16vgkgb-o_O-yellow_1ywdg4u"
     />
   </div>
   <div
+    className="color_17zglbt"
     key="1-color-pink"
     onClick={[Function]}
-    style={
-      Object {
-        "borderColor": "transparent",
-        "borderRadius": "20px",
-        "borderStyle": "solid",
-        "borderWidth": 2,
-        "display": "inline-block",
-      }
-    }
   >
     <div
-      style={
-        Object {
-          "backgroundColor": "deeppink",
-          "borderRadius": "15px",
-          "height": "29px",
-          "margin": "3px",
-          "width": "29px",
-        }
-      }
+      className="inner_16vgkgb-o_O-pink_ub5v9e"
     />
   </div>
   <div
+    className="color_17zglbt"
     key="1-color-purple"
     onClick={[Function]}
-    style={
-      Object {
-        "borderColor": "transparent",
-        "borderRadius": "20px",
-        "borderStyle": "solid",
-        "borderWidth": 2,
-        "display": "inline-block",
-      }
-    }
   >
     <div
-      style={
-        Object {
-          "backgroundColor": "mediumpurple",
-          "borderRadius": "15px",
-          "height": "29px",
-          "margin": "3px",
-          "width": "29px",
-        }
-      }
+      className="inner_16vgkgb-o_O-purple_s6keop"
     />
   </div>
   <div
+    className="color_17zglbt"
     key="1-color-warm"
     onClick={[Function]}
-    style={
-      Object {
-        "borderColor": "transparent",
-        "borderRadius": "20px",
-        "borderStyle": "solid",
-        "borderWidth": 2,
-        "display": "inline-block",
-      }
-    }
   >
     <div
-      style={
-        Object {
-          "backgroundColor": "#efd275",
-          "borderRadius": "15px",
-          "height": "29px",
-          "margin": "3px",
-          "width": "29px",
-        }
-      }
+      className="inner_16vgkgb-o_O-warm_1wjcaqm"
     />
   </div>
   <div
+    className="color_17zglbt"
     key="1-color-neutral"
     onClick={[Function]}
-    style={
-      Object {
-        "borderColor": "transparent",
-        "borderRadius": "20px",
-        "borderStyle": "solid",
-        "borderWidth": 2,
-        "display": "inline-block",
-      }
-    }
   >
     <div
-      style={
-        Object {
-          "backgroundColor": "#f1e0b5",
-          "borderRadius": "15px",
-          "height": "29px",
-          "margin": "3px",
-          "width": "29px",
-        }
-      }
+      className="inner_16vgkgb-o_O-neutral_1hyp8n0"
     />
   </div>
   <div
+    className="color_17zglbt"
     key="1-color-cold"
     onClick={[Function]}
-    style={
-      Object {
-        "borderColor": "transparent",
-        "borderRadius": "20px",
-        "borderStyle": "solid",
-        "borderWidth": 2,
-        "display": "inline-block",
-      }
-    }
   >
     <div
-      style={
-        Object {
-          "backgroundColor": "#f5faf6",
-          "borderRadius": "15px",
-          "height": "29px",
-          "margin": "3px",
-          "width": "29px",
-        }
-      }
+      className="inner_16vgkgb-o_O-cold_k70gul"
     />
   </div>
 </div>
@@ -238,235 +90,87 @@ exports[`ColorSwitcher should render the rgb switcher correctly when blue is act
 
 exports[`ColorSwitcher should render the rgb switcher correctly when cold is active 1`] = `
 <div
-  style={
-    Object {
-      "fontSize": 0,
-    }
-  }
+  className="colorSwitcher_1osgznj"
 >
   <div
+    className="color_17zglbt"
     key="1-color-red"
     onClick={[Function]}
-    style={
-      Object {
-        "borderColor": "transparent",
-        "borderRadius": "20px",
-        "borderStyle": "solid",
-        "borderWidth": 2,
-        "display": "inline-block",
-      }
-    }
   >
     <div
-      style={
-        Object {
-          "backgroundColor": "red",
-          "borderRadius": "15px",
-          "height": "29px",
-          "margin": "3px",
-          "width": "29px",
-        }
-      }
+      className="inner_16vgkgb-o_O-red_k554e1"
     />
   </div>
   <div
+    className="color_17zglbt"
     key="1-color-green"
     onClick={[Function]}
-    style={
-      Object {
-        "borderColor": "transparent",
-        "borderRadius": "20px",
-        "borderStyle": "solid",
-        "borderWidth": 2,
-        "display": "inline-block",
-      }
-    }
   >
     <div
-      style={
-        Object {
-          "backgroundColor": "green",
-          "borderRadius": "15px",
-          "height": "29px",
-          "margin": "3px",
-          "width": "29px",
-        }
-      }
+      className="inner_16vgkgb-o_O-green_22ph69"
     />
   </div>
   <div
+    className="color_17zglbt"
     key="1-color-blue"
     onClick={[Function]}
-    style={
-      Object {
-        "borderColor": "transparent",
-        "borderRadius": "20px",
-        "borderStyle": "solid",
-        "borderWidth": 2,
-        "display": "inline-block",
-      }
-    }
   >
     <div
-      style={
-        Object {
-          "backgroundColor": "blue",
-          "borderRadius": "15px",
-          "height": "29px",
-          "margin": "3px",
-          "width": "29px",
-        }
-      }
+      className="inner_16vgkgb-o_O-blue_106q26s"
     />
   </div>
   <div
+    className="color_17zglbt"
     key="1-color-yellow"
     onClick={[Function]}
-    style={
-      Object {
-        "borderColor": "transparent",
-        "borderRadius": "20px",
-        "borderStyle": "solid",
-        "borderWidth": 2,
-        "display": "inline-block",
-      }
-    }
   >
     <div
-      style={
-        Object {
-          "backgroundColor": "yellow",
-          "borderRadius": "15px",
-          "height": "29px",
-          "margin": "3px",
-          "width": "29px",
-        }
-      }
+      className="inner_16vgkgb-o_O-yellow_1ywdg4u"
     />
   </div>
   <div
+    className="color_17zglbt"
     key="1-color-pink"
     onClick={[Function]}
-    style={
-      Object {
-        "borderColor": "transparent",
-        "borderRadius": "20px",
-        "borderStyle": "solid",
-        "borderWidth": 2,
-        "display": "inline-block",
-      }
-    }
   >
     <div
-      style={
-        Object {
-          "backgroundColor": "deeppink",
-          "borderRadius": "15px",
-          "height": "29px",
-          "margin": "3px",
-          "width": "29px",
-        }
-      }
+      className="inner_16vgkgb-o_O-pink_ub5v9e"
     />
   </div>
   <div
+    className="color_17zglbt"
     key="1-color-purple"
     onClick={[Function]}
-    style={
-      Object {
-        "borderColor": "transparent",
-        "borderRadius": "20px",
-        "borderStyle": "solid",
-        "borderWidth": 2,
-        "display": "inline-block",
-      }
-    }
   >
     <div
-      style={
-        Object {
-          "backgroundColor": "mediumpurple",
-          "borderRadius": "15px",
-          "height": "29px",
-          "margin": "3px",
-          "width": "29px",
-        }
-      }
+      className="inner_16vgkgb-o_O-purple_s6keop"
     />
   </div>
   <div
+    className="color_17zglbt"
     key="1-color-warm"
     onClick={[Function]}
-    style={
-      Object {
-        "borderColor": "transparent",
-        "borderRadius": "20px",
-        "borderStyle": "solid",
-        "borderWidth": 2,
-        "display": "inline-block",
-      }
-    }
   >
     <div
-      style={
-        Object {
-          "backgroundColor": "#efd275",
-          "borderRadius": "15px",
-          "height": "29px",
-          "margin": "3px",
-          "width": "29px",
-        }
-      }
+      className="inner_16vgkgb-o_O-warm_1wjcaqm"
     />
   </div>
   <div
+    className="color_17zglbt"
     key="1-color-neutral"
     onClick={[Function]}
-    style={
-      Object {
-        "borderColor": "transparent",
-        "borderRadius": "20px",
-        "borderStyle": "solid",
-        "borderWidth": 2,
-        "display": "inline-block",
-      }
-    }
   >
     <div
-      style={
-        Object {
-          "backgroundColor": "#f1e0b5",
-          "borderRadius": "15px",
-          "height": "29px",
-          "margin": "3px",
-          "width": "29px",
-        }
-      }
+      className="inner_16vgkgb-o_O-neutral_1hyp8n0"
     />
   </div>
   <div
+    className="color_17zglbt"
     key="1-color-cold"
     onClick={[Function]}
-    style={
-      Object {
-        "borderColor": "transparent",
-        "borderRadius": "20px",
-        "borderStyle": "solid",
-        "borderWidth": 2,
-        "display": "inline-block",
-      }
-    }
   >
     <div
-      style={
-        Object {
-          "backgroundColor": "#f5faf6",
-          "borderRadius": "15px",
-          "height": "29px",
-          "margin": "3px",
-          "width": "29px",
-        }
-      }
+      className="inner_16vgkgb-o_O-cold_k70gul"
     />
   </div>
 </div>
@@ -474,235 +178,87 @@ exports[`ColorSwitcher should render the rgb switcher correctly when cold is act
 
 exports[`ColorSwitcher should render the rgb switcher correctly when green is active 1`] = `
 <div
-  style={
-    Object {
-      "fontSize": 0,
-    }
-  }
+  className="colorSwitcher_1osgznj"
 >
   <div
+    className="color_17zglbt"
     key="1-color-red"
     onClick={[Function]}
-    style={
-      Object {
-        "borderColor": "transparent",
-        "borderRadius": "20px",
-        "borderStyle": "solid",
-        "borderWidth": 2,
-        "display": "inline-block",
-      }
-    }
   >
     <div
-      style={
-        Object {
-          "backgroundColor": "red",
-          "borderRadius": "15px",
-          "height": "29px",
-          "margin": "3px",
-          "width": "29px",
-        }
-      }
+      className="inner_16vgkgb-o_O-red_k554e1"
     />
   </div>
   <div
+    className="color_17zglbt"
     key="1-color-green"
     onClick={[Function]}
-    style={
-      Object {
-        "borderColor": "transparent",
-        "borderRadius": "20px",
-        "borderStyle": "solid",
-        "borderWidth": 2,
-        "display": "inline-block",
-      }
-    }
   >
     <div
-      style={
-        Object {
-          "backgroundColor": "green",
-          "borderRadius": "15px",
-          "height": "29px",
-          "margin": "3px",
-          "width": "29px",
-        }
-      }
+      className="inner_16vgkgb-o_O-green_22ph69"
     />
   </div>
   <div
+    className="color_17zglbt"
     key="1-color-blue"
     onClick={[Function]}
-    style={
-      Object {
-        "borderColor": "transparent",
-        "borderRadius": "20px",
-        "borderStyle": "solid",
-        "borderWidth": 2,
-        "display": "inline-block",
-      }
-    }
   >
     <div
-      style={
-        Object {
-          "backgroundColor": "blue",
-          "borderRadius": "15px",
-          "height": "29px",
-          "margin": "3px",
-          "width": "29px",
-        }
-      }
+      className="inner_16vgkgb-o_O-blue_106q26s"
     />
   </div>
   <div
+    className="color_17zglbt"
     key="1-color-yellow"
     onClick={[Function]}
-    style={
-      Object {
-        "borderColor": "transparent",
-        "borderRadius": "20px",
-        "borderStyle": "solid",
-        "borderWidth": 2,
-        "display": "inline-block",
-      }
-    }
   >
     <div
-      style={
-        Object {
-          "backgroundColor": "yellow",
-          "borderRadius": "15px",
-          "height": "29px",
-          "margin": "3px",
-          "width": "29px",
-        }
-      }
+      className="inner_16vgkgb-o_O-yellow_1ywdg4u"
     />
   </div>
   <div
+    className="color_17zglbt"
     key="1-color-pink"
     onClick={[Function]}
-    style={
-      Object {
-        "borderColor": "transparent",
-        "borderRadius": "20px",
-        "borderStyle": "solid",
-        "borderWidth": 2,
-        "display": "inline-block",
-      }
-    }
   >
     <div
-      style={
-        Object {
-          "backgroundColor": "deeppink",
-          "borderRadius": "15px",
-          "height": "29px",
-          "margin": "3px",
-          "width": "29px",
-        }
-      }
+      className="inner_16vgkgb-o_O-pink_ub5v9e"
     />
   </div>
   <div
+    className="color_17zglbt"
     key="1-color-purple"
     onClick={[Function]}
-    style={
-      Object {
-        "borderColor": "transparent",
-        "borderRadius": "20px",
-        "borderStyle": "solid",
-        "borderWidth": 2,
-        "display": "inline-block",
-      }
-    }
   >
     <div
-      style={
-        Object {
-          "backgroundColor": "mediumpurple",
-          "borderRadius": "15px",
-          "height": "29px",
-          "margin": "3px",
-          "width": "29px",
-        }
-      }
+      className="inner_16vgkgb-o_O-purple_s6keop"
     />
   </div>
   <div
+    className="color_17zglbt"
     key="1-color-warm"
     onClick={[Function]}
-    style={
-      Object {
-        "borderColor": "transparent",
-        "borderRadius": "20px",
-        "borderStyle": "solid",
-        "borderWidth": 2,
-        "display": "inline-block",
-      }
-    }
   >
     <div
-      style={
-        Object {
-          "backgroundColor": "#efd275",
-          "borderRadius": "15px",
-          "height": "29px",
-          "margin": "3px",
-          "width": "29px",
-        }
-      }
+      className="inner_16vgkgb-o_O-warm_1wjcaqm"
     />
   </div>
   <div
+    className="color_17zglbt"
     key="1-color-neutral"
     onClick={[Function]}
-    style={
-      Object {
-        "borderColor": "transparent",
-        "borderRadius": "20px",
-        "borderStyle": "solid",
-        "borderWidth": 2,
-        "display": "inline-block",
-      }
-    }
   >
     <div
-      style={
-        Object {
-          "backgroundColor": "#f1e0b5",
-          "borderRadius": "15px",
-          "height": "29px",
-          "margin": "3px",
-          "width": "29px",
-        }
-      }
+      className="inner_16vgkgb-o_O-neutral_1hyp8n0"
     />
   </div>
   <div
+    className="color_17zglbt"
     key="1-color-cold"
     onClick={[Function]}
-    style={
-      Object {
-        "borderColor": "transparent",
-        "borderRadius": "20px",
-        "borderStyle": "solid",
-        "borderWidth": 2,
-        "display": "inline-block",
-      }
-    }
   >
     <div
-      style={
-        Object {
-          "backgroundColor": "#f5faf6",
-          "borderRadius": "15px",
-          "height": "29px",
-          "margin": "3px",
-          "width": "29px",
-        }
-      }
+      className="inner_16vgkgb-o_O-cold_k70gul"
     />
   </div>
 </div>
@@ -710,235 +266,87 @@ exports[`ColorSwitcher should render the rgb switcher correctly when green is ac
 
 exports[`ColorSwitcher should render the rgb switcher correctly when neutral is active 1`] = `
 <div
-  style={
-    Object {
-      "fontSize": 0,
-    }
-  }
+  className="colorSwitcher_1osgznj"
 >
   <div
+    className="color_17zglbt"
     key="1-color-red"
     onClick={[Function]}
-    style={
-      Object {
-        "borderColor": "transparent",
-        "borderRadius": "20px",
-        "borderStyle": "solid",
-        "borderWidth": 2,
-        "display": "inline-block",
-      }
-    }
   >
     <div
-      style={
-        Object {
-          "backgroundColor": "red",
-          "borderRadius": "15px",
-          "height": "29px",
-          "margin": "3px",
-          "width": "29px",
-        }
-      }
+      className="inner_16vgkgb-o_O-red_k554e1"
     />
   </div>
   <div
+    className="color_17zglbt"
     key="1-color-green"
     onClick={[Function]}
-    style={
-      Object {
-        "borderColor": "transparent",
-        "borderRadius": "20px",
-        "borderStyle": "solid",
-        "borderWidth": 2,
-        "display": "inline-block",
-      }
-    }
   >
     <div
-      style={
-        Object {
-          "backgroundColor": "green",
-          "borderRadius": "15px",
-          "height": "29px",
-          "margin": "3px",
-          "width": "29px",
-        }
-      }
+      className="inner_16vgkgb-o_O-green_22ph69"
     />
   </div>
   <div
+    className="color_17zglbt"
     key="1-color-blue"
     onClick={[Function]}
-    style={
-      Object {
-        "borderColor": "transparent",
-        "borderRadius": "20px",
-        "borderStyle": "solid",
-        "borderWidth": 2,
-        "display": "inline-block",
-      }
-    }
   >
     <div
-      style={
-        Object {
-          "backgroundColor": "blue",
-          "borderRadius": "15px",
-          "height": "29px",
-          "margin": "3px",
-          "width": "29px",
-        }
-      }
+      className="inner_16vgkgb-o_O-blue_106q26s"
     />
   </div>
   <div
+    className="color_17zglbt"
     key="1-color-yellow"
     onClick={[Function]}
-    style={
-      Object {
-        "borderColor": "transparent",
-        "borderRadius": "20px",
-        "borderStyle": "solid",
-        "borderWidth": 2,
-        "display": "inline-block",
-      }
-    }
   >
     <div
-      style={
-        Object {
-          "backgroundColor": "yellow",
-          "borderRadius": "15px",
-          "height": "29px",
-          "margin": "3px",
-          "width": "29px",
-        }
-      }
+      className="inner_16vgkgb-o_O-yellow_1ywdg4u"
     />
   </div>
   <div
+    className="color_17zglbt"
     key="1-color-pink"
     onClick={[Function]}
-    style={
-      Object {
-        "borderColor": "transparent",
-        "borderRadius": "20px",
-        "borderStyle": "solid",
-        "borderWidth": 2,
-        "display": "inline-block",
-      }
-    }
   >
     <div
-      style={
-        Object {
-          "backgroundColor": "deeppink",
-          "borderRadius": "15px",
-          "height": "29px",
-          "margin": "3px",
-          "width": "29px",
-        }
-      }
+      className="inner_16vgkgb-o_O-pink_ub5v9e"
     />
   </div>
   <div
+    className="color_17zglbt"
     key="1-color-purple"
     onClick={[Function]}
-    style={
-      Object {
-        "borderColor": "transparent",
-        "borderRadius": "20px",
-        "borderStyle": "solid",
-        "borderWidth": 2,
-        "display": "inline-block",
-      }
-    }
   >
     <div
-      style={
-        Object {
-          "backgroundColor": "mediumpurple",
-          "borderRadius": "15px",
-          "height": "29px",
-          "margin": "3px",
-          "width": "29px",
-        }
-      }
+      className="inner_16vgkgb-o_O-purple_s6keop"
     />
   </div>
   <div
+    className="color_17zglbt"
     key="1-color-warm"
     onClick={[Function]}
-    style={
-      Object {
-        "borderColor": "transparent",
-        "borderRadius": "20px",
-        "borderStyle": "solid",
-        "borderWidth": 2,
-        "display": "inline-block",
-      }
-    }
   >
     <div
-      style={
-        Object {
-          "backgroundColor": "#efd275",
-          "borderRadius": "15px",
-          "height": "29px",
-          "margin": "3px",
-          "width": "29px",
-        }
-      }
+      className="inner_16vgkgb-o_O-warm_1wjcaqm"
     />
   </div>
   <div
+    className="color_17zglbt"
     key="1-color-neutral"
     onClick={[Function]}
-    style={
-      Object {
-        "borderColor": "transparent",
-        "borderRadius": "20px",
-        "borderStyle": "solid",
-        "borderWidth": 2,
-        "display": "inline-block",
-      }
-    }
   >
     <div
-      style={
-        Object {
-          "backgroundColor": "#f1e0b5",
-          "borderRadius": "15px",
-          "height": "29px",
-          "margin": "3px",
-          "width": "29px",
-        }
-      }
+      className="inner_16vgkgb-o_O-neutral_1hyp8n0"
     />
   </div>
   <div
+    className="color_17zglbt"
     key="1-color-cold"
     onClick={[Function]}
-    style={
-      Object {
-        "borderColor": "transparent",
-        "borderRadius": "20px",
-        "borderStyle": "solid",
-        "borderWidth": 2,
-        "display": "inline-block",
-      }
-    }
   >
     <div
-      style={
-        Object {
-          "backgroundColor": "#f5faf6",
-          "borderRadius": "15px",
-          "height": "29px",
-          "margin": "3px",
-          "width": "29px",
-        }
-      }
+      className="inner_16vgkgb-o_O-cold_k70gul"
     />
   </div>
 </div>
@@ -946,235 +354,87 @@ exports[`ColorSwitcher should render the rgb switcher correctly when neutral is 
 
 exports[`ColorSwitcher should render the rgb switcher correctly when pink is active 1`] = `
 <div
-  style={
-    Object {
-      "fontSize": 0,
-    }
-  }
+  className="colorSwitcher_1osgznj"
 >
   <div
+    className="color_17zglbt"
     key="1-color-red"
     onClick={[Function]}
-    style={
-      Object {
-        "borderColor": "transparent",
-        "borderRadius": "20px",
-        "borderStyle": "solid",
-        "borderWidth": 2,
-        "display": "inline-block",
-      }
-    }
   >
     <div
-      style={
-        Object {
-          "backgroundColor": "red",
-          "borderRadius": "15px",
-          "height": "29px",
-          "margin": "3px",
-          "width": "29px",
-        }
-      }
+      className="inner_16vgkgb-o_O-red_k554e1"
     />
   </div>
   <div
+    className="color_17zglbt"
     key="1-color-green"
     onClick={[Function]}
-    style={
-      Object {
-        "borderColor": "transparent",
-        "borderRadius": "20px",
-        "borderStyle": "solid",
-        "borderWidth": 2,
-        "display": "inline-block",
-      }
-    }
   >
     <div
-      style={
-        Object {
-          "backgroundColor": "green",
-          "borderRadius": "15px",
-          "height": "29px",
-          "margin": "3px",
-          "width": "29px",
-        }
-      }
+      className="inner_16vgkgb-o_O-green_22ph69"
     />
   </div>
   <div
+    className="color_17zglbt"
     key="1-color-blue"
     onClick={[Function]}
-    style={
-      Object {
-        "borderColor": "transparent",
-        "borderRadius": "20px",
-        "borderStyle": "solid",
-        "borderWidth": 2,
-        "display": "inline-block",
-      }
-    }
   >
     <div
-      style={
-        Object {
-          "backgroundColor": "blue",
-          "borderRadius": "15px",
-          "height": "29px",
-          "margin": "3px",
-          "width": "29px",
-        }
-      }
+      className="inner_16vgkgb-o_O-blue_106q26s"
     />
   </div>
   <div
+    className="color_17zglbt"
     key="1-color-yellow"
     onClick={[Function]}
-    style={
-      Object {
-        "borderColor": "transparent",
-        "borderRadius": "20px",
-        "borderStyle": "solid",
-        "borderWidth": 2,
-        "display": "inline-block",
-      }
-    }
   >
     <div
-      style={
-        Object {
-          "backgroundColor": "yellow",
-          "borderRadius": "15px",
-          "height": "29px",
-          "margin": "3px",
-          "width": "29px",
-        }
-      }
+      className="inner_16vgkgb-o_O-yellow_1ywdg4u"
     />
   </div>
   <div
+    className="color_17zglbt"
     key="1-color-pink"
     onClick={[Function]}
-    style={
-      Object {
-        "borderColor": "transparent",
-        "borderRadius": "20px",
-        "borderStyle": "solid",
-        "borderWidth": 2,
-        "display": "inline-block",
-      }
-    }
   >
     <div
-      style={
-        Object {
-          "backgroundColor": "deeppink",
-          "borderRadius": "15px",
-          "height": "29px",
-          "margin": "3px",
-          "width": "29px",
-        }
-      }
+      className="inner_16vgkgb-o_O-pink_ub5v9e"
     />
   </div>
   <div
+    className="color_17zglbt"
     key="1-color-purple"
     onClick={[Function]}
-    style={
-      Object {
-        "borderColor": "transparent",
-        "borderRadius": "20px",
-        "borderStyle": "solid",
-        "borderWidth": 2,
-        "display": "inline-block",
-      }
-    }
   >
     <div
-      style={
-        Object {
-          "backgroundColor": "mediumpurple",
-          "borderRadius": "15px",
-          "height": "29px",
-          "margin": "3px",
-          "width": "29px",
-        }
-      }
+      className="inner_16vgkgb-o_O-purple_s6keop"
     />
   </div>
   <div
+    className="color_17zglbt"
     key="1-color-warm"
     onClick={[Function]}
-    style={
-      Object {
-        "borderColor": "transparent",
-        "borderRadius": "20px",
-        "borderStyle": "solid",
-        "borderWidth": 2,
-        "display": "inline-block",
-      }
-    }
   >
     <div
-      style={
-        Object {
-          "backgroundColor": "#efd275",
-          "borderRadius": "15px",
-          "height": "29px",
-          "margin": "3px",
-          "width": "29px",
-        }
-      }
+      className="inner_16vgkgb-o_O-warm_1wjcaqm"
     />
   </div>
   <div
+    className="color_17zglbt"
     key="1-color-neutral"
     onClick={[Function]}
-    style={
-      Object {
-        "borderColor": "transparent",
-        "borderRadius": "20px",
-        "borderStyle": "solid",
-        "borderWidth": 2,
-        "display": "inline-block",
-      }
-    }
   >
     <div
-      style={
-        Object {
-          "backgroundColor": "#f1e0b5",
-          "borderRadius": "15px",
-          "height": "29px",
-          "margin": "3px",
-          "width": "29px",
-        }
-      }
+      className="inner_16vgkgb-o_O-neutral_1hyp8n0"
     />
   </div>
   <div
+    className="color_17zglbt"
     key="1-color-cold"
     onClick={[Function]}
-    style={
-      Object {
-        "borderColor": "transparent",
-        "borderRadius": "20px",
-        "borderStyle": "solid",
-        "borderWidth": 2,
-        "display": "inline-block",
-      }
-    }
   >
     <div
-      style={
-        Object {
-          "backgroundColor": "#f5faf6",
-          "borderRadius": "15px",
-          "height": "29px",
-          "margin": "3px",
-          "width": "29px",
-        }
-      }
+      className="inner_16vgkgb-o_O-cold_k70gul"
     />
   </div>
 </div>
@@ -1182,235 +442,87 @@ exports[`ColorSwitcher should render the rgb switcher correctly when pink is act
 
 exports[`ColorSwitcher should render the rgb switcher correctly when purple is active 1`] = `
 <div
-  style={
-    Object {
-      "fontSize": 0,
-    }
-  }
+  className="colorSwitcher_1osgznj"
 >
   <div
+    className="color_17zglbt"
     key="1-color-red"
     onClick={[Function]}
-    style={
-      Object {
-        "borderColor": "transparent",
-        "borderRadius": "20px",
-        "borderStyle": "solid",
-        "borderWidth": 2,
-        "display": "inline-block",
-      }
-    }
   >
     <div
-      style={
-        Object {
-          "backgroundColor": "red",
-          "borderRadius": "15px",
-          "height": "29px",
-          "margin": "3px",
-          "width": "29px",
-        }
-      }
+      className="inner_16vgkgb-o_O-red_k554e1"
     />
   </div>
   <div
+    className="color_17zglbt"
     key="1-color-green"
     onClick={[Function]}
-    style={
-      Object {
-        "borderColor": "transparent",
-        "borderRadius": "20px",
-        "borderStyle": "solid",
-        "borderWidth": 2,
-        "display": "inline-block",
-      }
-    }
   >
     <div
-      style={
-        Object {
-          "backgroundColor": "green",
-          "borderRadius": "15px",
-          "height": "29px",
-          "margin": "3px",
-          "width": "29px",
-        }
-      }
+      className="inner_16vgkgb-o_O-green_22ph69"
     />
   </div>
   <div
+    className="color_17zglbt"
     key="1-color-blue"
     onClick={[Function]}
-    style={
-      Object {
-        "borderColor": "transparent",
-        "borderRadius": "20px",
-        "borderStyle": "solid",
-        "borderWidth": 2,
-        "display": "inline-block",
-      }
-    }
   >
     <div
-      style={
-        Object {
-          "backgroundColor": "blue",
-          "borderRadius": "15px",
-          "height": "29px",
-          "margin": "3px",
-          "width": "29px",
-        }
-      }
+      className="inner_16vgkgb-o_O-blue_106q26s"
     />
   </div>
   <div
+    className="color_17zglbt"
     key="1-color-yellow"
     onClick={[Function]}
-    style={
-      Object {
-        "borderColor": "transparent",
-        "borderRadius": "20px",
-        "borderStyle": "solid",
-        "borderWidth": 2,
-        "display": "inline-block",
-      }
-    }
   >
     <div
-      style={
-        Object {
-          "backgroundColor": "yellow",
-          "borderRadius": "15px",
-          "height": "29px",
-          "margin": "3px",
-          "width": "29px",
-        }
-      }
+      className="inner_16vgkgb-o_O-yellow_1ywdg4u"
     />
   </div>
   <div
+    className="color_17zglbt"
     key="1-color-pink"
     onClick={[Function]}
-    style={
-      Object {
-        "borderColor": "transparent",
-        "borderRadius": "20px",
-        "borderStyle": "solid",
-        "borderWidth": 2,
-        "display": "inline-block",
-      }
-    }
   >
     <div
-      style={
-        Object {
-          "backgroundColor": "deeppink",
-          "borderRadius": "15px",
-          "height": "29px",
-          "margin": "3px",
-          "width": "29px",
-        }
-      }
+      className="inner_16vgkgb-o_O-pink_ub5v9e"
     />
   </div>
   <div
+    className="color_17zglbt"
     key="1-color-purple"
     onClick={[Function]}
-    style={
-      Object {
-        "borderColor": "transparent",
-        "borderRadius": "20px",
-        "borderStyle": "solid",
-        "borderWidth": 2,
-        "display": "inline-block",
-      }
-    }
   >
     <div
-      style={
-        Object {
-          "backgroundColor": "mediumpurple",
-          "borderRadius": "15px",
-          "height": "29px",
-          "margin": "3px",
-          "width": "29px",
-        }
-      }
+      className="inner_16vgkgb-o_O-purple_s6keop"
     />
   </div>
   <div
+    className="color_17zglbt"
     key="1-color-warm"
     onClick={[Function]}
-    style={
-      Object {
-        "borderColor": "transparent",
-        "borderRadius": "20px",
-        "borderStyle": "solid",
-        "borderWidth": 2,
-        "display": "inline-block",
-      }
-    }
   >
     <div
-      style={
-        Object {
-          "backgroundColor": "#efd275",
-          "borderRadius": "15px",
-          "height": "29px",
-          "margin": "3px",
-          "width": "29px",
-        }
-      }
+      className="inner_16vgkgb-o_O-warm_1wjcaqm"
     />
   </div>
   <div
+    className="color_17zglbt"
     key="1-color-neutral"
     onClick={[Function]}
-    style={
-      Object {
-        "borderColor": "transparent",
-        "borderRadius": "20px",
-        "borderStyle": "solid",
-        "borderWidth": 2,
-        "display": "inline-block",
-      }
-    }
   >
     <div
-      style={
-        Object {
-          "backgroundColor": "#f1e0b5",
-          "borderRadius": "15px",
-          "height": "29px",
-          "margin": "3px",
-          "width": "29px",
-        }
-      }
+      className="inner_16vgkgb-o_O-neutral_1hyp8n0"
     />
   </div>
   <div
+    className="color_17zglbt"
     key="1-color-cold"
     onClick={[Function]}
-    style={
-      Object {
-        "borderColor": "transparent",
-        "borderRadius": "20px",
-        "borderStyle": "solid",
-        "borderWidth": 2,
-        "display": "inline-block",
-      }
-    }
   >
     <div
-      style={
-        Object {
-          "backgroundColor": "#f5faf6",
-          "borderRadius": "15px",
-          "height": "29px",
-          "margin": "3px",
-          "width": "29px",
-        }
-      }
+      className="inner_16vgkgb-o_O-cold_k70gul"
     />
   </div>
 </div>
@@ -1418,235 +530,87 @@ exports[`ColorSwitcher should render the rgb switcher correctly when purple is a
 
 exports[`ColorSwitcher should render the rgb switcher correctly when red is active 1`] = `
 <div
-  style={
-    Object {
-      "fontSize": 0,
-    }
-  }
+  className="colorSwitcher_1osgznj"
 >
   <div
+    className="color_17zglbt"
     key="1-color-red"
     onClick={[Function]}
-    style={
-      Object {
-        "borderColor": "transparent",
-        "borderRadius": "20px",
-        "borderStyle": "solid",
-        "borderWidth": 2,
-        "display": "inline-block",
-      }
-    }
   >
     <div
-      style={
-        Object {
-          "backgroundColor": "red",
-          "borderRadius": "15px",
-          "height": "29px",
-          "margin": "3px",
-          "width": "29px",
-        }
-      }
+      className="inner_16vgkgb-o_O-red_k554e1"
     />
   </div>
   <div
+    className="color_17zglbt"
     key="1-color-green"
     onClick={[Function]}
-    style={
-      Object {
-        "borderColor": "transparent",
-        "borderRadius": "20px",
-        "borderStyle": "solid",
-        "borderWidth": 2,
-        "display": "inline-block",
-      }
-    }
   >
     <div
-      style={
-        Object {
-          "backgroundColor": "green",
-          "borderRadius": "15px",
-          "height": "29px",
-          "margin": "3px",
-          "width": "29px",
-        }
-      }
+      className="inner_16vgkgb-o_O-green_22ph69"
     />
   </div>
   <div
+    className="color_17zglbt"
     key="1-color-blue"
     onClick={[Function]}
-    style={
-      Object {
-        "borderColor": "transparent",
-        "borderRadius": "20px",
-        "borderStyle": "solid",
-        "borderWidth": 2,
-        "display": "inline-block",
-      }
-    }
   >
     <div
-      style={
-        Object {
-          "backgroundColor": "blue",
-          "borderRadius": "15px",
-          "height": "29px",
-          "margin": "3px",
-          "width": "29px",
-        }
-      }
+      className="inner_16vgkgb-o_O-blue_106q26s"
     />
   </div>
   <div
+    className="color_17zglbt"
     key="1-color-yellow"
     onClick={[Function]}
-    style={
-      Object {
-        "borderColor": "transparent",
-        "borderRadius": "20px",
-        "borderStyle": "solid",
-        "borderWidth": 2,
-        "display": "inline-block",
-      }
-    }
   >
     <div
-      style={
-        Object {
-          "backgroundColor": "yellow",
-          "borderRadius": "15px",
-          "height": "29px",
-          "margin": "3px",
-          "width": "29px",
-        }
-      }
+      className="inner_16vgkgb-o_O-yellow_1ywdg4u"
     />
   </div>
   <div
+    className="color_17zglbt"
     key="1-color-pink"
     onClick={[Function]}
-    style={
-      Object {
-        "borderColor": "transparent",
-        "borderRadius": "20px",
-        "borderStyle": "solid",
-        "borderWidth": 2,
-        "display": "inline-block",
-      }
-    }
   >
     <div
-      style={
-        Object {
-          "backgroundColor": "deeppink",
-          "borderRadius": "15px",
-          "height": "29px",
-          "margin": "3px",
-          "width": "29px",
-        }
-      }
+      className="inner_16vgkgb-o_O-pink_ub5v9e"
     />
   </div>
   <div
+    className="color_17zglbt"
     key="1-color-purple"
     onClick={[Function]}
-    style={
-      Object {
-        "borderColor": "transparent",
-        "borderRadius": "20px",
-        "borderStyle": "solid",
-        "borderWidth": 2,
-        "display": "inline-block",
-      }
-    }
   >
     <div
-      style={
-        Object {
-          "backgroundColor": "mediumpurple",
-          "borderRadius": "15px",
-          "height": "29px",
-          "margin": "3px",
-          "width": "29px",
-        }
-      }
+      className="inner_16vgkgb-o_O-purple_s6keop"
     />
   </div>
   <div
+    className="color_17zglbt"
     key="1-color-warm"
     onClick={[Function]}
-    style={
-      Object {
-        "borderColor": "transparent",
-        "borderRadius": "20px",
-        "borderStyle": "solid",
-        "borderWidth": 2,
-        "display": "inline-block",
-      }
-    }
   >
     <div
-      style={
-        Object {
-          "backgroundColor": "#efd275",
-          "borderRadius": "15px",
-          "height": "29px",
-          "margin": "3px",
-          "width": "29px",
-        }
-      }
+      className="inner_16vgkgb-o_O-warm_1wjcaqm"
     />
   </div>
   <div
+    className="color_17zglbt"
     key="1-color-neutral"
     onClick={[Function]}
-    style={
-      Object {
-        "borderColor": "transparent",
-        "borderRadius": "20px",
-        "borderStyle": "solid",
-        "borderWidth": 2,
-        "display": "inline-block",
-      }
-    }
   >
     <div
-      style={
-        Object {
-          "backgroundColor": "#f1e0b5",
-          "borderRadius": "15px",
-          "height": "29px",
-          "margin": "3px",
-          "width": "29px",
-        }
-      }
+      className="inner_16vgkgb-o_O-neutral_1hyp8n0"
     />
   </div>
   <div
+    className="color_17zglbt"
     key="1-color-cold"
     onClick={[Function]}
-    style={
-      Object {
-        "borderColor": "transparent",
-        "borderRadius": "20px",
-        "borderStyle": "solid",
-        "borderWidth": 2,
-        "display": "inline-block",
-      }
-    }
   >
     <div
-      style={
-        Object {
-          "backgroundColor": "#f5faf6",
-          "borderRadius": "15px",
-          "height": "29px",
-          "margin": "3px",
-          "width": "29px",
-        }
-      }
+      className="inner_16vgkgb-o_O-cold_k70gul"
     />
   </div>
 </div>
@@ -1654,235 +618,87 @@ exports[`ColorSwitcher should render the rgb switcher correctly when red is acti
 
 exports[`ColorSwitcher should render the rgb switcher correctly when warm is active 1`] = `
 <div
-  style={
-    Object {
-      "fontSize": 0,
-    }
-  }
+  className="colorSwitcher_1osgznj"
 >
   <div
+    className="color_17zglbt"
     key="1-color-red"
     onClick={[Function]}
-    style={
-      Object {
-        "borderColor": "transparent",
-        "borderRadius": "20px",
-        "borderStyle": "solid",
-        "borderWidth": 2,
-        "display": "inline-block",
-      }
-    }
   >
     <div
-      style={
-        Object {
-          "backgroundColor": "red",
-          "borderRadius": "15px",
-          "height": "29px",
-          "margin": "3px",
-          "width": "29px",
-        }
-      }
+      className="inner_16vgkgb-o_O-red_k554e1"
     />
   </div>
   <div
+    className="color_17zglbt"
     key="1-color-green"
     onClick={[Function]}
-    style={
-      Object {
-        "borderColor": "transparent",
-        "borderRadius": "20px",
-        "borderStyle": "solid",
-        "borderWidth": 2,
-        "display": "inline-block",
-      }
-    }
   >
     <div
-      style={
-        Object {
-          "backgroundColor": "green",
-          "borderRadius": "15px",
-          "height": "29px",
-          "margin": "3px",
-          "width": "29px",
-        }
-      }
+      className="inner_16vgkgb-o_O-green_22ph69"
     />
   </div>
   <div
+    className="color_17zglbt"
     key="1-color-blue"
     onClick={[Function]}
-    style={
-      Object {
-        "borderColor": "transparent",
-        "borderRadius": "20px",
-        "borderStyle": "solid",
-        "borderWidth": 2,
-        "display": "inline-block",
-      }
-    }
   >
     <div
-      style={
-        Object {
-          "backgroundColor": "blue",
-          "borderRadius": "15px",
-          "height": "29px",
-          "margin": "3px",
-          "width": "29px",
-        }
-      }
+      className="inner_16vgkgb-o_O-blue_106q26s"
     />
   </div>
   <div
+    className="color_17zglbt"
     key="1-color-yellow"
     onClick={[Function]}
-    style={
-      Object {
-        "borderColor": "transparent",
-        "borderRadius": "20px",
-        "borderStyle": "solid",
-        "borderWidth": 2,
-        "display": "inline-block",
-      }
-    }
   >
     <div
-      style={
-        Object {
-          "backgroundColor": "yellow",
-          "borderRadius": "15px",
-          "height": "29px",
-          "margin": "3px",
-          "width": "29px",
-        }
-      }
+      className="inner_16vgkgb-o_O-yellow_1ywdg4u"
     />
   </div>
   <div
+    className="color_17zglbt"
     key="1-color-pink"
     onClick={[Function]}
-    style={
-      Object {
-        "borderColor": "transparent",
-        "borderRadius": "20px",
-        "borderStyle": "solid",
-        "borderWidth": 2,
-        "display": "inline-block",
-      }
-    }
   >
     <div
-      style={
-        Object {
-          "backgroundColor": "deeppink",
-          "borderRadius": "15px",
-          "height": "29px",
-          "margin": "3px",
-          "width": "29px",
-        }
-      }
+      className="inner_16vgkgb-o_O-pink_ub5v9e"
     />
   </div>
   <div
+    className="color_17zglbt"
     key="1-color-purple"
     onClick={[Function]}
-    style={
-      Object {
-        "borderColor": "transparent",
-        "borderRadius": "20px",
-        "borderStyle": "solid",
-        "borderWidth": 2,
-        "display": "inline-block",
-      }
-    }
   >
     <div
-      style={
-        Object {
-          "backgroundColor": "mediumpurple",
-          "borderRadius": "15px",
-          "height": "29px",
-          "margin": "3px",
-          "width": "29px",
-        }
-      }
+      className="inner_16vgkgb-o_O-purple_s6keop"
     />
   </div>
   <div
+    className="color_17zglbt"
     key="1-color-warm"
     onClick={[Function]}
-    style={
-      Object {
-        "borderColor": "transparent",
-        "borderRadius": "20px",
-        "borderStyle": "solid",
-        "borderWidth": 2,
-        "display": "inline-block",
-      }
-    }
   >
     <div
-      style={
-        Object {
-          "backgroundColor": "#efd275",
-          "borderRadius": "15px",
-          "height": "29px",
-          "margin": "3px",
-          "width": "29px",
-        }
-      }
+      className="inner_16vgkgb-o_O-warm_1wjcaqm"
     />
   </div>
   <div
+    className="color_17zglbt"
     key="1-color-neutral"
     onClick={[Function]}
-    style={
-      Object {
-        "borderColor": "transparent",
-        "borderRadius": "20px",
-        "borderStyle": "solid",
-        "borderWidth": 2,
-        "display": "inline-block",
-      }
-    }
   >
     <div
-      style={
-        Object {
-          "backgroundColor": "#f1e0b5",
-          "borderRadius": "15px",
-          "height": "29px",
-          "margin": "3px",
-          "width": "29px",
-        }
-      }
+      className="inner_16vgkgb-o_O-neutral_1hyp8n0"
     />
   </div>
   <div
+    className="color_17zglbt"
     key="1-color-cold"
     onClick={[Function]}
-    style={
-      Object {
-        "borderColor": "transparent",
-        "borderRadius": "20px",
-        "borderStyle": "solid",
-        "borderWidth": 2,
-        "display": "inline-block",
-      }
-    }
   >
     <div
-      style={
-        Object {
-          "backgroundColor": "#f5faf6",
-          "borderRadius": "15px",
-          "height": "29px",
-          "margin": "3px",
-          "width": "29px",
-        }
-      }
+      className="inner_16vgkgb-o_O-cold_k70gul"
     />
   </div>
 </div>
@@ -1890,235 +706,87 @@ exports[`ColorSwitcher should render the rgb switcher correctly when warm is act
 
 exports[`ColorSwitcher should render the rgb switcher correctly when yellow is active 1`] = `
 <div
-  style={
-    Object {
-      "fontSize": 0,
-    }
-  }
+  className="colorSwitcher_1osgznj"
 >
   <div
+    className="color_17zglbt"
     key="1-color-red"
     onClick={[Function]}
-    style={
-      Object {
-        "borderColor": "transparent",
-        "borderRadius": "20px",
-        "borderStyle": "solid",
-        "borderWidth": 2,
-        "display": "inline-block",
-      }
-    }
   >
     <div
-      style={
-        Object {
-          "backgroundColor": "red",
-          "borderRadius": "15px",
-          "height": "29px",
-          "margin": "3px",
-          "width": "29px",
-        }
-      }
+      className="inner_16vgkgb-o_O-red_k554e1"
     />
   </div>
   <div
+    className="color_17zglbt"
     key="1-color-green"
     onClick={[Function]}
-    style={
-      Object {
-        "borderColor": "transparent",
-        "borderRadius": "20px",
-        "borderStyle": "solid",
-        "borderWidth": 2,
-        "display": "inline-block",
-      }
-    }
   >
     <div
-      style={
-        Object {
-          "backgroundColor": "green",
-          "borderRadius": "15px",
-          "height": "29px",
-          "margin": "3px",
-          "width": "29px",
-        }
-      }
+      className="inner_16vgkgb-o_O-green_22ph69"
     />
   </div>
   <div
+    className="color_17zglbt"
     key="1-color-blue"
     onClick={[Function]}
-    style={
-      Object {
-        "borderColor": "transparent",
-        "borderRadius": "20px",
-        "borderStyle": "solid",
-        "borderWidth": 2,
-        "display": "inline-block",
-      }
-    }
   >
     <div
-      style={
-        Object {
-          "backgroundColor": "blue",
-          "borderRadius": "15px",
-          "height": "29px",
-          "margin": "3px",
-          "width": "29px",
-        }
-      }
+      className="inner_16vgkgb-o_O-blue_106q26s"
     />
   </div>
   <div
+    className="color_17zglbt"
     key="1-color-yellow"
     onClick={[Function]}
-    style={
-      Object {
-        "borderColor": "transparent",
-        "borderRadius": "20px",
-        "borderStyle": "solid",
-        "borderWidth": 2,
-        "display": "inline-block",
-      }
-    }
   >
     <div
-      style={
-        Object {
-          "backgroundColor": "yellow",
-          "borderRadius": "15px",
-          "height": "29px",
-          "margin": "3px",
-          "width": "29px",
-        }
-      }
+      className="inner_16vgkgb-o_O-yellow_1ywdg4u"
     />
   </div>
   <div
+    className="color_17zglbt"
     key="1-color-pink"
     onClick={[Function]}
-    style={
-      Object {
-        "borderColor": "transparent",
-        "borderRadius": "20px",
-        "borderStyle": "solid",
-        "borderWidth": 2,
-        "display": "inline-block",
-      }
-    }
   >
     <div
-      style={
-        Object {
-          "backgroundColor": "deeppink",
-          "borderRadius": "15px",
-          "height": "29px",
-          "margin": "3px",
-          "width": "29px",
-        }
-      }
+      className="inner_16vgkgb-o_O-pink_ub5v9e"
     />
   </div>
   <div
+    className="color_17zglbt"
     key="1-color-purple"
     onClick={[Function]}
-    style={
-      Object {
-        "borderColor": "transparent",
-        "borderRadius": "20px",
-        "borderStyle": "solid",
-        "borderWidth": 2,
-        "display": "inline-block",
-      }
-    }
   >
     <div
-      style={
-        Object {
-          "backgroundColor": "mediumpurple",
-          "borderRadius": "15px",
-          "height": "29px",
-          "margin": "3px",
-          "width": "29px",
-        }
-      }
+      className="inner_16vgkgb-o_O-purple_s6keop"
     />
   </div>
   <div
+    className="color_17zglbt"
     key="1-color-warm"
     onClick={[Function]}
-    style={
-      Object {
-        "borderColor": "transparent",
-        "borderRadius": "20px",
-        "borderStyle": "solid",
-        "borderWidth": 2,
-        "display": "inline-block",
-      }
-    }
   >
     <div
-      style={
-        Object {
-          "backgroundColor": "#efd275",
-          "borderRadius": "15px",
-          "height": "29px",
-          "margin": "3px",
-          "width": "29px",
-        }
-      }
+      className="inner_16vgkgb-o_O-warm_1wjcaqm"
     />
   </div>
   <div
+    className="color_17zglbt"
     key="1-color-neutral"
     onClick={[Function]}
-    style={
-      Object {
-        "borderColor": "transparent",
-        "borderRadius": "20px",
-        "borderStyle": "solid",
-        "borderWidth": 2,
-        "display": "inline-block",
-      }
-    }
   >
     <div
-      style={
-        Object {
-          "backgroundColor": "#f1e0b5",
-          "borderRadius": "15px",
-          "height": "29px",
-          "margin": "3px",
-          "width": "29px",
-        }
-      }
+      className="inner_16vgkgb-o_O-neutral_1hyp8n0"
     />
   </div>
   <div
+    className="color_17zglbt"
     key="1-color-cold"
     onClick={[Function]}
-    style={
-      Object {
-        "borderColor": "transparent",
-        "borderRadius": "20px",
-        "borderStyle": "solid",
-        "borderWidth": 2,
-        "display": "inline-block",
-      }
-    }
   >
     <div
-      style={
-        Object {
-          "backgroundColor": "#f5faf6",
-          "borderRadius": "15px",
-          "height": "29px",
-          "margin": "3px",
-          "width": "29px",
-        }
-      }
+      className="inner_16vgkgb-o_O-cold_k70gul"
     />
   </div>
 </div>
@@ -2126,35 +794,15 @@ exports[`ColorSwitcher should render the rgb switcher correctly when yellow is a
 
 exports[`ColorSwitcher should render the white switcher correctly 1`] = `
 <div
-  style={
-    Object {
-      "fontSize": 0,
-    }
-  }
+  className="colorSwitcher_1osgznj"
 >
   <div
+    className="color_17zglbt"
     key="1-color-neutral"
     onClick={[Function]}
-    style={
-      Object {
-        "borderColor": "transparent",
-        "borderRadius": "20px",
-        "borderStyle": "solid",
-        "borderWidth": 2,
-        "display": "inline-block",
-      }
-    }
   >
     <div
-      style={
-        Object {
-          "backgroundColor": "#f1e0b5",
-          "borderRadius": "15px",
-          "height": "29px",
-          "margin": "3px",
-          "width": "29px",
-        }
-      }
+      className="inner_16vgkgb-o_O-neutral_1hyp8n0"
     />
   </div>
 </div>
@@ -2162,85 +810,33 @@ exports[`ColorSwitcher should render the white switcher correctly 1`] = `
 
 exports[`ColorSwitcher should render the white-spectrum switcher correctly when cold is active 1`] = `
 <div
-  style={
-    Object {
-      "fontSize": 0,
-    }
-  }
+  className="colorSwitcher_1osgznj"
 >
   <div
+    className="color_17zglbt"
     key="1-color-warm"
     onClick={[Function]}
-    style={
-      Object {
-        "borderColor": "transparent",
-        "borderRadius": "20px",
-        "borderStyle": "solid",
-        "borderWidth": 2,
-        "display": "inline-block",
-      }
-    }
   >
     <div
-      style={
-        Object {
-          "backgroundColor": "#efd275",
-          "borderRadius": "15px",
-          "height": "29px",
-          "margin": "3px",
-          "width": "29px",
-        }
-      }
+      className="inner_16vgkgb-o_O-warm_1wjcaqm"
     />
   </div>
   <div
+    className="color_17zglbt"
     key="1-color-neutral"
     onClick={[Function]}
-    style={
-      Object {
-        "borderColor": "transparent",
-        "borderRadius": "20px",
-        "borderStyle": "solid",
-        "borderWidth": 2,
-        "display": "inline-block",
-      }
-    }
   >
     <div
-      style={
-        Object {
-          "backgroundColor": "#f1e0b5",
-          "borderRadius": "15px",
-          "height": "29px",
-          "margin": "3px",
-          "width": "29px",
-        }
-      }
+      className="inner_16vgkgb-o_O-neutral_1hyp8n0"
     />
   </div>
   <div
+    className="color_17zglbt"
     key="1-color-cold"
     onClick={[Function]}
-    style={
-      Object {
-        "borderColor": "transparent",
-        "borderRadius": "20px",
-        "borderStyle": "solid",
-        "borderWidth": 2,
-        "display": "inline-block",
-      }
-    }
   >
     <div
-      style={
-        Object {
-          "backgroundColor": "#f5faf6",
-          "borderRadius": "15px",
-          "height": "29px",
-          "margin": "3px",
-          "width": "29px",
-        }
-      }
+      className="inner_16vgkgb-o_O-cold_k70gul"
     />
   </div>
 </div>
@@ -2248,85 +844,33 @@ exports[`ColorSwitcher should render the white-spectrum switcher correctly when 
 
 exports[`ColorSwitcher should render the white-spectrum switcher correctly when neutral is active 1`] = `
 <div
-  style={
-    Object {
-      "fontSize": 0,
-    }
-  }
+  className="colorSwitcher_1osgznj"
 >
   <div
+    className="color_17zglbt"
     key="1-color-warm"
     onClick={[Function]}
-    style={
-      Object {
-        "borderColor": "transparent",
-        "borderRadius": "20px",
-        "borderStyle": "solid",
-        "borderWidth": 2,
-        "display": "inline-block",
-      }
-    }
   >
     <div
-      style={
-        Object {
-          "backgroundColor": "#efd275",
-          "borderRadius": "15px",
-          "height": "29px",
-          "margin": "3px",
-          "width": "29px",
-        }
-      }
+      className="inner_16vgkgb-o_O-warm_1wjcaqm"
     />
   </div>
   <div
+    className="color_17zglbt"
     key="1-color-neutral"
     onClick={[Function]}
-    style={
-      Object {
-        "borderColor": "transparent",
-        "borderRadius": "20px",
-        "borderStyle": "solid",
-        "borderWidth": 2,
-        "display": "inline-block",
-      }
-    }
   >
     <div
-      style={
-        Object {
-          "backgroundColor": "#f1e0b5",
-          "borderRadius": "15px",
-          "height": "29px",
-          "margin": "3px",
-          "width": "29px",
-        }
-      }
+      className="inner_16vgkgb-o_O-neutral_1hyp8n0"
     />
   </div>
   <div
+    className="color_17zglbt"
     key="1-color-cold"
     onClick={[Function]}
-    style={
-      Object {
-        "borderColor": "transparent",
-        "borderRadius": "20px",
-        "borderStyle": "solid",
-        "borderWidth": 2,
-        "display": "inline-block",
-      }
-    }
   >
     <div
-      style={
-        Object {
-          "backgroundColor": "#f5faf6",
-          "borderRadius": "15px",
-          "height": "29px",
-          "margin": "3px",
-          "width": "29px",
-        }
-      }
+      className="inner_16vgkgb-o_O-cold_k70gul"
     />
   </div>
 </div>
@@ -2334,85 +878,33 @@ exports[`ColorSwitcher should render the white-spectrum switcher correctly when 
 
 exports[`ColorSwitcher should render the white-spectrum switcher correctly when warm is active 1`] = `
 <div
-  style={
-    Object {
-      "fontSize": 0,
-    }
-  }
+  className="colorSwitcher_1osgznj"
 >
   <div
+    className="color_17zglbt"
     key="1-color-warm"
     onClick={[Function]}
-    style={
-      Object {
-        "borderColor": "transparent",
-        "borderRadius": "20px",
-        "borderStyle": "solid",
-        "borderWidth": 2,
-        "display": "inline-block",
-      }
-    }
   >
     <div
-      style={
-        Object {
-          "backgroundColor": "#efd275",
-          "borderRadius": "15px",
-          "height": "29px",
-          "margin": "3px",
-          "width": "29px",
-        }
-      }
+      className="inner_16vgkgb-o_O-warm_1wjcaqm"
     />
   </div>
   <div
+    className="color_17zglbt"
     key="1-color-neutral"
     onClick={[Function]}
-    style={
-      Object {
-        "borderColor": "transparent",
-        "borderRadius": "20px",
-        "borderStyle": "solid",
-        "borderWidth": 2,
-        "display": "inline-block",
-      }
-    }
   >
     <div
-      style={
-        Object {
-          "backgroundColor": "#f1e0b5",
-          "borderRadius": "15px",
-          "height": "29px",
-          "margin": "3px",
-          "width": "29px",
-        }
-      }
+      className="inner_16vgkgb-o_O-neutral_1hyp8n0"
     />
   </div>
   <div
+    className="color_17zglbt"
     key="1-color-cold"
     onClick={[Function]}
-    style={
-      Object {
-        "borderColor": "transparent",
-        "borderRadius": "20px",
-        "borderStyle": "solid",
-        "borderWidth": 2,
-        "display": "inline-block",
-      }
-    }
   >
     <div
-      style={
-        Object {
-          "backgroundColor": "#f5faf6",
-          "borderRadius": "15px",
-          "height": "29px",
-          "margin": "3px",
-          "width": "29px",
-        }
-      }
+      className="inner_16vgkgb-o_O-cold_k70gul"
     />
   </div>
 </div>

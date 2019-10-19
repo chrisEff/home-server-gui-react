@@ -1,14 +1,5 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Title should render correctly 1`] = `
-<span
-  className="name"
-  onClick={[Function]}
->
-  test
-</span>
-`;
-
 exports[`Title should go into edit mode on click 1`] = `
 <div>
   <input
@@ -26,4 +17,13 @@ exports[`Title should go into edit mode on click 1`] = `
     OK
   </button>
 </div>
+`;
+
+exports[`Title should render correctly 1`] = `
+<span
+  className="title_1raj3kg"
+  onClick={[Function]}
+>
+  test
+</span>
 `;

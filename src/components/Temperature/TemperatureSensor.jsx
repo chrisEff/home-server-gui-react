@@ -3,13 +3,15 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import {connect} from 'react-redux'
+import {StyleSheet, css} from 'aphrodite'
 
 import TemperatureChart from './TemperatureChart'
+import theme from '@/theme'
 
 const TemperatureSensor = ({sensor}) => (
-	<div style={styles.tempSensor} className='tempSensor'>
-		<h4 className='name'>{sensor.name}</h4>
-		<div className='value'>{Math.round(sensor.celsiusValue * 10) / 10}°C</div>
+	<div className={css([theme.styles.device, styles.tempSensor])}>
+		<span className={css([styles.name])}>{sensor.name}</span>
+		<div className={css([styles.value])}>{Math.round(sensor.celsiusValue * 10) / 10}°C</div>
 
 		{ sensor.history && <TemperatureChart data={sensor.history} /> }
 	</div>
@@ -25,12 +27,21 @@ TemperatureSensor.propTypes = {
 	history: PropTypes.array,
 }
 
-const styles = {
+const styles = StyleSheet.create({
 	tempSensor: {
 		height: '280px',
 		width: '920px',
 	},
-}
+	name: {
+		marginLeft: '20px',
+		marginTop: '5px',
+		float: 'left',
+	},
+	value: {
+		float: 'right',
+		fontSize: '2.2em',
+	},
+})
 
 const mapStateToProps = (state, ownProps) => ({
 	sensor: state.tempSensors.find(sensor => sensor.id === ownProps.id),

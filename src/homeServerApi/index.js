@@ -8,7 +8,6 @@ const call = async (method, action, params = {}) => {
 	}
 
 	const url = `${api.apiUrl}${action}?${querystring.stringify(params)}`
-	console.log('fetching URL:', url)
 
 	const response = await fetch(url, {
 		method: method,

@@ -3,6 +3,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import {connect} from 'react-redux'
+import {StyleSheet, css} from 'aphrodite'
 
 import RfOutlet from './RfOutlet'
 
@@ -25,7 +26,7 @@ class RfOutlets extends React.Component {
 
 	render () {
 		return !this.props.outlets ? <div/> : (
-			<div id='rfOutlets'>
+			<div id='rfOutlets' className={css([styles.rfOutlets])}>
 				<h2>{this.props.title}</h2>
 				{this.props.outlets.map(outlet =>
 					<RfOutlet key={outlet.id} id={outlet.id}/>
@@ -34,6 +35,12 @@ class RfOutlets extends React.Component {
 		)
 	}
 }
+
+const styles = StyleSheet.create({
+	rfOutlets: {
+		display: 'inline-block',
+	},
+})
 
 const mapStateToProps = state => ({
 	outlets: state.outlets,

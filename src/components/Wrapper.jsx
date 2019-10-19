@@ -4,6 +4,7 @@ import homeServerApi from '@/homeServerApi'
 
 import React from 'react'
 import {connect} from 'react-redux'
+import {StyleSheet, css} from 'aphrodite'
 
 import ErrorMessage from './ErrorMessage'
 import LoginForm from './LoginForm'
@@ -11,6 +12,8 @@ import Tradfri from './Tradfri'
 import RfOutlets from './RfOutlets'
 import Shutters from './Shutters'
 import Temperature from './Temperature'
+
+import theme from '@/theme'
 
 class Wrapper extends React.Component {
 
@@ -55,8 +58,8 @@ class Wrapper extends React.Component {
 			return <LoginForm onLogin={this.updateCredentials} />
 		}
 		return (
-			<div>
-				<div style={{float: 'right', backgroundColor: 'rgb(60, 63, 65)', padding: '10px', margin: '0 20px'}}>
+			<div className={css([styles.wrapper])}>
+				<div className={css([theme.styles.button, styles.logoutButton])}>
 					<div onClick={this.unsetCredentials}>
 						Log out
 					</div>
@@ -70,6 +73,19 @@ class Wrapper extends React.Component {
 		)
 	}
 }
+
+const styles = StyleSheet.create({
+	wrapper: {
+		backgroundColor: 'rgb(49, 51, 53)',
+		color: '#eee',
+		fontFamily: 'SF Pro Display, SF Pro Icons, AOS Icons, Helvetica Neue, Helvetica, Arial, sans-serif',
+		padding: '20px 0 0 20px',
+	},
+	logoutButton: {
+		float: 'right',
+		margin: '0 20px',
+	},
+})
 
 const mapStateToProps = state => ({
 	errorMessage: state.errorMessage,

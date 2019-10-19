@@ -2,31 +2,35 @@
 
 exports[`LoginForm should render correctly 1`] = `
 <div
-  className="loginForm"
+  className="loginForm_12to336"
 >
   <br />
   <input
+    className="input_1bqe76u"
     name="apiUrl"
     placeholder="API URL"
     type="text"
   />
   <br />
   <input
+    className="input_1bqe76u"
     name="apiUser"
     placeholder="API User"
     type="text"
   />
   <br />
   <input
+    className="input_1bqe76u"
     name="apiKey"
     placeholder="API Key"
     type="password"
   />
   <br />
-  <button
+  <div
+    className="button_1s6k8ie"
     onClick={[Function]}
   >
     OK
-  </button>
+  </div>
 </div>
 `;

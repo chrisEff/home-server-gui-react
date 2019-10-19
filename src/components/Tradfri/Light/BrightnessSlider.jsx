@@ -3,11 +3,13 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import {connect} from 'react-redux'
+import {StyleSheet, css} from 'aphrodite'
+
 import {setDeviceBrightness} from '@/actions/tradfri'
 
 const BrightnessSlider = ({deviceId, brightness, onChange}) =>
 	<input
-		style={styles.brightnessSlider}
+		className={css([styles.brightnessSlider])}
 		type='range'
 		min='0'
 		max='254'
@@ -21,12 +23,12 @@ BrightnessSlider.propTypes = {
 	onchange: PropTypes.func,
 }
 
-const styles = {
+const styles = StyleSheet.create({
 	brightnessSlider: {
 		margin: '20px 0',
 		width: '120px',
 	},
-}
+})
 
 const mapStateToProps = (state, ownProps) => ({
 })

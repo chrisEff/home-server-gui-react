@@ -9,6 +9,7 @@ exports[`Light should render correctly 1`] = `
     title="Decke"
   />
   <Connect(Switch)
+    color="neutral"
     deviceId={65537}
     state={0}
   />

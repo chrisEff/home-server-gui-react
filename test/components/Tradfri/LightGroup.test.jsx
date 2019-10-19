@@ -33,7 +33,7 @@ describe('LightGroup', () => {
 			state: 0,
 			type: 'bulb',
 		}]} />)
-		wrapper.find('.name').simulate('click')
+		wrapper.find('h3').simulate('click')
 		expect(wrapper).toMatchSnapshot()
 	})
 })

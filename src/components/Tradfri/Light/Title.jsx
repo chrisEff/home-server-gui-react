@@ -3,6 +3,7 @@
 import React, {useRef, useState} from 'react'
 import PropTypes from 'prop-types'
 import {connect} from 'react-redux'
+import {StyleSheet, css} from 'aphrodite'
 
 import {setDeviceName} from '@/actions/tradfri'
 
@@ -12,7 +13,9 @@ const Title = ({deviceId, title, onChange}) => {
 
 	if (!editMode) {
 		return (
-			<span className={title.length > 15 ? 'name long' : 'name'} onClick={() => setEditMode(true)}>
+			<span className={
+				css(title.length > 15 ? [styles.title, styles.long] : [styles.title])
+			} onClick={() => setEditMode(true)}>
 				{title}
 			</span>
 		)
@@ -31,6 +34,23 @@ Title.propTypes = {
 	title: PropTypes.string.isRequired,
 	onChange: PropTypes.func,
 }
+
+const styles = StyleSheet.create({
+	title: {
+		':hover': {
+			':after': {
+				content: "' ✏️'",
+				fontSize: '0.9em',
+			},
+		},
+		display: 'block',
+		height: '1.6em',
+	},
+	long: {
+		fontSize: '0.8em',
+		height: '2em',
+	},
+})
 
 const mapStateToProps = (state, ownProps) => ({
 })

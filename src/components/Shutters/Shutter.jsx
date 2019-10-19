@@ -3,16 +3,18 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import {connect} from 'react-redux'
+import {StyleSheet, css} from 'aphrodite'
 
 import {moveShutterUp, moveShutterDown} from '@/actions/shutters'
+import theme from '@/theme'
 
 const Shutter = ({shutter, onUp, onDown}) => {
 	return (
-		<div style={styles.shutter} className='shutter'>
-			<h4>{shutter.name}</h4>
+		<div className={css([theme.styles.device, styles.shutter])}>
+			<span>{shutter.name}</span>
 			<br/>
-			<span className='button' onClick={() => onUp(shutter.id)}>⬆️</span><br/>
-			<span className='button' onClick={() => onDown(shutter.id)}>⬇️</span>
+			<span className={css([styles.button])} onClick={() => onUp(shutter.id)}>⬆️</span><br/>
+			<span className={css([styles.button])} onClick={() => onDown(shutter.id)}>⬇️</span>
 		</div>
 	)
 }
@@ -24,11 +26,15 @@ Shutter.propTypes = {
 	onDown: PropTypes.func,
 }
 
-const styles = {
+const styles = StyleSheet.create({
 	shutter: {
 		height: '200px',
 	},
-}
+	button: {
+		fontSize: '60px',
+		userSelect: 'none',
+	},
+})
 
 const mapStateToProps = (state, ownProps) => ({
 	shutter: state.shutters.find(shutter => shutter.id === ownProps.id),

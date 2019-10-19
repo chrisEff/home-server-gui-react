@@ -2,11 +2,7 @@
 
 exports[`ErrorMessage should render correctly 1`] = `
 <div
-  style={
-    Object {
-      "color": "red",
-    }
-  }
+  className="errorMessage_137u7ef"
 >
   test
 </div>

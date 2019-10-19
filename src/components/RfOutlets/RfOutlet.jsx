@@ -13,7 +13,7 @@ const RfOutlet = ({outlet, onToggle}) => {
 		<div
 			className={css([theme.styles.device, styles.outlet, outlet.state ? styles.on : styles.off])}
 		>
-			<h4>{outlet.name}</h4>
+			<span>{outlet.name}</span>
 			<div
 				className={css([styles.plug, outlet.state ? styles.plugOn : styles.plugOff])}
 				onClick={() => onToggle(outlet.id, outlet.state ? 0 : 1)}
