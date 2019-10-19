@@ -12,7 +12,7 @@ const Shutter = ({shutter, onUp, onDown}) => {
 	return (
 		<div className={css([theme.styles.device, styles.shutter])}>
 			<span>{shutter.name}</span>
-			<br/>
+			<br/><br/>
 			<span className={css([styles.button])} onClick={() => onUp(shutter.id)}>⬆️</span><br/>
 			<span className={css([styles.button])} onClick={() => onDown(shutter.id)}>⬇️</span>
 		</div>
@@ -31,6 +31,7 @@ const styles = StyleSheet.create({
 		height: '200px',
 	},
 	button: {
+		cursor: 'pointer',
 		fontSize: '60px',
 		userSelect: 'none',
 	},

@@ -8,7 +8,7 @@ exports[`RfOutlet should render correctly 1`] = `
     Fernseher
   </span>
   <div
-    className="plug_ujscnj-o_O-plugOff_1pr3crw"
+    className="plug_15loxqg-o_O-plugOff_1pr3crw"
     onClick={[Function]}
   >
     🔌

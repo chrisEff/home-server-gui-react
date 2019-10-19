@@ -21,7 +21,7 @@ exports[`Title should go into edit mode on click 1`] = `
 
 exports[`Title should render correctly 1`] = `
 <span
-  className="title_1raj3kg"
+  className="title_xi2qeq"
   onClick={[Function]}
 >
   test

@@ -27,7 +27,7 @@ exports[`LoginForm should render correctly 1`] = `
   />
   <br />
   <div
-    className="button_1s6k8ie"
+    className="button_1f1tgwh"
     onClick={[Function]}
   >
     OK

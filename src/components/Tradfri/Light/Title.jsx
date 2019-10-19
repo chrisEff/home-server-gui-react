@@ -43,8 +43,10 @@ const styles = StyleSheet.create({
 				fontSize: '0.9em',
 			},
 		},
+		cursor: 'pointer',
 		display: 'block',
 		height: '1.6em',
+		userSelect: 'none',
 	},
 	long: {
 		fontSize: '0.8em',

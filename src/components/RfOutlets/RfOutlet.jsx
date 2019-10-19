@@ -39,6 +39,7 @@ const styles = StyleSheet.create({
 		color: 'rgb(135, 147, 155)',
 	},
 	plug: {
+		cursor: 'pointer',
 		fontSize: 80,
 		paddingTop: '40px',
 		textAlign: 'center',

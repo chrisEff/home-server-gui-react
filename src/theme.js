@@ -9,6 +9,7 @@ const vars = {
 const styles = StyleSheet.create({
 	button: {
 		backgroundColor: vars.elementColor,
+		cursor: 'pointer',
 		display: 'inline-block',
 		padding: '10px',
 		userSelect: 'none',

@@ -30,7 +30,7 @@ exports[`LightGroup should render correctly 1`] = `
   className="deviceGroup_3hmsj"
 >
   <h3
-    className="name_7bdam5"
+    className="name_14nkgf3"
     onClick={[Function]}
   >
     Test Group

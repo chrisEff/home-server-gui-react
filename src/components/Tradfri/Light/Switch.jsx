@@ -32,6 +32,7 @@ const styles = StyleSheet.create({
 			height: '68px',
 			overflow: 'hidden',
 		},
+		cursor: 'pointer',
 		filter: 'grayscale(100%) blur(5px)',
 		fontSize: 80,
 		paddingTop: '15px',

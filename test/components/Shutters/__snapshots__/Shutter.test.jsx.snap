@@ -8,15 +8,16 @@ exports[`Shutter should render correctly 1`] = `
     Office
   </span>
   <br />
+  <br />
   <span
-    className="button_j63qv8"
+    className="button_dxqb8j"
     onClick={[Function]}
   >
     ⬆️
   </span>
   <br />
   <span
-    className="button_j63qv8"
+    className="button_dxqb8j"
     onClick={[Function]}
   >
     ⬇️

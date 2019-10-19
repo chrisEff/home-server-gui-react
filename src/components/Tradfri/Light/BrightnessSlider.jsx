@@ -25,6 +25,7 @@ BrightnessSlider.propTypes = {
 
 const styles = StyleSheet.create({
 	brightnessSlider: {
+		cursor: 'pointer',
 		margin: '20px 0',
 		width: '120px',
 	},

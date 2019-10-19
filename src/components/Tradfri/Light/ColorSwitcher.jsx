@@ -48,6 +48,7 @@ const styles = StyleSheet.create({
 		borderRadius: '20px',
 		borderStyle: 'solid',
 		borderWidth: 2,
+		cursor: 'pointer',
 		display: 'inline-block',
 	},
 	active: {

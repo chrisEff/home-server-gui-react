@@ -48,6 +48,8 @@ const styles = StyleSheet.create({
 				fontSize: '0.9em',
 			},
 		},
+		cursor: 'pointer',
+		userSelect: 'none',
 	},
 })
 
