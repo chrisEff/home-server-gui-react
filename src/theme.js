@@ -13,10 +13,22 @@ const styles = StyleSheet.create({
 		padding: '10px',
 		userSelect: 'none',
 	},
+	section: {
+
+	},
+	sectionBody: {
+		display: 'flex',
+		flexWrap: 'wrap',
+	},
+	deviceGroup: {
+
+	},
+	deviceGroupBody: {
+		display: 'flex',
+	},
 	device: {
 		backgroundColor: vars.elementColor,
 		borderRadius: '10px',
-		display: 'inline-block',
 		margin: '0 20px 20px 0',
 		overflow: 'hidden',
 		padding: '10px',

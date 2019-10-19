@@ -3,11 +3,12 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import {connect} from 'react-redux'
-import {StyleSheet, css} from 'aphrodite'
+import {css} from 'aphrodite'
 
 import Shutter from './Shutter'
 
 import {loadShutters} from '@/actions/shutters'
+import theme from '@/theme'
 
 class Shutters extends React.Component {
 
@@ -26,21 +27,17 @@ class Shutters extends React.Component {
 
 	render () {
 		return !this.props.shutters ? <div/> : (
-			<div id='shutters' className={css([styles.shutters])}>
+			<div className={css([theme.styles.section])}>
 				<h2>{this.props.title}</h2>
-				{this.props.shutters.map(shutter =>
-					<Shutter key={shutter.id} id={shutter.id}/>
-				)}
+				<div className={css([theme.styles.sectionBody])}>
+					{this.props.shutters.map(shutter =>
+						<Shutter key={shutter.id} id={shutter.id}/>
+					)}
+				</div>
 			</div>
 		)
 	}
 }
-
-const styles = StyleSheet.create({
-	shutters: {
-		display: 'inline-block',
-	},
-})
 
 const mapStateToProps = state => ({
 	shutters: state.shutters,

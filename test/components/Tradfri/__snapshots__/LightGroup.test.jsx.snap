@@ -2,7 +2,7 @@
 
 exports[`LightGroup should go into edit mode on click 1`] = `
 <div
-  className="lightGroup_36rlri"
+  className="deviceGroup_3hmsj"
 >
   <div>
     <input
@@ -14,16 +14,20 @@ exports[`LightGroup should go into edit mode on click 1`] = `
       OK
     </button>
   </div>
-  <Connect(Light)
-    id={65537}
-    key="Decke"
-  />
+  <div
+    className="deviceGroupBody_jro6t0"
+  >
+    <Connect(Light)
+      id={65537}
+      key="Decke"
+    />
+  </div>
 </div>
 `;
 
 exports[`LightGroup should render correctly 1`] = `
 <div
-  className="lightGroup_36rlri"
+  className="deviceGroup_3hmsj"
 >
   <h3
     className="name_7bdam5"
@@ -31,9 +35,13 @@ exports[`LightGroup should render correctly 1`] = `
   >
     Test Group
   </h3>
-  <Connect(Light)
-    id={65537}
-    key="Decke"
-  />
+  <div
+    className="deviceGroupBody_jro6t0"
+  >
+    <Connect(Light)
+      id={65537}
+      key="Decke"
+    />
+  </div>
 </div>
 `;

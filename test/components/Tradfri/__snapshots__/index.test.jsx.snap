@@ -2,22 +2,26 @@
 
 exports[`Tradfri should render correctly 1`] = `
 <div
-  id="tradfri"
+  className="section_3hmsj"
 >
   <h2>
     test
   </h2>
-  <Connect(LightGroup)
-    deviceIds={
-      Array [
-        65603,
-        65537,
-        65602,
-      ]
-    }
-    id={131092}
-    key="131092"
-    name="Office"
-  />
+  <div
+    className="sectionBody_1joc06t"
+  >
+    <Connect(LightGroup)
+      deviceIds={
+        Array [
+          65603,
+          65537,
+          65602,
+        ]
+      }
+      id={131092}
+      key="131092"
+      name="Office"
+    />
+  </div>
 </div>
 `;

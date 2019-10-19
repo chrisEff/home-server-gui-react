@@ -2,7 +2,7 @@
 
 exports[`TemperatureSensor should render correctly 1`] = `
 <div
-  className="device_n9mjiu-o_O-tempSensor_1kmafzr"
+  className="device_1woep87-o_O-tempSensor_1kmafzr"
 >
   <span
     className="name_5lbt9x"

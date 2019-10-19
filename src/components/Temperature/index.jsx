@@ -3,10 +3,12 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import {connect} from 'react-redux'
+import {css} from 'aphrodite'
 
 import TemperatureSensor from './TemperatureSensor'
 
 import {loadTempSensors} from '@/actions/temperature'
+import theme from '@/theme'
 
 class Temperature extends React.Component {
 
@@ -25,11 +27,13 @@ class Temperature extends React.Component {
 
 	render () {
 		return !this.props.tempSensors ? <div/> : (
-			<div id='temperature'>
+			<div className={css([theme.styles.section])}>
 				<h2>{this.props.title}</h2>
-				{this.props.tempSensors.map(sensor =>
-					<TemperatureSensor key={sensor.id}  id={sensor.id}/>
-				)}
+				<div className={css([theme.styles.sectionBody])}>
+					{this.props.tempSensors.map(sensor =>
+						<TemperatureSensor key={sensor.id}  id={sensor.id}/>
+					)}
+				</div>
 			</div>
 		)
 	}
