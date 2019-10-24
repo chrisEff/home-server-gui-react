@@ -11,11 +11,12 @@ exports[`Title should go into edit mode on click 1`] = `
     }
     type="text"
   />
-  <button
+  <div
+    className="button_1f1tgwh-o_O-button_g8nwon"
     onClick={[Function]}
   >
     OK
-  </button>
+  </div>
 </div>
 `;
 

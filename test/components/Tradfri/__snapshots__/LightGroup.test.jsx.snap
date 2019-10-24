@@ -4,15 +4,18 @@ exports[`LightGroup should go into edit mode on click 1`] = `
 <div
   className="deviceGroup_3hmsj"
 >
-  <div>
+  <div
+    className="form_1nx6cxj"
+  >
     <input
       defaultValue="Test Group"
     />
-    <button
+    <div
+      className="button_1f1tgwh-o_O-button_1pn6zm0"
       onClick={[Function]}
     >
       OK
-    </button>
+    </div>
   </div>
   <div
     className="deviceGroupBody_jro6t0"

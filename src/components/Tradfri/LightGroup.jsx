@@ -15,10 +15,10 @@ const LightGroup = ({id, name, devices, onSaveName}) => {
 
 	return (
 		<div className={css([theme.styles.deviceGroup])}>
-			{!editMode && <h3  className={css([styles.name])} onClick={() => { setEditMode(true) }}>{name}</h3>}
-			{editMode && <div>
+			{!editMode && <h3 className={css([styles.name])} onClick={() => { setEditMode(true) }}>{name}</h3>}
+			{editMode && <div className={css([styles.form])}>
 				<input ref={nameInput} defaultValue={name} />
-				<button onClick={() => { setEditMode(false); onSaveName(id, nameInput.current.value) }}>OK</button>
+				<div className={css([theme.styles.button, styles.button])} onClick={() => { setEditMode(false); onSaveName(id, nameInput.current.value) }}>OK</div>
 			</div>}
 
 			<div className={css([theme.styles.deviceGroupBody])}>
@@ -50,6 +50,14 @@ const styles = StyleSheet.create({
 		},
 		cursor: 'pointer',
 		userSelect: 'none',
+	},
+	form: {
+		margin: '19px 0',
+	},
+	button: {
+		fontSize: '0.9em',
+		marginLeft: '10px',
+		padding: '4px 10px',
 	},
 })
 

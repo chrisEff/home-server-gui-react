@@ -6,6 +6,7 @@ import {connect} from 'react-redux'
 import {StyleSheet, css} from 'aphrodite'
 
 import {setDeviceName} from '@/actions/tradfri'
+import theme from '@/theme'
 
 const Title = ({deviceId, title, onChange}) => {
 	const [editMode, setEditMode] = useState(false)
@@ -23,7 +24,7 @@ const Title = ({deviceId, title, onChange}) => {
 		return (
 			<div>
 				<input type='text' ref={titleInput} style={{width: 110}} defaultValue={title} />
-				<button onClick={() => { setEditMode(false); onChange(deviceId, titleInput.current.value) }}>OK</button>
+				<div className={css([theme.styles.button, styles.button])} onClick={() => { setEditMode(false); onChange(deviceId, titleInput.current.value) }}>OK</div>
 			</div>
 		)
 	}
@@ -51,6 +52,12 @@ const styles = StyleSheet.create({
 	long: {
 		fontSize: '0.8em',
 		height: '2em',
+	},
+	button: {
+		backgroundColor: 'rgb(49, 51, 53)',
+		fontSize: '0.9em',
+		padding: '4px 10px',
+		marginTop: '2px',
 	},
 })
 
