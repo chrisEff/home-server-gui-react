@@ -2,13 +2,13 @@
 
 import React from 'react'
 import PropTypes from 'prop-types'
-import {connect} from 'react-redux'
-import {StyleSheet, css} from 'aphrodite'
+import { connect } from 'react-redux'
+import { StyleSheet, css } from 'aphrodite'
 
-import {setOutletState} from '@/actions/outlets'
+import { setOutletState } from '@/actions/outlets'
 import theme from '@/theme'
 
-const RfOutlet = ({outlet, onToggle}) => {
+const RfOutlet = ({ outlet, onToggle }) => {
 	return (
 		<div
 			className={css([theme.styles.device, styles.outlet, outlet.state ? styles.on : styles.off])}
@@ -63,4 +63,4 @@ const mapDispatchToProps = dispatch => ({
 })
 
 export default connect(mapStateToProps, mapDispatchToProps)(RfOutlet)
-export {RfOutlet}
+export { RfOutlet }

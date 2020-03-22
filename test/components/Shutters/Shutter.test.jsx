@@ -1,9 +1,9 @@
 'use strict'
 
 import React from 'react'
-import {Shutter} from '@/components/Shutters/Shutter'
+import { Shutter } from '@/components/Shutters/Shutter'
 
-import {shallow} from 'enzyme'
+import { shallow } from 'enzyme'
 
 describe('Shutter', () => {
 	it('should render correctly', () => {

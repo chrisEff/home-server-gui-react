@@ -1,14 +1,14 @@
 'use strict'
 
-import React, {useRef, useState} from 'react'
+import React, { useRef, useState } from 'react'
 import PropTypes from 'prop-types'
-import {connect} from 'react-redux'
-import {StyleSheet, css} from 'aphrodite'
+import { connect } from 'react-redux'
+import { StyleSheet, css } from 'aphrodite'
 
-import {setDeviceName} from '@/actions/tradfri'
+import { setDeviceName } from '@/actions/tradfri'
 import theme from '@/theme'
 
-const Title = ({deviceId, title, onChange}) => {
+const Title = ({ deviceId, title, onChange }) => {
 	const [editMode, setEditMode] = useState(false)
 	const titleInput = useRef(title)
 
@@ -23,7 +23,7 @@ const Title = ({deviceId, title, onChange}) => {
 	} else {
 		return (
 			<div>
-				<input type='text' ref={titleInput} style={{width: 110}} defaultValue={title} />
+				<input type='text' ref={titleInput} style={{ width: 110 }} defaultValue={title} />
 				<div className={css([theme.styles.button, styles.button])} onClick={() => { setEditMode(false); onChange(deviceId, titleInput.current.value) }}>OK</div>
 			</div>
 		)
@@ -68,4 +68,4 @@ const mapDispatchToProps = dispatch => ({
 })
 
 export default connect(mapStateToProps, mapDispatchToProps)(Title)
-export {Title}
+export { Title }

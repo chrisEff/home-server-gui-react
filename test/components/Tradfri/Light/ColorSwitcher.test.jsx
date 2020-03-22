@@ -1,9 +1,9 @@
 'use strict'
 
 import React from 'react'
-import {ColorSwitcher} from '@/components/Tradfri/Light/ColorSwitcher'
+import { ColorSwitcher } from '@/components/Tradfri/Light/ColorSwitcher'
 
-import {shallow} from 'enzyme'
+import { shallow } from 'enzyme'
 
 describe.only('ColorSwitcher', () => {
 

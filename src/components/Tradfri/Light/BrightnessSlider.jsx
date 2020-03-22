@@ -2,12 +2,12 @@
 
 import React from 'react'
 import PropTypes from 'prop-types'
-import {connect} from 'react-redux'
-import {StyleSheet, css} from 'aphrodite'
+import { connect } from 'react-redux'
+import { StyleSheet, css } from 'aphrodite'
 
-import {setDeviceBrightness} from '@/actions/tradfri'
+import { setDeviceBrightness } from '@/actions/tradfri'
 
-const BrightnessSlider = ({deviceId, brightness, onChange}) =>
+const BrightnessSlider = ({ deviceId, brightness, onChange }) =>
 	<input
 		className={css([styles.brightnessSlider])}
 		type='range'
@@ -38,4 +38,4 @@ const mapDispatchToProps = dispatch => ({
 })
 
 export default connect(mapStateToProps, mapDispatchToProps)(BrightnessSlider)
-export {BrightnessSlider}
+export { BrightnessSlider }

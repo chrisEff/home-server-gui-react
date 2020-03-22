@@ -10,8 +10,8 @@
 		"test:update": "jest --updateSnapshot",
 		"cover": "jest --coverage --collectCoverageFrom=src/**/*",
 		"coveralls": "jest --coverage --collectCoverageFrom=src/**/* --coverageReporters=text-lcov | coveralls",
-		"eslint": "eslint 'src/**/*.jsx' 'src/**/*.js' 'test/**/*.jsx' 'test/**/*.js'",
-		"eslint-fix": "eslint 'src/**/*.jsx' 'src/**/*.js' 'test/**/*.jsx' 'test/**/*.js' --fix"
+		"eslint": "eslint --ext js,jsx src test",
+		"eslint-fix": "eslint --ext js,jsx src test --fix"
 	},
 	"keywords": [],
 	"author": "chrisEff",

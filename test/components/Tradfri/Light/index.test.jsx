@@ -1,9 +1,9 @@
 'use strict'
 
 import React from 'react'
-import {Light} from '@/components/Tradfri/Light'
+import { Light } from '@/components/Tradfri/Light'
 
-import {shallow} from 'enzyme'
+import { shallow } from 'enzyme'
 
 describe('Light', () => {
 	it('should render correctly', () => {

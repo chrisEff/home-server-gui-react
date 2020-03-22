@@ -2,7 +2,7 @@
 
 import configureMockStore from 'redux-mock-store'
 import thunk from 'redux-thunk'
-import {loadOutlets, setOutletState} from '@/actions/outlets'
+import { loadOutlets, setOutletState } from '@/actions/outlets'
 import fetchMock from 'fetch-mock'
 
 const middlewares = [thunk]
@@ -16,19 +16,19 @@ describe('outlets actions', () => {
 	describe('loadOutlets', () => {
 		it('should create SET_OUTLETS', async () => {
 			fetchMock.get('/rfoutlets/outlet', {
-				body: [{id: 1}],
+				body: [{ id: 1 }],
 			})
-			const store = mockStore({outlets: []})
+			const store = mockStore({ outlets: [] })
 
 			await store.dispatch(loadOutlets())
 			expect(store.getActions()).toEqual([
-				{outlets: [{id: 1}], type: 'SET_OUTLETS'},
+				{ outlets: [{ id: 1 }], type: 'SET_OUTLETS' },
 			])
 		})
 
 		it('should set an error message on failure', async () => {
 			fetchMock.get('/rfoutlets/outlet', 500)
-			const store = mockStore({outlets: []})
+			const store = mockStore({ outlets: [] })
 
 			await store.dispatch(loadOutlets())
 			expect(store.getActions()).toEqual([{
@@ -43,7 +43,7 @@ describe('outlets actions', () => {
 			fetchMock.put('/rfoutlets/outlet/1/0', {
 				body: {},
 			})
-			const store = mockStore({outlets: []})
+			const store = mockStore({ outlets: [] })
 
 			await store.dispatch(setOutletState(1, 0))
 			expect(store.getActions()).toEqual([{
@@ -55,7 +55,7 @@ describe('outlets actions', () => {
 
 		it('should set an error message on failure', async () => {
 			fetchMock.put('/rfoutlets/outlet/1/0', 500)
-			const store = mockStore({outlets: []})
+			const store = mockStore({ outlets: [] })
 
 			await store.dispatch(setOutletState(1, 0))
 			expect(store.getActions()).toEqual([{

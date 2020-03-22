@@ -1,15 +1,15 @@
 'use strict'
 
-import React, {useRef, useState} from 'react'
+import React, { useRef, useState } from 'react'
 import PropTypes from 'prop-types'
-import {connect} from 'react-redux'
-import {StyleSheet, css} from 'aphrodite'
+import { connect } from 'react-redux'
+import { StyleSheet, css } from 'aphrodite'
 
 import Light from './Light'
-import {setGroupName} from '@/actions/tradfri'
+import { setGroupName } from '@/actions/tradfri'
 import theme from '@/theme'
 
-const LightGroup = ({id, name, devices, onSaveName}) => {
+const LightGroup = ({ id, name, devices, onSaveName }) => {
 	const [editMode, setEditMode] = useState(false)
 	const nameInput = useRef(name)
 
@@ -70,4 +70,4 @@ const mapDispatchToProps = dispatch => ({
 })
 
 export default connect(mapStateToProps, mapDispatchToProps)(LightGroup)
-export {LightGroup}
+export { LightGroup }

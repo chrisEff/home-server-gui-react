@@ -1,13 +1,13 @@
 'use strict'
 
 import homeServerApi from '@/homeServerApi'
-import {setErrorMessage} from './errorMessage'
+import { setErrorMessage } from './errorMessage'
 
 export const loadShutters = () => {
 	return async (dispatch) => {
 		try {
 			const shutters = Object.values(await homeServerApi.getShutters())
-			dispatch({type: 'SET_SHUTTERS', shutters})
+			dispatch({ type: 'SET_SHUTTERS', shutters })
 		} catch (e) {
 			dispatch(setErrorMessage('failed to load shutters: ' + e.message))
 		}

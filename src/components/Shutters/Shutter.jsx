@@ -2,13 +2,13 @@
 
 import React from 'react'
 import PropTypes from 'prop-types'
-import {connect} from 'react-redux'
-import {StyleSheet, css} from 'aphrodite'
+import { connect } from 'react-redux'
+import { StyleSheet, css } from 'aphrodite'
 
-import {moveShutterUp, moveShutterDown} from '@/actions/shutters'
+import { moveShutterUp, moveShutterDown } from '@/actions/shutters'
 import theme from '@/theme'
 
-const Shutter = ({shutter, onUp, onDown}) => {
+const Shutter = ({ shutter, onUp, onDown }) => {
 	return (
 		<div className={css([theme.styles.device, styles.shutter])}>
 			<span>{shutter.name}</span>
@@ -47,4 +47,4 @@ const mapDispatchToProps = dispatch => ({
 })
 
 export default connect(mapStateToProps, mapDispatchToProps)(Shutter)
-export {Shutter}
+export { Shutter }

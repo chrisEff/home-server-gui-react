@@ -1,7 +1,7 @@
 'use strict'
 
 import homeServerApi from '@/homeServerApi'
-import {setErrorMessage} from './errorMessage'
+import { setErrorMessage } from './errorMessage'
 import dateFormat from 'dateformat'
 import sortBy from 'lodash.sortby'
 
@@ -27,26 +27,26 @@ export const loadTempSensors = () => {
 				const historyToday     = (await fetchHistory(sensor.id, timestampStartOfToday))
 				const historyYesterday = (await fetchHistory(sensor.id, timestampStartOfYesterday, timestampStartOfToday - 1))
 
-				for (let entry of historyYesterday) {
+				for (const entry of historyYesterday) {
 					if (entry.time % 120 === 0) {
 						const time = dateFormat(new Date(entry.time * 1000), 'HH:MM')
-						history[time] = {time: time, yesterday: entry.val}
+						history[time] = { time: time, yesterday: entry.val }
 					}
 				}
-				for (let entry of historyToday) {
+				for (const entry of historyToday) {
 					const time = dateFormat(new Date(entry.time * 1000), 'HH:MM')
 					if (!history[time]) {
-						history[time] = {time}
+						history[time] = { time }
 					}
 					history[time].today = entry.val
 				}
 
 				sensor.history = sortBy(Object.values(history), ['time'])
-				sensor.history.push({time: '24:00'})
+				sensor.history.push({ time: '24:00' })
 
 				return sensor
 			}))
-			dispatch({type: 'SET_TEMP_SENSORS', tempSensors})
+			dispatch({ type: 'SET_TEMP_SENSORS', tempSensors })
 		} catch (e) {
 			dispatch(setErrorMessage('failed to load temperature sensors: ' + e.message))
 		}

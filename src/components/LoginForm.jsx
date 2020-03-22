@@ -1,11 +1,11 @@
 'use strict'
 
-import React, {useRef} from 'react'
-import {StyleSheet, css} from 'aphrodite'
+import React, { useRef } from 'react'
+import { StyleSheet, css } from 'aphrodite'
 
 import theme from '@/theme'
 
-const LoginForm = ({onLogin}) => {
+const LoginForm = ({ onLogin }) => {
 	const apiUrlInput = useRef('')
 	const apiUserInput = useRef('')
 	const apiKeyInput = useRef('')

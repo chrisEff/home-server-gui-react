@@ -2,7 +2,7 @@
 
 import configureMockStore from 'redux-mock-store'
 import thunk from 'redux-thunk'
-import {loadDevices, loadGroups, setGroupName, setDeviceName, setDeviceState, setDeviceBrightness, setDeviceColor} from '@/actions/tradfri'
+import { loadDevices, loadGroups, setGroupName, setDeviceName, setDeviceState, setDeviceBrightness, setDeviceColor } from '@/actions/tradfri'
 import fetchMock from 'fetch-mock'
 
 const middlewares = [thunk]
@@ -25,12 +25,12 @@ describe('tradfri actions', () => {
 	describe('loadGroups', () => {
 		it('should create SET_TRADFRI_GROUPS', async () => {
 			fetchMock.get('/tradfri/group', {
-				body: [{id: 1}],
+				body: [{ id: 1 }],
 			})
 
 			await store.dispatch(loadGroups())
 			expect(store.getActions()).toEqual([
-				{groups: [{id: 1}], type: 'SET_TRADFRI_GROUPS'},
+				{ groups: [{ id: 1 }], type: 'SET_TRADFRI_GROUPS' },
 			])
 		})
 
@@ -48,12 +48,12 @@ describe('tradfri actions', () => {
 	describe('loadDevices', () => {
 		it('should create SET_TRADFRI_DEVICES', async () => {
 			fetchMock.get('/tradfri/device', {
-				body: [{id: 1}],
+				body: [{ id: 1 }],
 			})
 
 			await store.dispatch(loadDevices())
 			expect(store.getActions()).toEqual([
-				{devices: [{id: 1}], type: 'SET_TRADFRI_DEVICES'},
+				{ devices: [{ id: 1 }], type: 'SET_TRADFRI_DEVICES' },
 			])
 		})
 
@@ -70,11 +70,11 @@ describe('tradfri actions', () => {
 
 	describe('setGroupName', () => {
 		it('should create SET_TRADFRI_GROUP_NAME', async () => {
-			fetchMock.put('/tradfri/group/1/name/test', {status: 200, body: {}})
+			fetchMock.put('/tradfri/group/1/name/test', { status: 200, body: {} })
 
 			await store.dispatch(setGroupName(1, 'test'))
 			expect(store.getActions()).toEqual([
-				{id: 1, name: 'test', type: 'SET_TRADFRI_GROUP_NAME'},
+				{ id: 1, name: 'test', type: 'SET_TRADFRI_GROUP_NAME' },
 			])
 		})
 
@@ -91,44 +91,44 @@ describe('tradfri actions', () => {
 
 	describe('setDeviceName', () => {
 		it('should create SET_TRADFRI_DEVICE_NAME', async () => {
-			fetchMock.put('/tradfri/device/1/name/test', {status: 200, body: {}})
+			fetchMock.put('/tradfri/device/1/name/test', { status: 200, body: {} })
 
 			await store.dispatch(setDeviceName(1, 'test'))
 			expect(store.getActions()).toEqual([
-				{id: 1, name: 'test', type: 'SET_TRADFRI_DEVICE_NAME'},
+				{ id: 1, name: 'test', type: 'SET_TRADFRI_DEVICE_NAME' },
 			])
 		})
 	})
 
 	describe('setDeviceState', () => {
 		it('should create SET_TRADFRI_DEVICE_STATE', async () => {
-			fetchMock.put('/tradfri/device/1/state/1', {status: 200, body: {}})
+			fetchMock.put('/tradfri/device/1/state/1', { status: 200, body: {} })
 
 			await store.dispatch(setDeviceState(1, 1))
 			expect(store.getActions()).toEqual([
-				{id: 1, state: 1, type: 'SET_TRADFRI_DEVICE_STATE'},
+				{ id: 1, state: 1, type: 'SET_TRADFRI_DEVICE_STATE' },
 			])
 		})
 	})
 
 	describe('setDeviceBrightness', () => {
 		it('should create SET_TRADFRI_DEVICE_BRIGHTNESS', async () => {
-			fetchMock.put('/tradfri/device/1/brightness/254', {status: 200, body: {}})
+			fetchMock.put('/tradfri/device/1/brightness/254', { status: 200, body: {} })
 
 			await store.dispatch(setDeviceBrightness(1, 254))
 			expect(store.getActions()).toEqual([
-				{id: 1, brightness: 254, type: 'SET_TRADFRI_DEVICE_BRIGHTNESS'},
+				{ id: 1, brightness: 254, type: 'SET_TRADFRI_DEVICE_BRIGHTNESS' },
 			])
 		})
 	})
 
 	describe('setDeviceColor', () => {
 		it('should create SET_TRADFRI_DEVICE_COLOR', async () => {
-			fetchMock.put('/tradfri/device/1/color/blue', {status: 200, body: {}})
+			fetchMock.put('/tradfri/device/1/color/blue', { status: 200, body: {} })
 
 			await store.dispatch(setDeviceColor(1, 'blue'))
 			expect(store.getActions()).toEqual([
-				{id: 1, color: 'blue', type: 'SET_TRADFRI_DEVICE_COLOR'},
+				{ id: 1, color: 'blue', type: 'SET_TRADFRI_DEVICE_COLOR' },
 			])
 		})
 	})

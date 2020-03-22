@@ -2,12 +2,12 @@
 
 import React from 'react'
 import PropTypes from 'prop-types'
-import {connect} from 'react-redux'
-import {StyleSheet, css} from 'aphrodite'
+import { connect } from 'react-redux'
+import { StyleSheet, css } from 'aphrodite'
 
-import {setDeviceColor} from '@/actions/tradfri'
+import { setDeviceColor } from '@/actions/tradfri'
 
-const ColorSwitcher = ({deviceId, bulbType, selected, onChange}) => {
+const ColorSwitcher = ({ deviceId, bulbType, selected, onChange }) => {
 	let colors = ['neutral']
 	if (bulbType === 'rgb') {
 		colors = ['red', 'green', 'blue', 'yellow', 'pink', 'purple', 'warm', 'neutral', 'cold']
@@ -60,15 +60,15 @@ const styles = StyleSheet.create({
 		height: '29px',
 		width: '29px',
 	},
-	warm:    {backgroundColor: '#efd275'},
-	neutral: {backgroundColor: '#f1e0b5'},
-	cold:    {backgroundColor: '#f5faf6'},
-	red:     {backgroundColor: 'red'},
-	green:   {backgroundColor: 'green'},
-	blue:    {backgroundColor: 'blue'},
-	yellow:  {backgroundColor: 'yellow'},
-	pink:    {backgroundColor: 'deeppink'},
-	purple:  {backgroundColor: 'mediumpurple'},
+	warm:    { backgroundColor: '#efd275' },
+	neutral: { backgroundColor: '#f1e0b5' },
+	cold:    { backgroundColor: '#f5faf6' },
+	red:     { backgroundColor: 'red' },
+	green:   { backgroundColor: 'green' },
+	blue:    { backgroundColor: 'blue' },
+	yellow:  { backgroundColor: 'yellow' },
+	pink:    { backgroundColor: 'deeppink' },
+	purple:  { backgroundColor: 'mediumpurple' },
 })
 
 const mapStateToProps = (state, ownProps) => ({
@@ -78,4 +78,4 @@ const mapDispatchToProps = dispatch => ({
 })
 
 export default connect(mapStateToProps, mapDispatchToProps)(ColorSwitcher)
-export {ColorSwitcher}
+export { ColorSwitcher }

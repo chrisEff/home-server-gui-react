@@ -3,7 +3,7 @@
 import React from 'react'
 import LoginForm from '@/components/LoginForm'
 
-import {shallow} from 'enzyme'
+import { shallow } from 'enzyme'
 
 describe('LoginForm', () => {
 	it('should render correctly', () => {

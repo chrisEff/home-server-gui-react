@@ -2,12 +2,12 @@
 
 import React from 'react'
 import PropTypes from 'prop-types'
-import {connect} from 'react-redux'
-import {StyleSheet, css} from 'aphrodite'
+import { connect } from 'react-redux'
+import { StyleSheet, css } from 'aphrodite'
 
-import {setDeviceState} from '@/actions/tradfri'
+import { setDeviceState } from '@/actions/tradfri'
 
-let Switch = ({deviceId, state, color, onChange}) =>
+const Switch = ({ deviceId, state, color, onChange }) =>
 	<div
 		className={css(state ? [styles.bulb, styles.on, styles[color]] : [styles.bulb])}
 		onClick={() => onChange(deviceId, state ? 0 : 1)}>💡</div>
@@ -44,39 +44,39 @@ const styles = StyleSheet.create({
 	},
 	warm: {
 		textShadow: '0 0 1px black, 0 0 50px #efd275',
-		':before': {textShadow: '0 0 0 #efd275'},
+		':before': { textShadow: '0 0 0 #efd275' },
 	},
 	neutral: {
 		textShadow: '0 0 1px black, 0 0 50px #f1e0b5',
-		':before': {textShadow: '0 0 0 #f1e0b5'},
+		':before': { textShadow: '0 0 0 #f1e0b5' },
 	},
 	cold: {
 		textShadow: '0 0 1px black, 0 0 50px #f5faf6',
-		':before': {textShadow: '0 0 0 #f5faf6'},
+		':before': { textShadow: '0 0 0 #f5faf6' },
 	},
 	red: {
 		textShadow: '0 0 1px black, 0 0 50px red',
-		':before': {textShadow: '0 0 0 red'},
+		':before': { textShadow: '0 0 0 red' },
 	},
 	green: {
 		textShadow: '0 0 1px black, 0 0 50px green',
-		':before': {textShadow: '0 0 0 green'},
+		':before': { textShadow: '0 0 0 green' },
 	},
 	blue: {
 		textShadow: '0 0 1px black, 0 0 50px blue',
-		':before': {textShadow: '0 0 0 blue'},
+		':before': { textShadow: '0 0 0 blue' },
 	},
 	yellow: {
 		textShadow: '0 0 1px black, 0 0 50px yellow',
-		':before': {textShadow: '0 0 0 yellow'},
+		':before': { textShadow: '0 0 0 yellow' },
 	},
 	pink: {
 		textShadow: '0 0 1px black, 0 0 50px deeppink',
-		':before': {textShadow: '0 0 0 deeppink'},
+		':before': { textShadow: '0 0 0 deeppink' },
 	},
 	purple: {
 		textShadow: '0 0 1px black, 0 0 50px mediumpurple',
-		':before': {textShadow: '0 0 0 mediumpurple'},
+		':before': { textShadow: '0 0 0 mediumpurple' },
 	},
 })
 
@@ -87,4 +87,4 @@ const mapDispatchToProps = dispatch => ({
 })
 
 export default connect(mapStateToProps, mapDispatchToProps)(Switch)
-export {Switch}
+export { Switch }

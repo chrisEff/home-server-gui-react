@@ -2,13 +2,13 @@
 
 import React from 'react'
 import PropTypes from 'prop-types'
-import {connect} from 'react-redux'
-import {StyleSheet, css} from 'aphrodite'
+import { connect } from 'react-redux'
+import { StyleSheet, css } from 'aphrodite'
 
 import TemperatureChart from './TemperatureChart'
 import theme from '@/theme'
 
-const TemperatureSensor = ({sensor}) => (
+const TemperatureSensor = ({ sensor }) => (
 	<div className={css([theme.styles.device, styles.tempSensor])}>
 		<span className={css([styles.name])}>{sensor.name}</span>
 		<div className={css([styles.value])}>{Math.round(sensor.celsiusValue * 10) / 10}°C</div>
@@ -51,4 +51,4 @@ const mapDispatchToProps = dispatch => ({
 })
 
 export default connect(mapStateToProps, mapDispatchToProps)(TemperatureSensor)
-export {TemperatureSensor}
+export { TemperatureSensor }

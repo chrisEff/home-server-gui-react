@@ -2,12 +2,12 @@
 
 import React from 'react'
 import PropTypes from 'prop-types'
-import {connect} from 'react-redux'
-import {css} from 'aphrodite'
+import { connect } from 'react-redux'
+import { css } from 'aphrodite'
 
 import RfOutlet from './RfOutlet'
 
-import {loadOutlets} from '@/actions/outlets'
+import { loadOutlets } from '@/actions/outlets'
 import theme from '@/theme'
 
 class RfOutlets extends React.Component {
@@ -17,7 +17,7 @@ class RfOutlets extends React.Component {
 		outlets: PropTypes.arrayOf(
 			PropTypes.shape({
 				id: PropTypes.number,
-			})
+			}),
 		),
 	}
 
@@ -31,7 +31,7 @@ class RfOutlets extends React.Component {
 				<h2>{this.props.title}</h2>
 				<div className={css([theme.styles.sectionBody])}>
 					{this.props.outlets.map(outlet =>
-						<RfOutlet key={outlet.id} id={outlet.id}/>
+						<RfOutlet key={outlet.id} id={outlet.id}/>,
 					)}
 				</div>
 			</div>

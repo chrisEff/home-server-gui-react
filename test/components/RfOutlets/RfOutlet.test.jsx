@@ -1,9 +1,9 @@
 'use strict'
 
 import React from 'react'
-import {RfOutlet} from '@/components/RfOutlets/RfOutlet'
+import { RfOutlet } from '@/components/RfOutlets/RfOutlet'
 
-import {shallow} from 'enzyme'
+import { shallow } from 'enzyme'
 
 describe('RfOutlet', () => {
 	it('should render correctly', () => {

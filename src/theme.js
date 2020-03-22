@@ -1,6 +1,6 @@
 'use strict'
 
-import {StyleSheet} from 'aphrodite'
+import { StyleSheet } from 'aphrodite'
 
 const vars = {
 	elementColor: 'rgb(60, 63, 65)',

@@ -1,9 +1,9 @@
 'use strict'
 
 import React from 'react'
-import {StyleSheet, css} from 'aphrodite'
+import { StyleSheet, css } from 'aphrodite'
 
-const ErrorMessage = ({message}) =>
+const ErrorMessage = ({ message }) =>
 	<div className={css([styles.errorMessage])}>{message}</div>
 
 const styles = StyleSheet.create({

@@ -3,7 +3,7 @@
 import React from 'react'
 import ErrorMessage from '@/components/ErrorMessage'
 
-import {shallow} from 'enzyme'
+import { shallow } from 'enzyme'
 
 describe('ErrorMessage', () => {
 	it('should render correctly', () => {

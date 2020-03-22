@@ -3,8 +3,8 @@
 import homeServerApi from '@/homeServerApi'
 
 import React from 'react'
-import {connect} from 'react-redux'
-import {StyleSheet, css} from 'aphrodite'
+import { connect } from 'react-redux'
+import { StyleSheet, css } from 'aphrodite'
 
 import ErrorMessage from './ErrorMessage'
 import LoginForm from './LoginForm'
@@ -32,7 +32,7 @@ class Wrapper extends React.Component {
 	}
 
 	updateCredentials = (apiUrl, apiUser, apiKey) => {
-		this.setState({apiUrl, apiUser, apiKey})
+		this.setState({ apiUrl, apiUser, apiKey })
 		homeServerApi.setApiUrl(apiUrl)
 		homeServerApi.apiUser = apiUser
 		homeServerApi.apiKey = apiKey
@@ -43,7 +43,7 @@ class Wrapper extends React.Component {
 	}
 
 	unsetCredentials = () => {
-		this.setState({apiUrl: undefined, apiUser: undefined, apiKey: undefined})
+		this.setState({ apiUrl: undefined, apiUser: undefined, apiKey: undefined })
 		homeServerApi.setApiUrl(undefined)
 		homeServerApi.apiUser = undefined
 		homeServerApi.apiKey = undefined
@@ -95,5 +95,5 @@ const mapDispatchToProps = dispatch => ({
 })
 
 export default connect(mapStateToProps, mapDispatchToProps)(Wrapper)
-export {Wrapper}
+export { Wrapper }
 

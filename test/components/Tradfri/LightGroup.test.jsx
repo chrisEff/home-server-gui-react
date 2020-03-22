@@ -1,9 +1,9 @@
 'use strict'
 
 import React from 'react'
-import {LightGroup} from '@/components/Tradfri/LightGroup'
+import { LightGroup } from '@/components/Tradfri/LightGroup'
 
-import {shallow} from 'enzyme'
+import { shallow } from 'enzyme'
 
 describe('LightGroup', () => {
 	it('should render correctly', () => {

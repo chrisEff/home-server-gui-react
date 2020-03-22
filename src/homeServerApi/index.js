@@ -45,7 +45,7 @@ const api = {
 	moveShutterDown: async (id) => api.put(`/shutters/shutter/${id}/down`),
 
 	getTempSensors: async () => api.get('/tempSensors/'),
-	getTempSensorHistory: async (id, min, max) => api.get(`/tempSensors/${id}/history`, {min, max}),
+	getTempSensorHistory: async (id, min, max) => api.get(`/tempSensors/${id}/history`, { min, max }),
 
 	getTradfriGroups: async () => api.get('/tradfri/group'),
 	getTradfriDevices: async () => api.get('/tradfri/device'),

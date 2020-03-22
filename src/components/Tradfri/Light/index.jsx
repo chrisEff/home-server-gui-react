@@ -2,8 +2,8 @@
 
 import React from 'react'
 import PropTypes from 'prop-types'
-import {connect} from 'react-redux'
-import {StyleSheet, css} from 'aphrodite'
+import { connect } from 'react-redux'
+import { StyleSheet, css } from 'aphrodite'
 
 import Title from './Title'
 import BrightnessSlider from './BrightnessSlider'
@@ -11,7 +11,7 @@ import ColorSwitcher from './ColorSwitcher'
 import Switch from './Switch'
 import theme from '@/theme'
 
-const Light = ({bulb}) => {
+const Light = ({ bulb }) => {
 	const className = bulb.state ? 'light on' : 'light'
 	return (
 		<div className={css([theme.styles.device, styles.light, bulb.state ? styles.on : styles.off]) + ' ' + className + ' ' + bulb.color}>
@@ -47,4 +47,4 @@ const mapDispatchToProps = dispatch => ({
 })
 
 export default connect(mapStateToProps, mapDispatchToProps)(Light)
-export {Light}
+export { Light }

@@ -2,12 +2,12 @@
 
 import React from 'react'
 import PropTypes from 'prop-types'
-import {connect} from 'react-redux'
-import {css} from 'aphrodite'
+import { connect } from 'react-redux'
+import { css } from 'aphrodite'
 
 import LightGroup from './LightGroup'
 
-import {loadGroups, loadDevices} from '@/actions/tradfri'
+import { loadGroups, loadDevices } from '@/actions/tradfri'
 import theme from '@/theme'
 
 class Tradfri extends React.Component {
@@ -19,7 +19,7 @@ class Tradfri extends React.Component {
 				id: PropTypes.number,
 				name: PropTypes.string,
 				deviceIds: PropTypes.array,
-			})
+			}),
 		),
 	}
 
@@ -33,7 +33,7 @@ class Tradfri extends React.Component {
 				<h2>{this.props.title}</h2>
 				<div className={css([theme.styles.sectionBody])}>
 					{this.props.tradfriGroups.map(group =>
-						<LightGroup key={group.id} id={group.id} name={group.name} deviceIds={group.deviceIds}/>
+						<LightGroup key={group.id} id={group.id} name={group.name} deviceIds={group.deviceIds}/>,
 					)}
 				</div>
 			</div>
@@ -53,4 +53,4 @@ const mapDispatchToProps = dispatch => ({
 })
 
 export default connect(mapStateToProps, mapDispatchToProps)(Tradfri)
-export {Tradfri}
+export { Tradfri }
