@@ -2,7 +2,7 @@
 
 import homeServerApi from '@/homeServerApi'
 
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { connect } from 'react-redux'
 import { StyleSheet, css } from 'aphrodite'
 
@@ -15,24 +15,23 @@ import Temperature from './Temperature'
 
 import theme from '@/theme'
 
-class Wrapper extends React.Component {
+const Wrapper = (props) => {
+	const [apiUrl, setApiUrl] = useState(null)
+	const [apiUser, setApiUser] = useState(null)
+	const [apiKey, setApiKey] = useState(null)
 
-	constructor (props) {
-		super(props)
-		this.state = {
-			apiUrl: null,
-			apiKey: null,
-		}
-	}
-
-	async componentDidMount () {
+	useEffect(() => {
 		if (window.localStorage.apiUrl) {
-			this.updateCredentials(window.localStorage.apiUrl, window.localStorage.apiUser, window.localStorage.apiKey)
+			updateCredentials(window.localStorage.apiUrl, window.localStorage.apiUser, window.localStorage.apiKey)
 		}
-	}
+	}, [])
 
-	updateCredentials = (apiUrl, apiUser, apiKey) => {
-		this.setState({ apiUrl, apiUser, apiKey })
+	const updateCredentials = (apiUrl, apiUser, apiKey) => {
+		// TODO Why do we need the credentials in the state AND the api client?
+		setApiUrl(apiUrl)
+		setApiUser(apiUser)
+		setApiKey(apiKey)
+
 		homeServerApi.setApiUrl(apiUrl)
 		homeServerApi.apiUser = apiUser
 		homeServerApi.apiKey = apiKey
@@ -42,8 +41,11 @@ class Wrapper extends React.Component {
 		window.localStorage.setItem('apiKey', apiKey)
 	}
 
-	unsetCredentials = () => {
-		this.setState({ apiUrl: undefined, apiUser: undefined, apiKey: undefined })
+	const unsetCredentials = () => {
+		setApiUrl(undefined)
+		setApiUser(undefined)
+		setApiKey(undefined)
+
 		homeServerApi.setApiUrl(undefined)
 		homeServerApi.apiUser = undefined
 		homeServerApi.apiKey = undefined
@@ -53,25 +55,23 @@ class Wrapper extends React.Component {
 		window.localStorage.removeItem('apiKey')
 	}
 
-	render () {
-		if (!homeServerApi.apiUrl) {
-			return <LoginForm onLogin={this.updateCredentials} />
-		}
-		return (
-			<div className={css([styles.wrapper])}>
-				<div className={css([theme.styles.button, styles.logoutButton])}>
-					<div onClick={this.unsetCredentials}>
-						Log out
-					</div>
-				</div>
-				{this.props.errorMessage && <ErrorMessage message={this.props.errorMessage} />}
-				<Tradfri title='Licht'/>
-				<RfOutlets title='Steckdosen'/>
-				<Shutters title='Rollläden'/>
-				<Temperature title='Temperatur'/>
-			</div>
-		)
+	if (!homeServerApi.apiUrl) {
+		return <LoginForm onLogin={updateCredentials} />
 	}
+	return (
+		<div className={css([styles.wrapper])}>
+			<div className={css([theme.styles.button, styles.logoutButton])}>
+				<div onClick={unsetCredentials}>
+					Log out
+				</div>
+			</div>
+			{props.errorMessage && <ErrorMessage message={props.errorMessage} />}
+			<Tradfri title='Licht'/>
+			<RfOutlets title='Steckdosen'/>
+			<Shutters title='Rollläden'/>
+			<Temperature title='Temperatur'/>
+		</div>
+	)
 }
 
 const styles = StyleSheet.create({
