@@ -1,78 +1,82 @@
 {
-	"name": "home-server-gui-react",
-	"version": "1.0.0",
-	"description": "A React GUI for my home automation API.",
-	"scripts": {
-		"build": "webpack --env=prod",
-		"build-dev": "webpack --env=dev",
-		"watch": "webpack -w --env=dev",
-		"test": "jest",
-		"test:update": "jest --updateSnapshot",
-		"cover": "jest --coverage --collectCoverageFrom=src/**/*",
-		"coveralls": "jest --coverage --collectCoverageFrom=src/**/* --coverageReporters=text-lcov | coveralls",
-		"eslint": "eslint --ext js,jsx src test",
-		"eslint-fix": "eslint --ext js,jsx src test --fix"
-	},
-	"keywords": [],
-	"author": "chrisEff",
-	"license": "MIT",
-	"homepage": "https://chriseff.github.io/home-server-gui-react/",
-	"repository": {
-		"type": "git",
-		"url": "git@github.com:chrisEff/home-server-gui-react.git"
-	},
-	"devDependencies": {
-		"@babel/core": "^7.9.0",
-		"@babel/plugin-proposal-class-properties": "^7.8.3",
-		"@babel/plugin-transform-runtime": "^7.9.0",
-		"@babel/polyfill": "^7.8.7",
-		"@babel/preset-env": "^7.9.0",
-		"@babel/preset-react": "^7.9.4",
-		"@babel/runtime": "^7.9.2",
-		"@chriseff/eslint-config": "^2.1.0",
-		"@types/jest": "^25.2.1",
-		"babel-core": "^7.0.0-bridge.0",
-		"babel-eslint": "^10.1.0",
-		"babel-jest": "^25.2.6",
-		"babel-loader": "^8.1.0",
-		"coveralls": "^3.0.11",
-		"enzyme": "^3.11.0",
-		"enzyme-adapter-react-16": "^1.15.2",
-		"enzyme-to-json": "^3.4.4",
-		"eslint": "^6.8.0",
-		"eslint-plugin-import": "^2.20.2",
-		"eslint-plugin-node": "^11.1.0",
-		"eslint-plugin-promise": "^4.2.1",
-		"eslint-plugin-react": "^7.19.0",
-		"eslint-plugin-standard": "^4.0.1",
-		"fetch-mock": "^9.3.1",
-		"husky": "^4.2.3",
-		"jest": "^25.2.7",
-		"lint-staged": "^10.1.1",
-		"node-fetch": "^2.6.0",
-		"redux-mock-store": "^1.5.4",
-		"webpack": "^4.42.1",
-		"webpack-cli": "^3.3.11",
-		"webpack-merge": "^4.2.2"
-	},
-	"dependencies": {
-		"aphrodite": "^2.4.0",
-		"dateformat": "^3.0.3",
-		"lodash.sortby": "^4.7.0",
-		"prop-types": "^15.7.2",
-		"react": "^16.13.1",
-		"react-dom": "^16.13.1",
-		"react-redux": "^7.2.0",
-		"recharts": "^1.8.5",
-		"redux": "^4.0.5",
-		"redux-thunk": "^2.3.0"
-	},
-	"lint-staged": {
-		"*.{js,jsx}": "eslint"
-	},
-	"husky": {
-		"hooks": {
-			"pre-commit": "lint-staged"
-		}
-	}
+  "name": "home-server-gui-react",
+  "version": "1.0.0",
+  "description": "A React GUI for my home automation API.",
+  "scripts": {
+    "build": "webpack --env=prod",
+    "build-dev": "webpack --env=dev",
+    "watch": "webpack -w --env=dev",
+    "test": "jest",
+    "test:update": "jest --updateSnapshot",
+    "cover": "jest --coverage --collectCoverageFrom=src/**/*",
+    "coveralls": "jest --coverage --collectCoverageFrom=src/**/* --coverageReporters=text-lcov | coveralls",
+    "eslint": "eslint --ext js,jsx src test",
+    "eslint-fix": "eslint --ext js,jsx src test --fix",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
+  },
+  "keywords": [],
+  "author": "chrisEff",
+  "license": "MIT",
+  "homepage": "https://chriseff.github.io/home-server-gui-react/",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:chrisEff/home-server-gui-react.git"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.9.0",
+    "@babel/plugin-proposal-class-properties": "^7.8.3",
+    "@babel/plugin-transform-runtime": "^7.9.0",
+    "@babel/polyfill": "^7.8.7",
+    "@babel/preset-env": "^7.9.0",
+    "@babel/preset-react": "^7.9.4",
+    "@babel/runtime": "^7.9.2",
+    "@chriseff/eslint-config": "^2.1.0",
+    "@types/jest": "^25.2.1",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-eslint": "^10.1.0",
+    "babel-jest": "^25.2.6",
+    "babel-loader": "^8.1.0",
+    "coveralls": "^3.0.11",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.2",
+    "enzyme-to-json": "^3.4.4",
+    "eslint": "^6.8.0",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-react": "^7.19.0",
+    "eslint-plugin-standard": "^4.0.1",
+    "fetch-mock": "^9.3.1",
+    "husky": "^4.2.3",
+    "jest": "^25.2.7",
+    "lint-staged": "^10.1.1",
+    "node-fetch": "^2.6.0",
+    "redux-mock-store": "^1.5.4",
+    "webpack": "^4.42.1",
+    "webpack-cli": "^3.3.11",
+    "webpack-merge": "^4.2.2"
+  },
+  "dependencies": {
+    "aphrodite": "^2.4.0",
+    "dateformat": "^3.0.3",
+    "lodash.sortby": "^4.7.0",
+    "prop-types": "^15.7.2",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-redux": "^7.2.0",
+    "recharts": "^1.8.5",
+    "redux": "^4.0.5",
+    "redux-thunk": "^2.3.0",
+    "snyk": "^1.316.1"
+  },
+  "lint-staged": {
+    "*.{js,jsx}": "eslint"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "snyk": true
 }
