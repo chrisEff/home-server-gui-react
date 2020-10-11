@@ -19,7 +19,7 @@ const RfOutlets = (props) => {
 		<div className={css([theme.styles.section])}>
 			<h2>{props.title}</h2>
 			<div className={css([theme.styles.sectionBody])}>
-				{props.outlets.map(outlet =>
+				{props.outlets.map((outlet) =>
 					<RfOutlet key={outlet.id} id={outlet.id}/>,
 				)}
 			</div>
@@ -36,11 +36,11 @@ RfOutlets.propTypes = {
 	),
 }
 
-const mapStateToProps = state => ({
+const mapStateToProps = (state) => ({
 	outlets: state.outlets,
 })
 
-const mapDispatchToProps = dispatch => ({
+const mapDispatchToProps = (dispatch) => ({
 	onLoad: () => dispatch(loadOutlets()),
 })
 

@@ -17,7 +17,7 @@ const ColorSwitcher = ({ deviceId, bulbType, selected, onChange }) => {
 
 	return (
 		<div className={css([styles.colorSwitcher])}>
-			{colors.map(color => (
+			{colors.map((color) => (
 				<div
 					key={`${deviceId}-color-${color}`}
 					className={css((selected === color) ? [styles.color, styles.active] : [styles.color])}
@@ -71,9 +71,8 @@ const styles = StyleSheet.create({
 	purple:  { backgroundColor: 'mediumpurple' },
 })
 
-const mapStateToProps = (state, ownProps) => ({
-})
-const mapDispatchToProps = dispatch => ({
+const mapStateToProps = (state, ownProps) => ({})
+const mapDispatchToProps = (dispatch) => ({
 	onChange: (id, color) => dispatch(setDeviceColor(id, color)),
 })
 

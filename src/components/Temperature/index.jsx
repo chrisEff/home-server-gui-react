@@ -19,7 +19,7 @@ const Temperature = (props) => {
 		<div className={css([theme.styles.section])}>
 			<h2>{props.title}</h2>
 			<div className={css([theme.styles.sectionBody])}>
-				{props.tempSensors.map(sensor =>
+				{props.tempSensors.map((sensor) =>
 					<TemperatureSensor key={sensor.id} id={sensor.id}/>,
 				)}
 			</div>
@@ -36,11 +36,11 @@ Temperature.propTypes = {
 	),
 }
 
-const mapStateToProps = state => ({
+const mapStateToProps = (state) => ({
 	tempSensors: state.tempSensors,
 })
 
-const mapDispatchToProps = dispatch => ({
+const mapDispatchToProps = (dispatch) => ({
 	onLoad: () => dispatch(loadTempSensors()),
 })
 

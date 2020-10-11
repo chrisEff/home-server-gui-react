@@ -55,10 +55,10 @@ const styles = StyleSheet.create({
 })
 
 const mapStateToProps = (state, ownProps) => ({
-	outlet: state.outlets.find(outlet => outlet.id === ownProps.id),
+	outlet: state.outlets.find((outlet) => outlet.id === ownProps.id),
 })
 
-const mapDispatchToProps = dispatch => ({
+const mapDispatchToProps = (dispatch) => ({
 	onToggle: (id, state) => dispatch(setOutletState(id, state)),
 })
 

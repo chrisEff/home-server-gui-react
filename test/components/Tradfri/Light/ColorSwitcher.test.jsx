@@ -6,7 +6,6 @@ import { ColorSwitcher } from '@/components/Tradfri/Light/ColorSwitcher'
 import { shallow } from 'enzyme'
 
 describe.only('ColorSwitcher', () => {
-
 	it.each([
 		['red'],
 		['green'],
@@ -22,12 +21,15 @@ describe.only('ColorSwitcher', () => {
 		expect(wrapper).toMatchSnapshot()
 	})
 
+	// prettier-ignore
 	it.each([
 		['warm'],
 		['neutral'],
 		['cold'],
 	])('should render the white-spectrum switcher correctly when %s is active', (color) => {
-		const wrapper = shallow(<ColorSwitcher deviceId={1} bulbType="white-spectrum" color={color} />)
+		const wrapper = shallow(
+			<ColorSwitcher deviceId={1} bulbType="white-spectrum" color={color} />,
+		)
 		expect(wrapper).toMatchSnapshot()
 	})
 
@@ -35,5 +37,4 @@ describe.only('ColorSwitcher', () => {
 		const wrapper = shallow(<ColorSwitcher deviceId={1} bulbType="white" color="neutral" />)
 		expect(wrapper).toMatchSnapshot()
 	})
-
 })

@@ -23,7 +23,6 @@ const call = async (method, action, params = {}) => {
 }
 
 const api = {
-
 	apiUrl: '',
 	apiUser: '',
 	apiKey: '',

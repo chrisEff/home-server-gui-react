@@ -10,9 +10,9 @@ import { setDeviceBrightness } from '@/actions/tradfri'
 const BrightnessSlider = ({ deviceId, brightness, onChange }) =>
 	<input
 		className={css([styles.brightnessSlider])}
-		type='range'
-		min='0'
-		max='254'
+		type="range"
+		min="0"
+		max="254"
 		defaultValue={brightness}
 		onMouseUp={(e) => onChange(deviceId, parseInt(e.target.value))}
 	/>
@@ -31,9 +31,8 @@ const styles = StyleSheet.create({
 	},
 })
 
-const mapStateToProps = (state, ownProps) => ({
-})
-const mapDispatchToProps = dispatch => ({
+const mapStateToProps = (state, ownProps) => ({})
+const mapDispatchToProps = (dispatch) => ({
 	onChange: (id, brightness) => dispatch(setDeviceBrightness(id, brightness)),
 })
 

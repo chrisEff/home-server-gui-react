@@ -38,10 +38,10 @@ const styles = StyleSheet.create({
 })
 
 const mapStateToProps = (state, ownProps) => ({
-	shutter: state.shutters.find(shutter => shutter.id === ownProps.id),
+	shutter: state.shutters.find((shutter) => shutter.id === ownProps.id),
 })
 
-const mapDispatchToProps = dispatch => ({
+const mapDispatchToProps = (dispatch) => ({
 	onUp: (id, state) => dispatch(moveShutterUp(id, state)),
 	onDown: (id, state) => dispatch(moveShutterDown(id, state)),
 })

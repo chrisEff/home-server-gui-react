@@ -13,7 +13,7 @@ const TemperatureSensor = ({ sensor }) => (
 		<span className={css([styles.name])}>{sensor.name}</span>
 		<div className={css([styles.value])}>{Math.round(sensor.celsiusValue * 10) / 10}°C</div>
 
-		{ sensor.history && <TemperatureChart data={sensor.history} /> }
+		{sensor.history && <TemperatureChart data={sensor.history} />}
 	</div>
 )
 
@@ -44,11 +44,10 @@ const styles = StyleSheet.create({
 })
 
 const mapStateToProps = (state, ownProps) => ({
-	sensor: state.tempSensors.find(sensor => sensor.id === ownProps.id),
+	sensor: state.tempSensors.find((sensor) => sensor.id === ownProps.id),
 })
 
-const mapDispatchToProps = dispatch => ({
-})
+const mapDispatchToProps = (dispatch) => ({})
 
 export default connect(mapStateToProps, mapDispatchToProps)(TemperatureSensor)
 export { TemperatureSensor }

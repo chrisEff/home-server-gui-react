@@ -19,7 +19,7 @@ const Shutters = (props) => {
 		<div className={css([theme.styles.section])}>
 			<h2>{props.title}</h2>
 			<div className={css([theme.styles.sectionBody])}>
-				{props.shutters.map(shutter =>
+				{props.shutters.map((shutter) =>
 					<Shutter key={shutter.id} id={shutter.id}/>,
 				)}
 			</div>
@@ -36,11 +36,11 @@ Shutters.propTypes = {
 	),
 }
 
-const mapStateToProps = state => ({
+const mapStateToProps = (state) => ({
 	shutters: state.shutters,
 })
 
-const mapDispatchToProps = dispatch => ({
+const mapDispatchToProps = (dispatch) => ({
 	onLoad: () => dispatch(loadShutters()),
 })
 

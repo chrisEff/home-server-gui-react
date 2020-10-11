@@ -21,9 +21,7 @@ describe('shutters actions', () => {
 			const store = mockStore({ shutters: [] })
 
 			await store.dispatch(loadShutters())
-			expect(store.getActions()).toEqual([
-				{ shutters: [{ id: 0 }], type: 'SET_SHUTTERS' },
-			])
+			expect(store.getActions()).toEqual([{ shutters: [{ id: 0 }], type: 'SET_SHUTTERS' }])
 		})
 
 		it('should set an error message on failure', async () => {
@@ -31,10 +29,12 @@ describe('shutters actions', () => {
 			const store = mockStore({ outlets: [] })
 
 			await store.dispatch(loadShutters())
-			expect(store.getActions()).toEqual([{
-				message: 'failed to load shutters: API responded with 500 Internal Server Error',
-				type: 'SET_ERROR_MESSAGE',
-			}])
+			expect(store.getActions()).toEqual([
+				{
+					message: 'failed to load shutters: API responded with 500 Internal Server Error',
+					type: 'SET_ERROR_MESSAGE',
+				},
+			])
 		})
 	})
 
@@ -44,10 +44,12 @@ describe('shutters actions', () => {
 			const store = mockStore({ outlets: [] })
 
 			await store.dispatch(moveShutterUp(1))
-			expect(store.getActions()).toEqual([{
-				message: 'failed to move shutter #1 up: API responded with 500 Internal Server Error',
-				type: 'SET_ERROR_MESSAGE',
-			}])
+			expect(store.getActions()).toEqual([
+				{
+					message: 'failed to move shutter #1 up: API responded with 500 Internal Server Error',
+					type: 'SET_ERROR_MESSAGE',
+				},
+			])
 		})
 	})
 
@@ -57,10 +59,12 @@ describe('shutters actions', () => {
 			const store = mockStore({ outlets: [] })
 
 			await store.dispatch(moveShutterDown(1))
-			expect(store.getActions()).toEqual([{
-				message: 'failed to move shutter #1 down: API responded with 500 Internal Server Error',
-				type: 'SET_ERROR_MESSAGE',
-			}])
+			expect(store.getActions()).toEqual([
+				{
+					message: 'failed to move shutter #1 down: API responded with 500 Internal Server Error',
+					type: 'SET_ERROR_MESSAGE',
+				},
+			])
 		})
 	})
 })

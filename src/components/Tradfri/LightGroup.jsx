@@ -62,10 +62,10 @@ const styles = StyleSheet.create({
 })
 
 const mapStateToProps = (state, ownProps) => ({
-	devices: state.tradfriDevices.filter(device => ownProps.deviceIds.includes(device.id)),
+	devices: state.tradfriDevices.filter((device) => ownProps.deviceIds.includes(device.id)),
 })
 
-const mapDispatchToProps = dispatch => ({
+const mapDispatchToProps = (dispatch) => ({
 	onSaveName: (id, name) => dispatch(setGroupName(id, name)),
 })
 

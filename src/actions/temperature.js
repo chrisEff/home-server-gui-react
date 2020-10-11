@@ -21,31 +21,33 @@ export const loadTempSensors = () => {
 			date.setDate(date.getDate() - 1)
 			const timestampStartOfYesterday = Math.floor(date.getTime() / 1000)
 
-			const tempSensors = await Promise.all(Object.values(response).map(async sensor => {
-				const history = {}
+			const tempSensors = await Promise.all(
+				Object.values(response).map(async (sensor) => {
+					const history = {}
 
-				const historyToday     = (await fetchHistory(sensor.id, timestampStartOfToday))
-				const historyYesterday = (await fetchHistory(sensor.id, timestampStartOfYesterday, timestampStartOfToday - 1))
+					const historyToday     = await fetchHistory(sensor.id, timestampStartOfToday)
+					const historyYesterday = await fetchHistory(sensor.id, timestampStartOfYesterday, timestampStartOfToday - 1)
 
-				for (const entry of historyYesterday) {
-					if (entry.time % 120 === 0) {
+					for (const entry of historyYesterday) {
+						if (entry.time % 120 === 0) {
+							const time = dateFormat(new Date(entry.time * 1000), 'HH:MM')
+							history[time] = { time: time, yesterday: entry.val }
+						}
+					}
+					for (const entry of historyToday) {
 						const time = dateFormat(new Date(entry.time * 1000), 'HH:MM')
-						history[time] = { time: time, yesterday: entry.val }
+						if (!history[time]) {
+							history[time] = { time }
+						}
+						history[time].today = entry.val
 					}
-				}
-				for (const entry of historyToday) {
-					const time = dateFormat(new Date(entry.time * 1000), 'HH:MM')
-					if (!history[time]) {
-						history[time] = { time }
-					}
-					history[time].today = entry.val
-				}
 
-				sensor.history = sortBy(Object.values(history), ['time'])
-				sensor.history.push({ time: '24:00' })
+					sensor.history = sortBy(Object.values(history), ['time'])
+					sensor.history.push({ time: '24:00' })
 
-				return sensor
-			}))
+					return sensor
+				}),
+			)
 			dispatch({ type: 'SET_TEMP_SENSORS', tempSensors })
 		} catch (e) {
 			dispatch(setErrorMessage('failed to load temperature sensors: ' + e.message))

@@ -61,9 +61,8 @@ const styles = StyleSheet.create({
 	},
 })
 
-const mapStateToProps = (state, ownProps) => ({
-})
-const mapDispatchToProps = dispatch => ({
+const mapStateToProps = (state, ownProps) => ({})
+const mapDispatchToProps = (dispatch) => ({
 	onChange: (id, name) => dispatch(setDeviceName(id, name)),
 })
 

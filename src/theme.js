@@ -14,16 +14,12 @@ const styles = StyleSheet.create({
 		padding: '10px',
 		userSelect: 'none',
 	},
-	section: {
-
-	},
+	section: {},
 	sectionBody: {
 		display: 'flex',
 		flexWrap: 'wrap',
 	},
-	deviceGroup: {
-
-	},
+	deviceGroup: {},
 	deviceGroupBody: {
 		display: 'flex',
 	},

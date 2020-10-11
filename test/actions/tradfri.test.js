@@ -2,7 +2,15 @@
 
 import configureMockStore from 'redux-mock-store'
 import thunk from 'redux-thunk'
-import { loadDevices, loadGroups, setGroupName, setDeviceName, setDeviceState, setDeviceBrightness, setDeviceColor } from '@/actions/tradfri'
+import {
+	loadDevices,
+	loadGroups,
+	setGroupName,
+	setDeviceName,
+	setDeviceState,
+	setDeviceBrightness,
+	setDeviceColor,
+} from '@/actions/tradfri'
 import fetchMock from 'fetch-mock'
 
 const middlewares = [thunk]
@@ -29,19 +37,19 @@ describe('tradfri actions', () => {
 			})
 
 			await store.dispatch(loadGroups())
-			expect(store.getActions()).toEqual([
-				{ groups: [{ id: 1 }], type: 'SET_TRADFRI_GROUPS' },
-			])
+			expect(store.getActions()).toEqual([{ groups: [{ id: 1 }], type: 'SET_TRADFRI_GROUPS' }])
 		})
 
 		it('should set an error message on failure', async () => {
 			fetchMock.get('/tradfri/group', 500)
 
 			await store.dispatch(loadGroups())
-			expect(store.getActions()).toEqual([{
-				message: 'failed to load tradfri groups: API responded with 500 Internal Server Error',
-				type: 'SET_ERROR_MESSAGE',
-			}])
+			expect(store.getActions()).toEqual([
+				{
+					message: 'failed to load tradfri groups: API responded with 500 Internal Server Error',
+					type: 'SET_ERROR_MESSAGE',
+				},
+			])
 		})
 	})
 
@@ -52,19 +60,19 @@ describe('tradfri actions', () => {
 			})
 
 			await store.dispatch(loadDevices())
-			expect(store.getActions()).toEqual([
-				{ devices: [{ id: 1 }], type: 'SET_TRADFRI_DEVICES' },
-			])
+			expect(store.getActions()).toEqual([{ devices: [{ id: 1 }], type: 'SET_TRADFRI_DEVICES' }])
 		})
 
 		it('should set an error message on failure', async () => {
 			fetchMock.get('/tradfri/device', 500)
 
 			await store.dispatch(loadDevices())
-			expect(store.getActions()).toEqual([{
-				message: 'failed to load tradfri devices: API responded with 500 Internal Server Error',
-				type: 'SET_ERROR_MESSAGE',
-			}])
+			expect(store.getActions()).toEqual([
+				{
+					message: 'failed to load tradfri devices: API responded with 500 Internal Server Error',
+					type: 'SET_ERROR_MESSAGE',
+				},
+			])
 		})
 	})
 
@@ -73,19 +81,19 @@ describe('tradfri actions', () => {
 			fetchMock.put('/tradfri/group/1/name/test', { status: 200, body: {} })
 
 			await store.dispatch(setGroupName(1, 'test'))
-			expect(store.getActions()).toEqual([
-				{ id: 1, name: 'test', type: 'SET_TRADFRI_GROUP_NAME' },
-			])
+			expect(store.getActions()).toEqual([{ id: 1, name: 'test', type: 'SET_TRADFRI_GROUP_NAME' }])
 		})
 
 		it('should set an error message on failure', async () => {
 			fetchMock.put('/tradfri/group/1/name/test', 500)
 
 			await store.dispatch(setGroupName(1, 'test'))
-			expect(store.getActions()).toEqual([{
-				message: 'failed to set tradfri group name: API responded with 500 Internal Server Error',
-				type: 'SET_ERROR_MESSAGE',
-			}])
+			expect(store.getActions()).toEqual([
+				{
+					message: 'failed to set tradfri group name: API responded with 500 Internal Server Error',
+					type: 'SET_ERROR_MESSAGE',
+				},
+			])
 		})
 	})
 
@@ -94,9 +102,7 @@ describe('tradfri actions', () => {
 			fetchMock.put('/tradfri/device/1/name/test', { status: 200, body: {} })
 
 			await store.dispatch(setDeviceName(1, 'test'))
-			expect(store.getActions()).toEqual([
-				{ id: 1, name: 'test', type: 'SET_TRADFRI_DEVICE_NAME' },
-			])
+			expect(store.getActions()).toEqual([{ id: 1, name: 'test', type: 'SET_TRADFRI_DEVICE_NAME' }])
 		})
 	})
 
@@ -105,9 +111,7 @@ describe('tradfri actions', () => {
 			fetchMock.put('/tradfri/device/1/state/1', { status: 200, body: {} })
 
 			await store.dispatch(setDeviceState(1, 1))
-			expect(store.getActions()).toEqual([
-				{ id: 1, state: 1, type: 'SET_TRADFRI_DEVICE_STATE' },
-			])
+			expect(store.getActions()).toEqual([{ id: 1, state: 1, type: 'SET_TRADFRI_DEVICE_STATE' }])
 		})
 	})
 

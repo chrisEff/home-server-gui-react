@@ -12,7 +12,7 @@ const LoginForm = ({ onLogin }) => {
 
 	return (
 		<div className={css([styles.loginForm])}>
-			<br/>
+			<br />
 
 			<input className={css([styles.input])} placeholder='API URL' type='text' name='apiUrl' ref={apiUrlInput} /><br/>
 			<input className={css([styles.input])} placeholder='API User' type='text' name='apiUser' ref={apiUserInput} /><br/>

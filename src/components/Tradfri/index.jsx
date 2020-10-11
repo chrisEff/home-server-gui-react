@@ -19,7 +19,7 @@ const Tradfri = (props) => {
 		<div className={css([theme.styles.section])}>
 			<h2>{props.title}</h2>
 			<div className={css([theme.styles.sectionBody])}>
-				{props.tradfriGroups.map(group =>
+				{props.tradfriGroups.map((group) =>
 					<LightGroup key={group.id} id={group.id} name={group.name} deviceIds={group.deviceIds}/>,
 				)}
 			</div>
@@ -38,11 +38,11 @@ Tradfri.propTypes = {
 	),
 }
 
-const mapStateToProps = state => ({
+const mapStateToProps = (state) => ({
 	tradfriGroups: state.tradfriGroups,
 })
 
-const mapDispatchToProps = dispatch => ({
+const mapDispatchToProps = (dispatch) => ({
 	onLoad: () => {
 		dispatch(loadGroups())
 		dispatch(loadDevices())

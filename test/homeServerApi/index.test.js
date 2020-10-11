@@ -74,5 +74,4 @@ describe('homeServerApi', () => {
 		await homeServerApi.setTradfriDeviceColor(1, 'blue')
 		expect(homeServerApi.put.mock.calls.length).toBe(1)
 	})
-
 })

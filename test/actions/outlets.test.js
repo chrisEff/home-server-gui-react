@@ -21,9 +21,7 @@ describe('outlets actions', () => {
 			const store = mockStore({ outlets: [] })
 
 			await store.dispatch(loadOutlets())
-			expect(store.getActions()).toEqual([
-				{ outlets: [{ id: 1 }], type: 'SET_OUTLETS' },
-			])
+			expect(store.getActions()).toEqual([{ outlets: [{ id: 1 }], type: 'SET_OUTLETS' }])
 		})
 
 		it('should set an error message on failure', async () => {
@@ -31,10 +29,12 @@ describe('outlets actions', () => {
 			const store = mockStore({ outlets: [] })
 
 			await store.dispatch(loadOutlets())
-			expect(store.getActions()).toEqual([{
-				message: 'failed to load outlets: API responded with 500 Internal Server Error',
-				type: 'SET_ERROR_MESSAGE',
-			}])
+			expect(store.getActions()).toEqual([
+				{
+					message: 'failed to load outlets: API responded with 500 Internal Server Error',
+					type: 'SET_ERROR_MESSAGE',
+				},
+			])
 		})
 	})
 
@@ -46,11 +46,13 @@ describe('outlets actions', () => {
 			const store = mockStore({ outlets: [] })
 
 			await store.dispatch(setOutletState(1, 0))
-			expect(store.getActions()).toEqual([{
-				id: 1,
-				state: 0,
-				type: 'SET_OUTLET_STATE',
-			}])
+			expect(store.getActions()).toEqual([
+				{
+					id: 1,
+					state: 0,
+					type: 'SET_OUTLET_STATE',
+				},
+			])
 		})
 
 		it('should set an error message on failure', async () => {
@@ -58,10 +60,12 @@ describe('outlets actions', () => {
 			const store = mockStore({ outlets: [] })
 
 			await store.dispatch(setOutletState(1, 0))
-			expect(store.getActions()).toEqual([{
-				message: 'failed to set state of outlet #1: API responded with 500 Internal Server Error',
-				type: 'SET_ERROR_MESSAGE',
-			}])
+			expect(store.getActions()).toEqual([
+				{
+					message: 'failed to set state of outlet #1: API responded with 500 Internal Server Error',
+					type: 'SET_ERROR_MESSAGE',
+				},
+			])
 		})
 	})
 })

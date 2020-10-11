@@ -41,10 +41,9 @@ const styles = StyleSheet.create({
 })
 
 const mapStateToProps = (state, ownProps) => ({
-	bulb: state.tradfriDevices.find(device => device.id === ownProps.id),
+	bulb: state.tradfriDevices.find((device) => device.id === ownProps.id),
 })
-const mapDispatchToProps = dispatch => ({
-})
+const mapDispatchToProps = (dispatch) => ({})
 
 export default connect(mapStateToProps, mapDispatchToProps)(Light)
 export { Light }

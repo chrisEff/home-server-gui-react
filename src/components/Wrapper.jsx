@@ -66,10 +66,10 @@ const Wrapper = (props) => {
 				</div>
 			</div>
 			{props.errorMessage && <ErrorMessage message={props.errorMessage} />}
-			<Tradfri title='Licht'/>
-			<RfOutlets title='Steckdosen'/>
-			<Shutters title='Rollläden'/>
-			<Temperature title='Temperatur'/>
+			<Tradfri title="Licht" />
+			<RfOutlets title="Steckdosen" />
+			<Shutters title="Rollläden" />
+			<Temperature title="Temperatur" />
 		</div>
 	)
 }
